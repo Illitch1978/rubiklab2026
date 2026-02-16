@@ -12,16 +12,22 @@ const Security = () => {
     <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border">
       <div className="max-w-4xl mx-auto text-center">
         <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-6">
-          Enterprise-grade security and controls
+          Built on governed infrastructure
         </h3>
-        <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-12 leading-relaxed">
-          Rubiklab meets the highest industry standards for security and compliance. We include all default controls that enterprise teams expect: SAML SSO, audit logs, IP allow-listing, data lifecycle management, and more.
+        <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto mb-4 leading-relaxed">
+          Rubiklab is engineered for organisations that require control, transparency, and compliance.
+        </p>
+        <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto mb-4 leading-relaxed">
+          We support enterprise authentication, audit logging, lifecycle management, role-based access controls, and secure integrations across your technology stack.
+        </p>
+        <p className="text-secondary-foreground text-base md:text-lg max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
+          Our approach ensures that intelligence is not only powerful, but defensible.
         </p>
         <a
-          href="#"
+          href="/security"
           className="text-sm text-foreground underline underline-offset-4 hover:text-accent transition-colors mb-16 inline-block"
         >
-          More About Security
+          Learn about Security
         </a>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">

@@ -1,7 +1,7 @@
 const testimonials = [
   {
     quote:
-      "The legal industry is evolving rapidly, and AI is essential to keep pace with growing complexity. Rubiklab has transformed how we work—enabling us to navigate challenges with precision.",
+      "The legal industry is evolving rapidly. Rubiklab gives us structured intelligence and the confidence to act with precision.",
     name: "Dr. Claudia Junker",
     title: "General Counsel",
     company: "Deutsche Telekom AG",
@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     quote:
-      "What we have seen at Reed Smith with Rubiklab is by far the most successful firm technology adoption story I have ever been a part of.",
+      "What we have built with Rubiklab is not just AI adoption. It is a disciplined knowledge architecture across the firm.",
     name: "Rich Robbins",
     title: "Director of Applied Artificial Intelligence",
     company: "Reed Smith",
@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     quote:
-      "Rubiklab has become part of our routine. Having a partner like Rubiklab at this stage is a real game-changer.",
+      "Rubiklab has become part of our operating infrastructure. It has changed how we manage and activate insight.",
     name: "Marie-Cécile Martin",
     title: "Head of Legal Operations",
     company: "Syngenta Group",
@@ -29,6 +29,12 @@ const Testimonials = () => {
   return (
     <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border">
       <div className="max-w-6xl mx-auto">
+        <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-4 text-center">
+          Trusted where decisions carry weight
+        </h3>
+        <p className="text-muted-foreground text-base md:text-lg text-center max-w-2xl mx-auto mb-16 leading-relaxed">
+          Leading organisations rely on Rubiklab to structure knowledge, strengthen governance, and improve decision quality.
+        </p>
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {testimonials.map((t, i) => (
             <div key={i} className="flex flex-col justify-between">
