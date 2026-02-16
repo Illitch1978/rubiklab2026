@@ -11,13 +11,13 @@ const PlatformHero = () => {
           Engineered for<br />Every Task
         </h1>
         <p className="text-lg text-muted-foreground max-w-md mb-16 leading-relaxed">
-          More than 100,000 legal professionals around the world use Harvey to cut through complexity and navigate complex legal work.
+          More than 100,000 legal professionals around the world use Rubiklab to cut through complexity and navigate complex legal work.
         </p>
 
         <div className="relative rounded-lg overflow-hidden">
           <img
             src={platformHero}
-            alt="Harvey platform interface"
+            alt="Rubiklab platform interface"
             className="w-full h-auto object-cover rounded-lg"
           />
           <button className="absolute inset-0 flex items-center justify-center bg-foreground/10 hover:bg-foreground/20 transition-colors group">

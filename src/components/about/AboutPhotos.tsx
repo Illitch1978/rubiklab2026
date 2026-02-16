@@ -8,12 +8,12 @@ const AboutPhotos = () => {
         <div className="grid md:grid-cols-2 gap-4">
           <img
             src={team1}
-            alt="Harvey team members collaborating"
+            alt="Rubiklab team members collaborating"
             className="w-full h-80 object-cover rounded-lg"
           />
           <img
             src={team2}
-            alt="Harvey team meeting"
+            alt="Rubiklab team meeting"
             className="w-full h-80 object-cover rounded-lg"
           />
         </div>

@@ -8,14 +8,14 @@ const testimonials = [
   },
   {
     quote:
-      "Harvey is a tremendous tool that fits perfectly with our culture and our way of approaching legal thinking and legal delivery.",
+      "Rubiklab is a tremendous tool that fits perfectly with our culture and our way of approaching legal thinking and legal delivery.",
     name: "Omar Puertas-Alvarez",
     title: "Partner",
     company: "Cuatrecasas",
   },
   {
     quote:
-      "What we have seen at Reed Smith with Harvey is by far the most successful firm technology adoption story I have ever been a part of.",
+      "What we have seen at Reed Smith with Rubiklab is by far the most successful firm technology adoption story I have ever been a part of.",
     name: "Rich Robbins",
     title: "Director of Applied Artificial Intelligence",
     company: "Reed Smith",

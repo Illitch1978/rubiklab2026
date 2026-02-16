@@ -11,7 +11,10 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
           <div className="col-span-2 md:col-span-1">
-            <span className="font-serif text-xl font-bold text-foreground">Harvey</span>
+            <div className="flex items-baseline gap-0.5">
+              <span className="font-serif text-xl font-bold text-foreground">rubiklab</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-accent mb-0.5 animate-pulse" />
+            </div>
           </div>
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
@@ -34,7 +37,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-8 border-t border-border">
           <p className="text-xs text-muted-foreground">
-            © 2025 Harvey AI. All rights reserved.
+            © 2026 Rubiklab. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">

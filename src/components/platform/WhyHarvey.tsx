@@ -26,7 +26,7 @@ const WhyHarvey = () => {
     <section className="py-24 md:py-32 px-8 md:px-16">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-16">
-          Why the top performers choose Harvey
+          Why the top performers choose Rubiklab
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">

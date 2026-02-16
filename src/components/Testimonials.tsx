@@ -1,7 +1,7 @@
 const testimonials = [
   {
     quote:
-      "The legal industry is evolving rapidly, and AI is essential to keep pace with growing complexity. Harvey has transformed how we work—enabling us to navigate challenges with precision.",
+      "The legal industry is evolving rapidly, and AI is essential to keep pace with growing complexity. Rubiklab has transformed how we work—enabling us to navigate challenges with precision.",
     name: "Dr. Claudia Junker",
     title: "General Counsel",
     company: "Deutsche Telekom AG",
@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     quote:
-      "What we have seen at Reed Smith with Harvey is by far the most successful firm technology adoption story I have ever been a part of.",
+      "What we have seen at Reed Smith with Rubiklab is by far the most successful firm technology adoption story I have ever been a part of.",
     name: "Rich Robbins",
     title: "Director of Applied Artificial Intelligence",
     company: "Reed Smith",
@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     quote:
-      "Harvey has become part of our routine. Having a partner like Harvey at this stage is a real game-changer.",
+      "Rubiklab has become part of our routine. Having a partner like Rubiklab at this stage is a real game-changer.",
     name: "Marie-Cécile Martin",
     title: "Head of Legal Operations",
     company: "Syngenta Group",

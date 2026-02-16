@@ -7,7 +7,7 @@ const SecurityHero = () => {
           For the Most<br />Sensitive Matters
         </h1>
         <p className="text-muted-foreground text-base md:text-lg max-w-md mb-10 leading-relaxed">
-          Harvey keeps your client data safe with world-class security and data privacy measures.
+          Rubiklab keeps your client data safe with world-class security and data privacy measures.
         </p>
         <a
           href="#"

@@ -14,10 +14,10 @@ const Integrations = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Use Harvey in */}
+          {/* Use Rubiklab in */}
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-6 tracking-wide uppercase">
-              Use Harvey in:
+              Use Rubiklab in:
             </h4>
             <div className="grid grid-cols-2 gap-3">
               {useIn.map((tool, i) => (

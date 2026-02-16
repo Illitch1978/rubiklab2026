@@ -19,7 +19,7 @@ const AboutCareers = () => {
         <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-4 max-w-2xl">
           <span className="font-semibold">Join our team.</span>{" "}
           <span className="text-muted-foreground">
-            Help Harvey shape the future of professional services.
+            Help Rubiklab shape the future of professional services.
           </span>
         </h2>
 
