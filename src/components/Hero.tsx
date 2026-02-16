@@ -1,12 +1,11 @@
 import { useState, useEffect, useMemo } from "react";
 import heroSlide1 from "@/assets/hero-slide-1.jpg";
 import heroSlide2 from "@/assets/hero-slide-2.jpg";
-import heroSlide3 from "@/assets/hero-slide-3.jpg";
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
 import heroSlide5 from "@/assets/hero-slide-5.jpg";
 import heroSlide6 from "@/assets/hero-slide-6.jpg";
 
-const allSlides = [heroSlide1, heroSlide2, heroSlide3, heroSlide4, heroSlide5, heroSlide6];
+const allSlides = [heroSlide1, heroSlide2, heroSlide4, heroSlide5, heroSlide6];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -24,7 +23,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -34,7 +33,7 @@ const Hero = () => {
       {slides.map((src, i) => (
         <div
           key={i}
-          className="absolute inset-0 transition-opacity duration-[1500ms] ease-in-out"
+          className="absolute inset-0 transition-opacity duration-[2000ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
           style={{ opacity: i === current ? 1 : 0 }}
         >
           <img
@@ -51,7 +50,11 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 px-8 md:px-16 max-w-3xl pt-24">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[0.95] mb-8 text-foreground">
-          Activated Intelligence.
+          Activated Intelligence
+          <span
+            className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-1 align-baseline animate-pulse"
+            style={{ backgroundColor: "hsl(var(--accent))" }}
+          />
         </h1>
         <p className="text-lg md:text-xl text-secondary-foreground max-w-lg mb-10 leading-relaxed">
           Rubiklab structures fragmented knowledge, separates signal from noise, and activates governed AI workflows across legal, research, and enterprise systems.
@@ -62,22 +65,6 @@ const Hero = () => {
         >
           Request a Demo
         </a>
-      </div>
-
-      {/* Slide indicators */}
-      <div className="absolute bottom-8 left-8 md:left-16 z-10 flex gap-2">
-        {slides.map((_, i) => (
-          <div
-            key={i}
-            className="h-0.5 rounded-full transition-all duration-500"
-            style={{
-              width: i === current ? "2rem" : "0.75rem",
-              backgroundColor: i === current
-                ? "hsl(var(--foreground))"
-                : "hsl(var(--foreground) / 0.3)",
-            }}
-          />
-        ))}
       </div>
     </section>
   );
