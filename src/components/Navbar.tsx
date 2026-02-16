@@ -8,7 +8,7 @@ const navItems = [
   { label: "Customers", hasDropdown: false, href: "#" },
   { label: "Security", hasDropdown: false, href: "#" },
   { label: "Resources", hasDropdown: true, href: "#" },
-  { label: "About", hasDropdown: true, href: "#" },
+  { label: "About", hasDropdown: true, href: "/about" },
 ];
 
 interface NavbarProps {
