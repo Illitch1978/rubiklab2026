@@ -5,10 +5,9 @@ import { Link } from "react-router-dom";
 const navItems = [
   { label: "Platform", hasDropdown: true, href: "/platform" },
   { label: "Solutions", hasDropdown: true, href: "#" },
-  { label: "Customers", hasDropdown: false, href: "#" },
+  { label: "About", hasDropdown: true, href: "/about" },
   { label: "Security", hasDropdown: false, href: "/security" },
   { label: "Resources", hasDropdown: true, href: "#" },
-  { label: "About", hasDropdown: true, href: "/about" },
 ];
 
 interface NavbarProps {
@@ -19,7 +18,7 @@ const Navbar = ({ light }: NavbarProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 backdrop-blur-md ${light ? 'bg-background/90' : 'bg-background/80'}`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5">
       <Link to="/" className="flex items-baseline gap-0.5 group">
         <span className="font-serif text-2xl font-bold tracking-tight text-foreground group-hover:text-accent transition-colors">
           rubiklab
@@ -27,7 +26,7 @@ const Navbar = ({ light }: NavbarProps) => {
         <span className="w-1.5 h-1.5 rounded-full bg-accent mb-0.5 animate-pulse" />
       </Link>
 
-      <div className="hidden md:flex items-center gap-8">
+      <div className="hidden md:flex items-center gap-8 ml-auto mr-8">
         {navItems.map((item) => (
           <Link
             key={item.label}
