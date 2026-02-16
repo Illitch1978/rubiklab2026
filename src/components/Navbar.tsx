@@ -6,7 +6,7 @@ const navItems = [
   { label: "Platform", hasDropdown: true, href: "/platform" },
   { label: "Solutions", hasDropdown: true, href: "#" },
   { label: "Customers", hasDropdown: false, href: "#" },
-  { label: "Security", hasDropdown: false, href: "#" },
+  { label: "Security", hasDropdown: false, href: "/security" },
   { label: "Resources", hasDropdown: true, href: "#" },
   { label: "About", hasDropdown: true, href: "/about" },
 ];
