@@ -3,8 +3,10 @@ import heroSlide1 from "@/assets/hero-slide-1.jpg";
 import heroSlide2 from "@/assets/hero-slide-2.jpg";
 import heroSlide3 from "@/assets/hero-slide-3.jpg";
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
+import heroSlide5 from "@/assets/hero-slide-5.jpg";
+import heroSlide6 from "@/assets/hero-slide-6.jpg";
 
-const allSlides = [heroSlide1, heroSlide2, heroSlide3, heroSlide4];
+const allSlides = [heroSlide1, heroSlide2, heroSlide3, heroSlide4, heroSlide5, heroSlide6];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -22,7 +24,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -32,16 +34,13 @@ const Hero = () => {
       {slides.map((src, i) => (
         <div
           key={i}
-          className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+          className="absolute inset-0 transition-opacity duration-[1500ms] ease-in-out"
           style={{ opacity: i === current ? 1 : 0 }}
         >
           <img
             src={src}
             alt={`Professional at work ${i + 1}`}
-            className="w-full h-full object-cover transition-transform duration-[6000ms] ease-out"
-            style={{
-              transform: i === current ? "scale(1.05)" : "scale(1)",
-            }}
+            className="w-full h-full object-cover"
           />
         </div>
       ))}
@@ -52,7 +51,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 px-8 md:px-16 max-w-3xl pt-24">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[0.95] mb-8 text-foreground">
-          Structured Intelligence.<br />Real Decisions.
+          Activated Intelligence.
         </h1>
         <p className="text-lg md:text-xl text-secondary-foreground max-w-lg mb-10 leading-relaxed">
           Rubiklab structures fragmented knowledge, separates signal from noise, and activates governed AI workflows across legal, research, and enterprise systems.
