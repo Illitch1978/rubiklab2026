@@ -8,7 +8,7 @@ const PlatformIntro = () => {
     <section className="py-24 md:py-32 px-8 md:px-16">
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif leading-snug text-foreground">
-          <span className="font-semibold">Harvey is AI designed for legal and professional services.</span>{" "}
+          <span className="font-semibold">Rubiklab is AI designed for legal and professional services.</span>{" "}
           <span className="text-muted-foreground">
             Advance your expertise on a secure platform that lets you focus on high-value work.
           </span>
@@ -19,7 +19,7 @@ const PlatformIntro = () => {
       <div className="overflow-hidden mb-12">
         <div className="text-center mb-6">
           <p className="text-sm text-muted-foreground tracking-widest uppercase">
-            The top legal teams use Harvey for
+            The top legal teams use Rubiklab for
           </p>
         </div>
         <div className="flex items-center overflow-hidden">

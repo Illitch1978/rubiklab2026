@@ -20,8 +20,11 @@ const Navbar = ({ light }: NavbarProps) => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 backdrop-blur-md ${light ? 'bg-background/90' : 'bg-background/80'}`}>
-      <Link to="/" className="font-serif text-2xl font-bold tracking-tight text-foreground">
-        Harvey
+      <Link to="/" className="flex items-baseline gap-0.5 group">
+        <span className="font-serif text-2xl font-bold tracking-tight text-foreground group-hover:text-accent transition-colors">
+          rubiklab
+        </span>
+        <span className="w-1.5 h-1.5 rounded-full bg-accent mb-0.5 animate-pulse" />
       </Link>
 
       <div className="hidden md:flex items-center gap-8">

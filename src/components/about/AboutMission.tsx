@@ -8,7 +8,7 @@ const AboutMission = () => {
           Designed to scale
         </h2>
         <p className="text-muted-foreground text-base md:text-lg max-w-3xl leading-relaxed mb-12">
-          Harvey is domain-specific AI for legal and professional services. Our products streamline workflows in areas including contract analysis, due diligence, compliance, and litigation to drive efficiency and value. Global law firms and Fortune 500 enterprises around the world use Harvey to enable faster, smarter decision-making.
+          Rubiklab is domain-specific AI for legal and professional services. Our products streamline workflows in areas including contract analysis, due diligence, compliance, and litigation to drive efficiency and value. Global law firms and Fortune 500 enterprises around the world use Rubiklab to enable faster, smarter decision-making.
         </p>
 
         <div className="flex flex-wrap gap-6 items-center mb-16">
@@ -24,7 +24,7 @@ const AboutMission = () => {
 
         <blockquote className="border-l-2 border-foreground/20 pl-8 py-4 max-w-2xl">
           <p className="text-xl md:text-2xl font-serif text-foreground leading-relaxed mb-4">
-            "If we took Harvey away from our staff, there'd be a riot."
+            "If we took Rubiklab away from our staff, there'd be a riot."
           </p>
           <footer>
             <p className="text-sm font-semibold text-foreground">Bivek Sharma</p>

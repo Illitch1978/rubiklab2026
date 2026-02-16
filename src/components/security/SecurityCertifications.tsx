@@ -15,7 +15,7 @@ const SecurityCertifications = () => {
           Enterprise-grade security and controls
         </h3>
         <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-          Harvey is built on a non-negotiable principle: protecting the security and confidentiality of our customers' data. Our platform is designed from the ground up to safeguard the most sensitive information.
+          Rubiklab is built on a non-negotiable principle: protecting the security and confidentiality of our customers' data. Our platform is designed from the ground up to safeguard the most sensitive information.
         </p>
         <a
           href="#"

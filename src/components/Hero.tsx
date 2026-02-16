@@ -17,7 +17,7 @@ const Hero = () => {
           Practice<br />Made Perfect
         </h1>
         <p className="text-lg md:text-xl text-secondary-foreground max-w-lg mb-10 leading-relaxed">
-          Today's top law firms and in-house legal teams trust Harvey to elevate their craft and navigate complexity.
+          Today's top law firms and in-house legal teams trust Rubiklab to elevate their craft and navigate complexity.
         </p>
         <a
           href="#"

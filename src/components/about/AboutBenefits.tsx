@@ -8,7 +8,7 @@ const benefits = [
   { icon: BookOpen, label: "Annual learning & development stipend" },
   { icon: Brain, label: "Mental health support" },
   { icon: Utensils, label: "Daily lunch in-office" },
-  { icon: Award, label: '"Harvey Holiday" sabbatical after 4 years' },
+  { icon: Award, label: '"Rubiklab Holiday" sabbatical after 4 years' },
 ];
 
 const AboutBenefits = () => {
@@ -19,7 +19,7 @@ const AboutBenefits = () => {
           What We Offer
         </h3>
         <p className="text-muted-foreground text-base max-w-xl mb-12 leading-relaxed">
-          At Harvey, your well-being is our priority. Our benefits package is designed to support your health and financial security.
+          At Rubiklab, your well-being is our priority. Our benefits package is designed to support your health and financial security.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
