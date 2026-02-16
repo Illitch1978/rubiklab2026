@@ -2,8 +2,12 @@ import { useState, useEffect, useMemo } from "react";
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
 import heroSlide5 from "@/assets/hero-slide-5.jpg";
 import heroSlide6 from "@/assets/hero-slide-6.jpg";
+import heroSlide7 from "@/assets/hero-slide-7.png";
+import heroSlide8 from "@/assets/hero-slide-8.png";
+import heroSlide9 from "@/assets/hero-slide-9.png";
+import heroSlide10 from "@/assets/hero-slide-10.png";
 
-const allSlides = [heroSlide4, heroSlide5, heroSlide6];
+const allSlides = [heroSlide4, heroSlide5, heroSlide6, heroSlide7, heroSlide8, heroSlide9, heroSlide10];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
