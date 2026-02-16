@@ -66,6 +66,26 @@
 }
 
 @layer utilities {
+  .theme-light {
+    --background: 40 20% 96%;
+    --foreground: 20 20% 10%;
+    --card: 40 15% 93%;
+    --card-foreground: 20 20% 10%;
+    --popover: 40 20% 96%;
+    --popover-foreground: 20 20% 10%;
+    --primary: 20 20% 10%;
+    --primary-foreground: 40 20% 96%;
+    --secondary: 40 10% 90%;
+    --secondary-foreground: 20 15% 30%;
+    --muted: 40 10% 88%;
+    --muted-foreground: 20 8% 45%;
+    --accent: 35 40% 50%;
+    --accent-foreground: 20 20% 10%;
+    --border: 30 10% 85%;
+    --input: 30 10% 85%;
+    --ring: 20 20% 10%;
+  }
+
   .text-gradient-warm {
     background: linear-gradient(135deg, hsl(40 30% 92%), hsl(35 40% 70%));
     -webkit-background-clip: text;
