@@ -7,36 +7,38 @@ const capabilities = [
 
 const PlatformIntro = () => {
   return (
-    <div className="theme-light bg-[hsl(40,20%,96%)]">
-      {/* Section 1: Platform positioning */}
-      <section className="py-24 md:py-32 px-8 md:px-16">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif leading-snug text-foreground">
-            <span className="font-semibold">A knowledge intelligence platform for complex organisations.</span>
-          </h2>
-          <div className="mt-8 max-w-3xl mx-auto space-y-4">
-            <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-              Rubiklab transforms scattered documents, research, conversations, and external data into a structured, governed knowledge layer.
-            </p>
-            <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-              We ingest diverse sources, enforce rigorous tagging and validation, and enable secure AI and agent-driven workflows that operate across your existing systems.
-            </p>
-            <p className="text-secondary-foreground text-base md:text-lg leading-relaxed font-medium">
-              This is not a chatbot layered over data. It is engineered infrastructure designed to support consequential decisions.
-            </p>
+    <>
+      {/* Section 1: Platform positioning — light stone theme */}
+      <div className="theme-light bg-[hsl(40,20%,96%)]">
+        <section className="py-24 md:py-32 px-8 md:px-16">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif leading-snug text-foreground">
+              <span className="font-semibold">A knowledge intelligence platform for complex organisations.</span>
+            </h2>
+            <div className="mt-8 max-w-3xl mx-auto space-y-4">
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                Rubiklab transforms scattered documents, research, conversations, and external data into a structured, governed knowledge layer.
+              </p>
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                We ingest diverse sources, enforce rigorous tagging and validation, and enable secure AI and agent-driven workflows that operate across your existing systems.
+              </p>
+              <p className="text-secondary-foreground text-base md:text-lg leading-relaxed font-medium">
+                This is not a chatbot layered over data. It is engineered infrastructure designed to support consequential decisions.
+              </p>
+            </div>
+            <div className="mt-10">
+              <a
+                href="/platform"
+                className="text-sm text-foreground underline underline-offset-4 hover:text-accent transition-colors"
+              >
+                Explore the Platform
+              </a>
+            </div>
           </div>
-          <div className="mt-10">
-            <a
-              href="/platform"
-              className="text-sm text-foreground underline underline-offset-4 hover:text-accent transition-colors"
-            >
-              Explore the Platform
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      {/* Section 2: What teams use Rubiklab for */}
+      {/* Section 2: What teams use Rubiklab for — dark theme */}
       <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border">
         <div className="max-w-5xl mx-auto text-center">
           <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-12">
@@ -59,7 +61,7 @@ const PlatformIntro = () => {
           </p>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

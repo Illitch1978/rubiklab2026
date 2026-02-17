@@ -6,12 +6,14 @@ import SecurityCertifications from "@/components/security/SecurityCertifications
 import SecurityFundamental from "@/components/security/SecurityFundamental";
 import SecurityFAQ from "@/components/security/SecurityFAQ";
 import SecurityBlog from "@/components/security/SecurityBlog";
+import Security from "@/components/Security";
 
 const SecurityPage = () => {
   return (
     <div className="min-h-screen theme-light bg-background text-foreground">
       <Navbar light />
       <SecurityHero />
+      <Security />
       <EnterpriseProtection />
       <SecurityCertifications />
       <SecurityFundamental />
