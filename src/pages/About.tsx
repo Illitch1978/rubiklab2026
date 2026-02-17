@@ -155,42 +155,32 @@ const About = () => {
         </section>
       </div>
 
-      {/* SECTION 4 — DARK EMPHASIS */}
-      <div className="bg-background text-foreground">
-        <section className="py-[140px]">
+      {/* SECTION 4 — LIGHT CONSEQUENTIAL */}
+      <div className="theme-light bg-background text-foreground">
+        <section className="pt-[160px] pb-[140px]">
           <div className={pageContainer}>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
-              <div className="md:col-span-7 mb-10">
-                <h2 className={h2}>
-                  Built for consequential environments
-                </h2>
+            <div className={prose}>
+              <h2 className={`${h2} mb-12`}>
+                Built for consequential environments
+              </h2>
+              <p className={`${body} mb-10`}>
+                Rubiklab serves organisations where decision quality carries weight.
+              </p>
+              <div className="space-y-6 mb-14">
+                <p className={body}>Legal teams navigating complex matters.</p>
+                <p className={body}>Research organisations interpreting diverse signals.</p>
+                <p className={body}>Healthcare and publishing groups managing regulated knowledge.</p>
+                <p className={body}>Enterprises and associations operating across multiple jurisdictions.</p>
               </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
-              <div className="md:col-span-6 mb-16 md:mb-0">
-                <p className={`${lead} mb-20`}>
-                  Rubiklab serves organisations where decision quality carries weight.
-                </p>
-                <div className="space-y-5">
-                  <p className="text-base font-medium text-foreground leading-relaxed tracking-wide">Structure is not optional.</p>
-                  <p className="text-base font-medium text-foreground leading-relaxed tracking-wide">Governance is not decorative.</p>
-                  <p className="text-base font-medium text-foreground leading-relaxed tracking-wide">Signal integrity is critical.</p>
-                </div>
-              </div>
-              <div className="md:col-span-5 md:col-start-8">
-                <div className="space-y-8">
-                  <p className={body}>Legal teams navigating complex matters.</p>
-                  <p className={body}>Research organisations interpreting diverse signals.</p>
-                  <p className={body}>Healthcare and publishing groups managing regulated knowledge.</p>
-                  <p className={body}>Enterprises and associations operating across multiple jurisdictions.</p>
-                </div>
-              </div>
+              <p className="text-base text-foreground leading-relaxed font-medium">
+                When the stakes are high, clarity is a capability.
+              </p>
             </div>
           </div>
         </section>
       </div>
 
-      {/* SECTION 4 — LIGHT CLOSING */}
+      {/* SECTION 5 — LIGHT CLOSING */}
       <div className="theme-light bg-background text-foreground">
         <section className="py-[140px]">
           <div className={pageContainer}>
