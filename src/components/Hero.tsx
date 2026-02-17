@@ -43,8 +43,8 @@ const Hero = () => {
         </div>
       ))}
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-background/50" />
+      {/* Subtle gradient for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/20 to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 px-8 md:px-16 max-w-3xl pt-24">
