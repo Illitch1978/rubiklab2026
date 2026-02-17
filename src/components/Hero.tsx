@@ -1,8 +1,11 @@
 import { useState, useEffect, useMemo } from "react";
-import heroSlide4 from "@/assets/hero-slide-4.jpg";
-import heroSlide9 from "@/assets/hero-slide-9.png";
+import heroNew1 from "@/assets/hero-new-1.png";
+import heroNew2 from "@/assets/hero-new-2.png";
+import heroNew3 from "@/assets/hero-new-3.png";
+import heroNew4 from "@/assets/hero-new-4.png";
+import heroNew5 from "@/assets/hero-new-5.png";
 
-const allSlides = [heroSlide4, heroSlide9];
+const allSlides = [heroNew1, heroNew2, heroNew3, heroNew4, heroNew5];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
