@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
  * ─────────────────────────────────────────────────────────────────── */
 
 const pageContainer = "max-w-[1320px] mx-auto px-8 md:px-12 lg:px-16";
-const prose = "max-w-[800px] mx-auto";
+const prose = "max-w-[760px] mx-auto";
 
 const h1 = "text-4xl md:text-6xl lg:text-[4.5rem] font-serif font-medium leading-[1.12] tracking-tight text-foreground";
 const h2 = "text-3xl md:text-[2.75rem] lg:text-5xl font-serif font-medium leading-[1.14] tracking-[-0.01em] text-foreground";
@@ -24,7 +24,7 @@ const About = () => {
       {/* SECTION 1 — DARK HERO */}
       <div className="bg-background text-foreground">
         <Navbar />
-        <section className="pt-40 pb-[160px]">
+        <section className="pt-52 pb-[160px]">
           <div className={pageContainer}>
             <div className={prose}>
               <h1 className={`${h1} mb-12`}>
@@ -58,18 +58,18 @@ const About = () => {
         <section className="pt-[160px] pb-[120px]">
           <div className={pageContainer}>
             <div className={prose}>
-              <h2 className={`${h2} mb-10`}>
+              <h2 className={`${h2} mb-12`}>
                 Without structure, knowledge creates risk
               </h2>
               <div className="space-y-6">
                 <p className={body}>
-                  Fragmented systems produce duplication, blind spots, and noise. Valuable insight is buried inside documents, transcripts, reports, and external sources that are never properly connected.
+                  Fragmented systems create duplication, blind spots, and noise. Valuable insight sits buried inside documents, transcripts, reports, and external data that are never properly connected.
                 </p>
                 <p className={body}>
-                  AI without governance amplifies that fragility.
+                  AI layered on top of that fragmentation does not solve the problem. It amplifies it.
                 </p>
-                <p className="text-base text-foreground leading-relaxed font-medium mt-6">
-                  In consequential environments, fragile intelligence is unacceptable.
+                <p className="text-base text-foreground leading-relaxed font-medium mt-10">
+                  When decisions matter, intelligence must be dependable.
                 </p>
               </div>
             </div>
