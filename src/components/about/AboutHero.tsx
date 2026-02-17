@@ -15,7 +15,7 @@ const AboutHero = () => {
           We're helping the world's best teams transform the way they work
         </h1>
 
-        <div className="grid grid-cols-3 gap-8 border-t border-border pt-12">
+        <div className="grid grid-cols-3 gap-8 pt-12">
           {stats.map((stat, i) => (
             <div key={i}>
               <p className="text-4xl md:text-6xl font-serif font-semibold text-foreground mb-2">

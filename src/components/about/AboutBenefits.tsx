@@ -13,7 +13,7 @@ const benefits = [
 
 const AboutBenefits = () => {
   return (
-    <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border">
+    <section className="py-24 md:py-32 px-8 md:px-16">
       <div className="max-w-6xl mx-auto">
         <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-4">
           What We Offer

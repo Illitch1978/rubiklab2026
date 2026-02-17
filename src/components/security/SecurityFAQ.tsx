@@ -38,7 +38,7 @@ const faqs = [
 
 const SecurityFAQ = () => {
   return (
-    <section className="py-24 px-8 md:px-16 border-t border-border">
+    <section className="py-24 px-8 md:px-16">
       <div className="max-w-3xl mx-auto">
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, i) => (

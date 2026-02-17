@@ -14,7 +14,7 @@ const departments = [
 
 const AboutCareers = () => {
   return (
-    <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border">
+    <section className="py-24 md:py-32 px-8 md:px-16">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-4 max-w-2xl">
           <span className="font-semibold">Join our team.</span>{" "}

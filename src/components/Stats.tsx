@@ -9,7 +9,7 @@ const stats = [
 const Stats = () => {
   return (
     <div className="theme-light bg-[hsl(40,20%,96%)]">
-    <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border">
+    <section className="py-24 md:py-32 px-8 md:px-16">
       <div className="max-w-6xl mx-auto">
         <h3 className="text-2xl md:text-3xl font-serif text-foreground text-center mb-16">
           Intelligence at scale
@@ -27,7 +27,7 @@ const Stats = () => {
           ))}
         </div>
         <p className="text-sm text-muted-foreground text-center mt-12 max-w-lg mx-auto">
-          Structured knowledge becomes more valuable as it grows. Rubiklab is built to scale with you.
+          Structured knowledge becomes more valuable as it grows.<br />Rubiklab is built to scale with you.
         </p>
       </div>
     </section>
