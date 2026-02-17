@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
  * ─────────────────────────────────────────────────────────────────── */
 
 const pageContainer = "max-w-[1320px] mx-auto px-8 md:px-12 lg:px-16";
-const prose = "max-w-[740px] mx-auto";
+const prose = "max-w-[800px] mx-auto";
 
 const h1 = "text-4xl md:text-6xl lg:text-[4.5rem] font-serif font-medium leading-[1.12] tracking-tight text-foreground";
 const h2 = "text-3xl md:text-[2.75rem] lg:text-5xl font-serif font-medium leading-[1.14] tracking-[-0.01em] text-foreground";
@@ -30,12 +30,14 @@ const About = () => {
               <h1 className={`${h1} mb-12`}>
                 Why Rubiklab exists
               </h1>
-              <p className={`${lead} mb-10`}>
+              <p className={`${lead} mb-10`} style={{ maxWidth: '100%' }}>
                 Organisations generate more knowledge than they can govern, trust, or activate.
               </p>
               <div className="space-y-6">
                 <p className={body}>
-                  Documents accumulate. Research multiplies. Conversations expand across systems. External data flows continuously.
+                  Documents accumulate. Research multiplies. Conversations expand across systems.
+                  <br />
+                  External data flows continuously.
                 </p>
                 <p className={body}>
                   Most AI tools attempt to layer automation on top of that complexity.
