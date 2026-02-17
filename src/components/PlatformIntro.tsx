@@ -7,7 +7,7 @@ const capabilities = [
 
 const PlatformIntro = () => {
   return (
-    <>
+    <div className="theme-light bg-[hsl(40,20%,96%)]">
       {/* Section 1: Platform positioning */}
       <section className="py-24 md:py-32 px-8 md:px-16">
         <div className="max-w-4xl mx-auto text-center mb-16">
@@ -59,7 +59,7 @@ const PlatformIntro = () => {
           </p>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
