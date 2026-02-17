@@ -51,95 +51,114 @@ const About = () => {
         </section>
       </div>
 
-      {/* SECTION 2 — LIGHT CORE NARRATIVE */}
+      {/* SECTION 1 — LIGHT: When knowledge fragments */}
       <div className="theme-light bg-background text-foreground">
-
-        {/* 2A — Structural Challenge */}
         <section className="pt-[160px] pb-[140px]">
           <div className={pageContainer}>
             <div className={prose}>
               <h2 className={`${h2} mb-12`}>
-                Without structure, knowledge creates risk
+                When knowledge fragments, risk grows
               </h2>
+              <p className={`${lead} mb-10`}>
+                Organisations rarely struggle with lack of information. They struggle with fragmentation.
+              </p>
               <div className="space-y-6">
                 <p className={body}>
-                  Fragmented systems create duplication, blind spots, and noise. Valuable insight sits buried inside documents, transcripts, reports, and external data that are never properly connected.
+                  Insight sits in reports, transcripts, dashboards, archives, inboxes, shared drives, and external feeds. Legacy systems coexist with real‑time data. Different formats. Different languages. Different standards.
                 </p>
                 <p className={body}>
-                  AI layered onto fragmentation does not solve the problem. It magnifies it.
+                  Layering AI on top of this does not resolve the problem. It often amplifies inconsistency.
                 </p>
                 <p className="text-base text-foreground leading-relaxed font-medium mt-10">
-                  When decisions matter, intelligence must be dependable.
+                  When decisions matter, intelligence must be grounded, traceable, and complete.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 2B — What We Built */}
+        {/* SECTION 2 — LIGHT: Technology should adapt */}
         <section className="pb-[140px]">
           <div className={pageContainer}>
             <div className={prose}>
               <h2 className={`${h2} mb-12`}>
-                Infrastructure before automation
+                Technology should adapt to people
               </h2>
-              <p className={`${body} mb-10`}>
-                Rubiklab is a structured knowledge layer designed for complex organisations.
+              <p className={`${body} mb-6`}>
+                Most systems force teams to change how they work.
               </p>
-              <div className="space-y-4 mb-16">
-                <p className={body}>We connect internal and external sources.</p>
-                <p className={body}>We apply rigorous tagging and validation.</p>
-                <p className={body}>We enforce governance and transparency.</p>
-                <p className={body}>We enable secure AI and agent-driven workflows.</p>
+              <p className={`${body} mb-10`}>
+                Rubiklab works differently.
+              </p>
+              <div className="space-y-6 mb-14">
+                <p className={body}>
+                  We design workflows around existing practices, not the other way around. Analysts, lawyers, researchers and editors remain in control. The system supports their judgement rather than replacing it.
+                </p>
+                <p className={body}>
+                  Automation is introduced where it reduces friction. Oversight remains where it protects quality.
+                </p>
               </div>
-              <div className="space-y-2">
-                <p className="text-base text-foreground leading-relaxed font-medium">Automation follows architecture.</p>
-                <p className="text-base text-foreground leading-relaxed font-medium">Activation follows structure.</p>
-              </div>
+              <p className="text-base text-foreground leading-relaxed font-medium">
+                The result is adoption without disruption.
+              </p>
             </div>
           </div>
         </section>
-
       </div>
 
-      {/* SECTION 3 — DARK SYSTEM BLOCK (How + Principles) */}
+      {/* SECTION 3 — DARK: How Rubiklab works */}
       <div className="bg-background text-foreground">
         <section className="pt-[160px] pb-[140px]">
           <div className="max-w-[1160px] mx-auto px-8 md:px-12 lg:px-16">
-            <h2 className={`${h2} mb-16`}>
+            <h2 className={`${h2} mb-12`}>
               How Rubiklab works
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-14 gap-y-12">
-              {[
-                { title: "Ingest", body: "We unify fragmented documents, research, conversations, and external data into a controlled foundation." },
-                { title: "Structure", body: "We apply rigorous tagging and classification to ensure consistency and traceability." },
-                { title: "Govern", body: "We enforce access controls, auditability, and lifecycle management across systems." },
-                { title: "Activate", body: "We enable secure AI and agent-driven workflows built on governed intelligence." },
-              ].map((item) => (
-                <div key={item.title}>
-                  <h3 className="text-xl md:text-2xl font-serif font-semibold text-foreground mb-4">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {item.body}
-                  </p>
-                </div>
-              ))}
+            <div className={`${prose} ml-0`}>
+              <div className="space-y-6 mb-14">
+                <p className={body}>
+                  We bring together internal archives and live external data into a single governed environment.
+                </p>
+                <p className={body}>
+                  Documents, research, conversations, reviews, regulatory material, market signals and historical records coexist in one ecosystem.
+                </p>
+                <p className={body}>
+                  Data is cleaned, tagged and validated using deterministic pipelines before any AI layer interacts with it.
+                </p>
+              </div>
+              <p className="text-base text-foreground leading-relaxed font-medium mb-14">
+                This matters.
+              </p>
+              <div className="space-y-6 mb-14">
+                <p className={body}>
+                  Because our analysis does not rely solely on probabilistic language models. It is anchored in prepared data, defined taxonomies and transparent processing steps.
+                </p>
+                <p className={body}>
+                  The outcome is deeper signal across both structured and unstructured sources, across multiple languages, without losing traceability.
+                </p>
+                <p className={body}>
+                  Users can explore broadly, ask complex questions, and follow the reasoning behind every output.
+                </p>
+              </div>
+              <p className="text-base text-foreground leading-relaxed font-medium">
+                Curiosity is encouraged. Confidence is earned.
+              </p>
             </div>
           </div>
         </section>
 
+        {/* SECTION 4 — DARK: What makes the difference */}
         <section className="pb-[160px]">
           <div className="max-w-[1160px] mx-auto px-8 md:px-12 lg:px-16">
             <h2 className={`${h2} mb-16`}>
-              Our principles
+              What makes the difference
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-14">
               {[
-                { title: "Structure over shortcuts", body: "Durable systems outperform temporary solutions." },
-                { title: "Governance over hype", body: "Trust and defensibility matter more than novelty." },
-                { title: "Signal over volume", body: "More data does not equal better decisions." },
-                { title: "Activation over storage", body: "Knowledge should move organisations forward." },
+                { title: "Diverse signals, not narrow datasets", body: "We combine legacy records with dynamic external sources to avoid blind spots." },
+                { title: "Method before model", body: "AI is applied to prepared data, not raw noise." },
+                { title: "Workflow alignment", body: "Technology fits existing roles and responsibilities." },
+                { title: "Clarity of reasoning", body: "Outputs can be inspected, traced and challenged." },
+                { title: "Depth across formats and languages", body: "Text, transcripts, reports, reviews and regulatory material analysed consistently across markets." },
               ].map((item) => (
                 <div key={item.title}>
                   <h3 className="text-xl md:text-2xl font-serif font-semibold text-foreground mb-3">
@@ -151,52 +170,55 @@ const About = () => {
                 </div>
               ))}
             </div>
+            <p className="text-base text-foreground leading-relaxed font-medium mt-16">
+              This is where reliability comes from.
+            </p>
           </div>
         </section>
       </div>
 
-      {/* SECTION 4 — LIGHT: WHERE DECISIONS CARRY WEIGHT */}
+      {/* SECTION 5 — LIGHT: Built for complex environments */}
       <div className="theme-light bg-background text-foreground">
         <section className="pt-[160px] pb-[140px]">
           <div className={pageContainer}>
             <div className={prose}>
               <h2 className={`${h2} mb-12`}>
-                Where decisions carry weight
+                Built for complex environments
               </h2>
-              <p className={`${body} mb-10`}>
-                Rubiklab supports organisations operating in complex, regulated, and high-stakes environments.
-              </p>
               <div className="space-y-6 mb-14">
                 <p className={body}>Legal teams navigating intricate matters.</p>
                 <p className={body}>Research organisations interpreting diverse signals.</p>
                 <p className={body}>Healthcare and publishing groups managing sensitive knowledge.</p>
-                <p className={body}>Enterprises and associations operating across multiple jurisdictions.</p>
+                <p className={body}>Enterprises operating across multiple jurisdictions.</p>
               </div>
+              <p className={`${body} mb-2`}>
+                These organisations operate beyond simple reporting.
+              </p>
               <p className="text-base text-foreground leading-relaxed font-medium">
-                In these settings, dependable intelligence is not optional.
+                They require dependable understanding.
               </p>
             </div>
           </div>
         </section>
       </div>
 
-      {/* SECTION 5 — LIGHT CLOSING */}
+      {/* SECTION 6 — LIGHT: Intelligence that holds up */}
       <div className="theme-light bg-background text-foreground">
         <section className="pt-[180px] pb-[160px]">
           <div className={pageContainer}>
             <div className={prose}>
               <h2 className={`${h2} mb-12`}>
-                The next phase demands discipline
+                Intelligence that holds up under scrutiny
               </h2>
               <p className={`${body} mb-10`}>
-                As AI and agent-driven systems become embedded in organisations, precision matters more than speed.
+                As AI becomes embedded in organisations, the difference will not be speed. It will be integrity.
               </p>
               <div className="space-y-6 mb-14">
-                <p className={body}>Automation without oversight creates noise.</p>
-                <p className={body}>Scale without integrity creates risk.</p>
+                <p className={body}>Scale without method creates noise.</p>
+                <p className={body}>Automation without discipline creates risk.</p>
               </div>
               <p className="text-base text-foreground leading-relaxed font-medium mb-20">
-                Intelligence must be trusted to be useful.
+                Rubiklab exists to ensure intelligence remains reliable as systems grow more complex.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
