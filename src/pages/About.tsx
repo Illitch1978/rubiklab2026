@@ -155,25 +155,25 @@ const About = () => {
         </section>
       </div>
 
-      {/* SECTION 4 — LIGHT CONSEQUENTIAL */}
+      {/* SECTION 4 — LIGHT: WHERE DECISIONS CARRY WEIGHT */}
       <div className="theme-light bg-background text-foreground">
         <section className="pt-[160px] pb-[140px]">
           <div className={pageContainer}>
             <div className={prose}>
               <h2 className={`${h2} mb-12`}>
-                Built for consequential environments
+                Where decisions carry weight
               </h2>
               <p className={`${body} mb-10`}>
-                Rubiklab serves organisations where decision quality carries weight.
+                Rubiklab supports organisations operating in complex, regulated, and high-stakes environments.
               </p>
               <div className="space-y-6 mb-14">
-                <p className={body}>Legal teams navigating complex matters.</p>
+                <p className={body}>Legal teams navigating intricate matters.</p>
                 <p className={body}>Research organisations interpreting diverse signals.</p>
-                <p className={body}>Healthcare and publishing groups managing regulated knowledge.</p>
+                <p className={body}>Healthcare and publishing groups managing sensitive knowledge.</p>
                 <p className={body}>Enterprises and associations operating across multiple jurisdictions.</p>
               </div>
               <p className="text-base text-foreground leading-relaxed font-medium">
-                When the stakes are high, clarity is a capability.
+                In these settings, dependable intelligence is not optional.
               </p>
             </div>
           </div>
@@ -182,42 +182,35 @@ const About = () => {
 
       {/* SECTION 5 — LIGHT CLOSING */}
       <div className="theme-light bg-background text-foreground">
-        <section className="py-[140px]">
+        <section className="pt-[180px] pb-[160px]">
           <div className={pageContainer}>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
-              <div className="md:col-span-7 mb-10">
-                <h2 className="text-4xl md:text-6xl lg:text-[4.5rem] font-serif font-medium leading-[1.08] tracking-[-0.01em] text-foreground">
-                  The future requires structure
-                </h2>
+            <div className={prose}>
+              <h2 className={`${h2} mb-12`}>
+                The next phase demands discipline
+              </h2>
+              <p className={`${body} mb-10`}>
+                As AI and agent-driven systems become embedded in organisations, precision matters more than speed.
+              </p>
+              <div className="space-y-6 mb-14">
+                <p className={body}>Automation without oversight creates noise.</p>
+                <p className={body}>Scale without integrity creates risk.</p>
               </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
-              <div className="md:col-span-6">
-                <p className={`${body} mb-16`}>
-                  As organisations adopt AI and agent driven systems, structured foundations become essential.
-                </p>
-                <div className="space-y-2 mb-20">
-                  <p className="text-base text-foreground leading-relaxed font-medium">
-                    Activation without structure creates noise.
-                  </p>
-                  <p className="text-base text-foreground leading-relaxed font-medium">
-                    Structure creates advantage.
-                  </p>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <a
-                    href="/platform"
-                    className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-sm tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
-                  >
-                    Explore the platform
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-sm tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
-                  >
-                    Request a demo
-                  </a>
-                </div>
+              <p className="text-base text-foreground leading-relaxed font-medium mb-20">
+                Intelligence must be trusted to be useful.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="/platform"
+                  className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-sm tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
+                >
+                  Explore the platform
+                </a>
+                <a
+                  href="#"
+                  className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-sm tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
+                >
+                  Request a demo
+                </a>
               </div>
             </div>
           </div>
