@@ -3,7 +3,7 @@ const testimonials = [
     quote:
       "This is a fantastic testament to your technical capabilities and hard work. We have gone up against two billion dollar companies with huge resources and come out on top!",
     name: "David Kekwick",
-    title: "HR Innovation Director / Co-Founder",
+    title: "Innovation Director / Co-Founder",
     company: "LexHR",
   },
   {
