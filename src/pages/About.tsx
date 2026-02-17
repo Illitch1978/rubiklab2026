@@ -100,22 +100,21 @@ const About = () => {
           </div>
         </section>
 
-        {/* 2C — How Rubiklab Works */}
-        <section className="pb-[120px]">
-          <div className={pageContainer}>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
-              <div className="md:col-span-6 mb-12 md:mb-16">
-                <h2 className={h2}>
-                  How Rubiklab works
-                </h2>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
+      </div>
+
+      {/* SECTION 3 — DARK SYSTEM BLOCK (How + Principles) */}
+      <div className="bg-background text-foreground">
+        <section className="pt-[160px] pb-[140px]">
+          <div className="max-w-[1160px] mx-auto px-8 md:px-12 lg:px-16">
+            <h2 className={`${h2} mb-16`}>
+              How Rubiklab works
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-14 gap-y-12">
               {[
                 { title: "Ingest", body: "We unify fragmented documents, research, conversations, and external data into a controlled foundation." },
                 { title: "Structure", body: "We apply rigorous tagging and classification to ensure consistency and traceability." },
                 { title: "Govern", body: "We enforce access controls, auditability, and lifecycle management across systems." },
-                { title: "Activate", body: "We enable secure AI and agent driven workflows built on governed intelligence." },
+                { title: "Activate", body: "We enable secure AI and agent-driven workflows built on governed intelligence." },
               ].map((item) => (
                 <div key={item.title}>
                   <h3 className="text-xl md:text-2xl font-serif font-semibold text-foreground mb-4">
@@ -130,38 +129,33 @@ const About = () => {
           </div>
         </section>
 
-        {/* 2D — Our Principles */}
-        <section className="pb-[140px]">
-          <div className={pageContainer}>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
-              <div className="md:col-span-5 mb-12 md:mb-0">
-                <h2 className={h2}>
-                  Our principles
-                </h2>
-              </div>
-              <div className="md:col-span-6 md:col-start-7 space-y-14">
-                {[
-                  { title: "Structure over shortcuts", body: "Durable systems outperform temporary solutions." },
-                  { title: "Governance over hype", body: "Trust and defensibility matter more than novelty." },
-                  { title: "Signal over volume", body: "More data does not equal better decisions." },
-                  { title: "Activation over storage", body: "Knowledge should move organisations forward." },
-                ].map((item) => (
-                  <div key={item.title}>
-                    <h3 className="text-xl md:text-2xl font-serif font-semibold text-foreground mb-3">
-                      {item.title}
-                    </h3>
-                    <p className={body}>
-                      {item.body}
-                    </p>
-                  </div>
-                ))}
-              </div>
+        <section className="pb-[160px]">
+          <div className="max-w-[1160px] mx-auto px-8 md:px-12 lg:px-16">
+            <h2 className={`${h2} mb-16`}>
+              Our principles
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-14">
+              {[
+                { title: "Structure over shortcuts", body: "Durable systems outperform temporary solutions." },
+                { title: "Governance over hype", body: "Trust and defensibility matter more than novelty." },
+                { title: "Signal over volume", body: "More data does not equal better decisions." },
+                { title: "Activation over storage", body: "Knowledge should move organisations forward." },
+              ].map((item) => (
+                <div key={item.title}>
+                  <h3 className="text-xl md:text-2xl font-serif font-semibold text-foreground mb-3">
+                    {item.title}
+                  </h3>
+                  <p className={body}>
+                    {item.body}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
       </div>
 
-      {/* SECTION 3 — DARK EMPHASIS */}
+      {/* SECTION 4 — DARK EMPHASIS */}
       <div className="bg-background text-foreground">
         <section className="py-[140px]">
           <div className={pageContainer}>
