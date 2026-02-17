@@ -39,7 +39,7 @@ const PlatformIntro = () => {
       {/* Section 2: What teams use Rubiklab for */}
       <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border bg-white">
         <div className="max-w-5xl mx-auto text-center">
-          <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-12">
+          <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-12 text-stone-800">
             Built for environments where signal matters
           </h3>
 
@@ -47,14 +47,14 @@ const PlatformIntro = () => {
             {capabilities.map((cap, i) => (
               <span
                 key={i}
-                className="px-6 py-3 border border-border text-sm text-secondary-foreground rounded-full hover:border-foreground/40 transition-colors"
+                className="px-6 py-3 border border-stone-300 text-sm text-stone-700 rounded-full hover:border-stone-500 transition-colors"
               >
                 {cap}
               </span>
             ))}
           </div>
 
-          <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm text-stone-600 max-w-2xl mx-auto leading-relaxed">
             From law firms and research agencies to regulated enterprises and associations, Rubiklab structures knowledge at scale.
           </p>
         </div>
