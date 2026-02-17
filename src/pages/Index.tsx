@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import PlatformIntro from "@/components/PlatformIntro";
 import Testimonials from "@/components/Testimonials";
 import Stats from "@/components/Stats";
-import Security from "@/components/Security";
+
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 
@@ -15,7 +15,7 @@ const Index = () => {
       <PlatformIntro />
       <Testimonials />
       <Stats />
-      <Security />
+      
       <CallToAction />
       <Footer />
     </div>
