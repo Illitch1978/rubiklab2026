@@ -1,7 +1,8 @@
 import { Shield } from "lucide-react";
 
 const certifications = [
-  { name: "SOC2 II", link: "#" },
+  { name: "Pen Test Grade A", link: "#" },
+  { name: "Cyber Essentials", link: "#" },
   { name: "CCPA", link: "#" },
   { name: "ISO 27001", link: "#" },
   { name: "GDPR", link: "#" },
@@ -30,7 +31,7 @@ const Security = () => {
           Learn about Security
         </a>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mt-12">
           {certifications.map((cert, i) => (
             <div
               key={i}
