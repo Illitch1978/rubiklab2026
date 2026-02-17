@@ -1,6 +1,6 @@
 const SecurityFundamental = () => {
   return (
-    <section className="py-24 px-8 md:px-16 border-t border-border">
+    <section className="py-24 px-8 md:px-16">
       <div className="max-w-4xl mx-auto">
         <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-6">
           Security is Fundamental to Everything We Do

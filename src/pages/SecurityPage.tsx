@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SecurityHero from "@/components/security/SecurityHero";
 import EnterpriseProtection from "@/components/security/EnterpriseProtection";
-import SecurityCertifications from "@/components/security/SecurityCertifications";
+
 import SecurityFundamental from "@/components/security/SecurityFundamental";
 import SecurityFAQ from "@/components/security/SecurityFAQ";
 import SecurityBlog from "@/components/security/SecurityBlog";
@@ -15,7 +15,7 @@ const SecurityPage = () => {
       <SecurityHero />
       <Security />
       <EnterpriseProtection />
-      <SecurityCertifications />
+      
       <SecurityFundamental />
       <SecurityFAQ />
       <SecurityBlog />

@@ -35,7 +35,7 @@ const features = [
 
 const EnterpriseProtection = () => {
   return (
-    <section className="py-20 px-8 md:px-16 border-t border-border">
+    <section className="py-20 px-8 md:px-16">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-16">
           Enterprise-Grade Protection
