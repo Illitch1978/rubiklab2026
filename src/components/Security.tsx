@@ -1,7 +1,7 @@
 import { Shield } from "lucide-react";
 
 const certifications = [
-  { name: "Pen Test Grade A", link: "#" },
+  { name: "Pen Test A", link: "#" },
   { name: "Cyber Essentials", link: "#" },
   { name: "CCPA", link: "#" },
   { name: "ISO 27001", link: "#" },
