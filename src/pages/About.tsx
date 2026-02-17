@@ -55,7 +55,7 @@ const About = () => {
       <div className="theme-light bg-background text-foreground">
 
         {/* 2A — Structural Challenge */}
-        <section className="pt-[160px] pb-[120px]">
+        <section className="pt-[160px] pb-[140px]">
           <div className={pageContainer}>
             <div className={prose}>
               <h2 className={`${h2} mb-12`}>
@@ -66,7 +66,7 @@ const About = () => {
                   Fragmented systems create duplication, blind spots, and noise. Valuable insight sits buried inside documents, transcripts, reports, and external data that are never properly connected.
                 </p>
                 <p className={body}>
-                  AI layered on top of that fragmentation does not solve the problem. It amplifies it.
+                  AI layered onto fragmentation does not solve the problem. It magnifies it.
                 </p>
                 <p className="text-base text-foreground leading-relaxed font-medium mt-10">
                   When decisions matter, intelligence must be dependable.
@@ -77,28 +77,24 @@ const About = () => {
         </section>
 
         {/* 2B — What We Built */}
-        <section className="pb-[120px]">
+        <section className="pb-[140px]">
           <div className={pageContainer}>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
-              <div className="md:col-span-6">
-                <h2 className={`${h2}`}>
-                  Infrastructure before automation
-                </h2>
+            <div className={prose}>
+              <h2 className={`${h2} mb-12`}>
+                Infrastructure before automation
+              </h2>
+              <p className={`${body} mb-10`}>
+                Rubiklab is a structured knowledge layer designed for complex organisations.
+              </p>
+              <div className="space-y-4 mb-16">
+                <p className={body}>We connect internal and external sources.</p>
+                <p className={body}>We apply rigorous tagging and validation.</p>
+                <p className={body}>We enforce governance and transparency.</p>
+                <p className={body}>We enable secure AI and agent-driven workflows.</p>
               </div>
-              <div className="md:col-span-6 md:pt-4 mt-10 md:mt-0">
-                <p className={`${body} mb-10`}>
-                  Rubiklab is a structured knowledge layer designed for complex organisations.
-                </p>
-                <div className="space-y-4 mb-16">
-                  <p className="text-base text-foreground/80 leading-relaxed">We ingest diverse internal and external sources.</p>
-                  <p className="text-base text-foreground/80 leading-relaxed">We apply rigorous tagging and validation.</p>
-                  <p className="text-base text-foreground/80 leading-relaxed">We enforce governance and transparency.</p>
-                  <p className="text-base text-foreground/80 leading-relaxed">We enable secure AI and agent driven workflows.</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-base text-foreground leading-relaxed font-medium">Automation follows architecture.</p>
-                  <p className="text-base text-foreground leading-relaxed font-medium">Activation follows structure.</p>
-                </div>
+              <div className="space-y-2">
+                <p className="text-base text-foreground leading-relaxed font-medium">Automation follows architecture.</p>
+                <p className="text-base text-foreground leading-relaxed font-medium">Activation follows structure.</p>
               </div>
             </div>
           </div>
