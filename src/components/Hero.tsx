@@ -1,9 +1,8 @@
 import { useState, useEffect, useMemo } from "react";
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
-import heroSlide5 from "@/assets/hero-slide-5.jpg";
 import heroSlide9 from "@/assets/hero-slide-9.png";
 
-const allSlides = [heroSlide4, heroSlide5, heroSlide9];
+const allSlides = [heroSlide4, heroSlide9];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -43,7 +42,7 @@ const Hero = () => {
       ))}
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-background/50" />
+      <div className="absolute inset-0 bg-background/70" />
 
       {/* Content */}
       <div className="relative z-10 px-8 md:px-16 max-w-3xl pt-24">
