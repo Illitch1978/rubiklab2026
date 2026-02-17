@@ -10,7 +10,7 @@ const certifications = [
 
 const Security = () => {
   return (
-    <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border">
+    <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border bg-white">
       <div className="max-w-4xl mx-auto text-center">
         <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-6">
           Built on governed infrastructure

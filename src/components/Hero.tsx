@@ -55,7 +55,7 @@ const Hero = () => {
           />
         </h1>
         <p className="text-lg md:text-xl text-secondary-foreground max-w-lg mb-10 leading-relaxed">
-          Rubiklab structures fragmented knowledge, separates signal from noise, and activates governed AI workflows across legal, research, and enterprise systems.
+          Rubiklab structures fragmented knowledge, separates signal from noise, and activates workflows across legal, research, and enterprise systems.
         </p>
         <a
           href="#"
