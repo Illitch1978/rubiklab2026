@@ -1,8 +1,22 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const gridContainer = "max-w-[1320px] mx-auto px-8 md:px-12 lg:px-16";
-const grid12 = "grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12";
+/* ── LOCKED TYPE SYSTEM ──────────────────────────────────────────────
+ * H1  – Hero only:       text-4xl md:text-6xl lg:text-[4.5rem]
+ * H2  – Section heads:   text-3xl md:text-[2.75rem] lg:text-5xl
+ * H3  – Sub-labels:      text-xl md:text-2xl
+ * Body:                  text-base
+ * Lead:                  text-lg md:text-xl
+ * Small / muted:         text-sm text-muted-foreground
+ * ─────────────────────────────────────────────────────────────────── */
+
+const pageContainer = "max-w-[1320px] mx-auto px-8 md:px-12 lg:px-16";
+const prose = "max-w-[740px] mx-auto";
+
+const h1 = "text-4xl md:text-6xl lg:text-[4.5rem] font-serif font-medium leading-[1.12] tracking-tight text-foreground";
+const h2 = "text-3xl md:text-[2.75rem] lg:text-5xl font-serif font-medium leading-[1.14] tracking-[-0.01em] text-foreground";
+const lead = "text-lg md:text-xl text-secondary-foreground leading-relaxed";
+const body = "text-base text-muted-foreground leading-relaxed";
 
 const About = () => {
   return (
@@ -11,28 +25,24 @@ const About = () => {
       <div className="bg-background text-foreground">
         <Navbar />
         <section className="pt-40 pb-[160px]">
-          <div className={gridContainer}>
-            <div className={grid12}>
-              <h1 className="md:col-span-8 text-5xl md:text-7xl lg:text-[5.5rem] font-serif font-medium leading-[1.08] tracking-tight text-foreground mb-10">
+          <div className={pageContainer}>
+            <div className={prose}>
+              <h1 className={`${h1} mb-12`}>
                 Why Rubiklab exists
               </h1>
-            </div>
-            <div className={grid12}>
-              <div className="md:col-span-6">
-                <p className="text-lg md:text-xl text-secondary-foreground leading-relaxed mb-12">
-                  Organisations generate more knowledge than they can govern, trust, or activate.
+              <p className={`${lead} mb-10`}>
+                Organisations generate more knowledge than they can govern, trust, or activate.
+              </p>
+              <div className="space-y-6">
+                <p className={body}>
+                  Documents accumulate. Research multiplies. Conversations expand across systems. External data flows continuously.
                 </p>
-                <div className="space-y-6">
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    Documents accumulate. Research multiplies. Conversations expand across systems. External data flows continuously.
-                  </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    Most AI tools attempt to layer automation on top of that complexity.
-                  </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    We built Rubiklab to solve the structural problem underneath it.
-                  </p>
-                </div>
+                <p className={body}>
+                  Most AI tools attempt to layer automation on top of that complexity.
+                </p>
+                <p className={body}>
+                  We built Rubiklab to solve the structural problem underneath it.
+                </p>
               </div>
             </div>
           </div>
@@ -43,27 +53,22 @@ const About = () => {
       <div className="theme-light bg-background text-foreground">
 
         {/* 2A — Structural Challenge */}
-        <section className="pt-[140px] pb-[120px]">
-          <div className={gridContainer}>
-            <div className={grid12}>
-              <div className="md:col-span-6">
-                <h2 className="text-3xl md:text-5xl lg:text-[3.5rem] font-serif font-medium leading-[1.12] tracking-[-0.01em] text-foreground">
-                  Without structure,<br />
-                  knowledge creates risk
-                </h2>
-              </div>
-              <div className="md:col-span-6 md:pt-4 mt-10 md:mt-0">
-                <div className="space-y-6">
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    Fragmented systems produce duplication, blind spots, and noise. Valuable insight is buried inside documents, transcripts, reports, and external sources that are never properly connected.
-                  </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    AI without governance amplifies that fragility.
-                  </p>
-                  <p className="text-base text-foreground leading-relaxed font-medium mt-12">
-                    In consequential environments, fragile intelligence is unacceptable.
-                  </p>
-                </div>
+        <section className="pt-[160px] pb-[120px]">
+          <div className={pageContainer}>
+            <div className={prose}>
+              <h2 className={`${h2} mb-10`}>
+                Without structure, knowledge creates risk
+              </h2>
+              <div className="space-y-6">
+                <p className={body}>
+                  Fragmented systems produce duplication, blind spots, and noise. Valuable insight is buried inside documents, transcripts, reports, and external sources that are never properly connected.
+                </p>
+                <p className={body}>
+                  AI without governance amplifies that fragility.
+                </p>
+                <p className="text-base text-foreground leading-relaxed font-medium mt-6">
+                  In consequential environments, fragile intelligence is unacceptable.
+                </p>
               </div>
             </div>
           </div>
@@ -71,16 +76,15 @@ const About = () => {
 
         {/* 2B — What We Built */}
         <section className="pb-[120px]">
-          <div className={gridContainer}>
-            <div className={grid12}>
+          <div className={pageContainer}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
               <div className="md:col-span-6">
-                <h2 className="text-4xl md:text-6xl lg:text-[4rem] font-serif font-medium leading-[1.1] tracking-[-0.01em] text-foreground">
-                  Infrastructure<br />
-                  before automation
+                <h2 className={`${h2}`}>
+                  Infrastructure before automation
                 </h2>
               </div>
               <div className="md:col-span-6 md:pt-4 mt-10 md:mt-0">
-                <p className="text-base text-muted-foreground leading-relaxed mb-10">
+                <p className={`${body} mb-10`}>
                   Rubiklab is a structured knowledge layer designed for complex organisations.
                 </p>
                 <div className="space-y-4 mb-16">
@@ -100,10 +104,10 @@ const About = () => {
 
         {/* 2C — How Rubiklab Works */}
         <section className="pb-[120px]">
-          <div className={gridContainer}>
-            <div className={grid12}>
+          <div className={pageContainer}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
               <div className="md:col-span-6 mb-12 md:mb-16">
-                <h2 className="text-3xl md:text-5xl font-serif font-medium leading-[1.12] tracking-[-0.01em] text-foreground">
+                <h2 className={h2}>
                   How Rubiklab works
                 </h2>
               </div>
@@ -116,7 +120,7 @@ const About = () => {
                 { title: "Activate", body: "We enable secure AI and agent driven workflows built on governed intelligence." },
               ].map((item) => (
                 <div key={item.title}>
-                  <h3 className="text-2xl font-serif font-semibold text-foreground mb-4">
+                  <h3 className="text-xl md:text-2xl font-serif font-semibold text-foreground mb-4">
                     {item.title}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
@@ -130,10 +134,10 @@ const About = () => {
 
         {/* 2D — Our Principles */}
         <section className="pb-[140px]">
-          <div className={gridContainer}>
-            <div className={grid12}>
+          <div className={pageContainer}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
               <div className="md:col-span-5 mb-12 md:mb-0">
-                <h2 className="text-3xl md:text-5xl font-serif font-medium leading-[1.12] tracking-[-0.01em] text-foreground">
+                <h2 className={h2}>
                   Our principles
                 </h2>
               </div>
@@ -148,7 +152,7 @@ const About = () => {
                     <h3 className="text-xl md:text-2xl font-serif font-semibold text-foreground mb-3">
                       {item.title}
                     </h3>
-                    <p className="text-base text-muted-foreground leading-relaxed">
+                    <p className={body}>
                       {item.body}
                     </p>
                   </div>
@@ -162,18 +166,17 @@ const About = () => {
       {/* SECTION 3 — DARK EMPHASIS */}
       <div className="bg-background text-foreground">
         <section className="py-[140px]">
-          <div className={gridContainer}>
-            <div className={grid12}>
+          <div className={pageContainer}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
               <div className="md:col-span-7 mb-10">
-                <h2 className="text-3xl md:text-5xl lg:text-[3.5rem] font-serif font-medium leading-[1.12] tracking-[-0.01em] text-foreground">
-                  Built for consequential<br />
-                  environments
+                <h2 className={h2}>
+                  Built for consequential environments
                 </h2>
               </div>
             </div>
-            <div className={grid12}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
               <div className="md:col-span-6 mb-16 md:mb-0">
-                <p className="text-lg text-secondary-foreground leading-relaxed mb-20">
+                <p className={`${lead} mb-20`}>
                   Rubiklab serves organisations where decision quality carries weight.
                 </p>
                 <div className="space-y-5">
@@ -184,10 +187,10 @@ const About = () => {
               </div>
               <div className="md:col-span-5 md:col-start-8">
                 <div className="space-y-8">
-                  <p className="text-base text-muted-foreground leading-relaxed">Legal teams navigating complex matters.</p>
-                  <p className="text-base text-muted-foreground leading-relaxed">Research organisations interpreting diverse signals.</p>
-                  <p className="text-base text-muted-foreground leading-relaxed">Healthcare and publishing groups managing regulated knowledge.</p>
-                  <p className="text-base text-muted-foreground leading-relaxed">Enterprises and associations operating across multiple jurisdictions.</p>
+                  <p className={body}>Legal teams navigating complex matters.</p>
+                  <p className={body}>Research organisations interpreting diverse signals.</p>
+                  <p className={body}>Healthcare and publishing groups managing regulated knowledge.</p>
+                  <p className={body}>Enterprises and associations operating across multiple jurisdictions.</p>
                 </div>
               </div>
             </div>
@@ -198,17 +201,17 @@ const About = () => {
       {/* SECTION 4 — LIGHT CLOSING */}
       <div className="theme-light bg-background text-foreground">
         <section className="py-[140px]">
-          <div className={gridContainer}>
-            <div className={grid12}>
+          <div className={pageContainer}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
               <div className="md:col-span-7 mb-10">
                 <h2 className="text-4xl md:text-6xl lg:text-[4.5rem] font-serif font-medium leading-[1.08] tracking-[-0.01em] text-foreground">
                   The future requires structure
                 </h2>
               </div>
             </div>
-            <div className={grid12}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 lg:gap-x-12">
               <div className="md:col-span-6">
-                <p className="text-base text-muted-foreground leading-relaxed mb-16">
+                <p className={`${body} mb-16`}>
                   As organisations adopt AI and agent driven systems, structured foundations become essential.
                 </p>
                 <div className="space-y-2 mb-20">
