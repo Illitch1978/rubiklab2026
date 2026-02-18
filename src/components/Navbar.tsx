@@ -20,12 +20,15 @@ const Navbar = ({ light }: NavbarProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const heroHeight = window.innerHeight * 0.8;
-      setHidden(window.scrollY > heroHeight);
+      // Shorter pages (e.g. /about) have a compact hero — hide nav earlier
+      const threshold = location.pathname === "/about"
+        ? 320
+        : window.innerHeight * 0.8;
+      setHidden(window.scrollY > threshold);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [location.pathname]);
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 transition-opacity duration-300 ${hidden ? "opacity-0 pointer-events-none" : "opacity-100"}`}>
