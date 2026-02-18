@@ -3,33 +3,33 @@ import { Shield, Globe, Lock, Settings, FileCheck, Search } from "lucide-react";
 const features = [
   {
     icon: Shield,
-    title: "Dedicated Security Expertise",
-    description: "An in-house security team spanning infrastructure, product, and operations with 24/7 coverage and end-to-end monitoring.",
+    title: "Dedicated security expertise",
+    description: "An in-house security team oversees infrastructure, application layers and monitoring across environments.",
   },
   {
     icon: Globe,
-    title: "Data Sovereignty and Control",
-    description: "Retain full control over your data. Decide which data to upload, set retention policies, delete data anytime, and keep everything in-region.",
+    title: "Data sovereignty and control",
+    description: "Clients retain control of their data. Hosting configurations and regional requirements can be aligned to internal policy.",
   },
   {
     icon: Lock,
-    title: "No Model Training",
-    description: "Your data stays yours. Inputs, outputs, and uploaded documents are never used to train underlying models.",
+    title: "No model training on client data",
+    description: "Client inputs, documents and outputs are not used to train external models.",
   },
   {
     icon: Settings,
-    title: "Enterprise-grade Features",
-    description: "Default controls that enterprise teams expect: SAML SSO, audit logs, IP allow-listing, data lifecycle management, and more.",
+    title: "Enterprise-grade features",
+    description: "Single sign-on, granular permissions, audit trails and controlled lifecycle management are built in.",
   },
   {
     icon: FileCheck,
-    title: "Enforceable Commitments",
-    description: "Binding terms on data protection, data access, incident response SLAs, and controls aligned with SOC 2, ISO, GDPR and other standards.",
+    title: "Enforceable commitments",
+    description: "Controls and processes align with recognised standards including ISO frameworks and SOC principles.",
   },
   {
     icon: Search,
-    title: "Independently Tested",
-    description: "Partnerships with top-tier security firms to perform in-depth audits, offering external validation of the highest standards of resilience.",
+    title: "Independently tested",
+    description: "Regular external testing validates system resilience and operational discipline.",
   },
 ];
 
@@ -38,7 +38,7 @@ const EnterpriseProtection = () => {
     <section className="py-20 px-8 md:px-16">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-16">
-          Enterprise-Grade Protection
+          Enterprise-grade protection
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {features.map((feature, i) => (
