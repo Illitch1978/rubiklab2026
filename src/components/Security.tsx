@@ -1,53 +1,29 @@
-import { Shield } from "lucide-react";
-
-const certifications = [
-  { name: "Independent Penetration Testing", link: "#" },
-  { name: "Cyber Essentials", link: "#" },
-  { name: "ISO 27001 aligned", link: "#" },
-  { name: "GDPR compliance", link: "#" },
-  { name: "Regional data controls", link: "#" },
-];
-
 const Security = () => {
   return (
     <section className="py-24 md:py-32 px-8 md:px-16">
       <div className="max-w-4xl mx-auto">
-        <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-6">
-          Built on controlled foundations
-        </h3>
+        <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-6">
+          Security is architectural
+        </h2>
         <p className="text-muted-foreground text-base md:text-lg max-w-3xl mb-4 leading-relaxed">
-          Rubiklab is designed for organisations that require oversight, accountability and regulatory alignment.
+          Rubiklab is engineered for organisations that require control, transparency and defensibility.
+        </p>
+        <p className="text-muted-foreground text-base md:text-lg max-w-3xl mb-8 leading-relaxed">
+          Our platform is built on enterprise-grade cloud architecture using Google Cloud Platform, with primary operations hosted in Frankfurt to support EU data residency requirements.
         </p>
         <p className="text-muted-foreground text-base md:text-lg max-w-3xl mb-4 leading-relaxed">
-          We support enterprise authentication, audit logging, lifecycle management and role-based access control across integrated systems.
+          Security is implemented across every layer:
         </p>
-        <p className="text-secondary-foreground text-base md:text-lg max-w-3xl mb-12 leading-relaxed font-medium">
-          Security is embedded into ingestion, processing and output. Not layered on afterwards.
+        <ul className="text-muted-foreground text-base md:text-lg max-w-3xl mb-8 leading-relaxed space-y-2 list-none">
+          <li>• AES-256 encryption for data at rest</li>
+          <li>• TLS 1.2+ encryption for data in transit</li>
+          <li>• Role-based access control and multi-factor authentication</li>
+          <li>• Continuous monitoring and threat detection</li>
+          <li>• Automated backup and integrity verification</li>
+        </ul>
+        <p className="text-secondary-foreground text-base md:text-lg max-w-3xl font-medium leading-relaxed">
+          Protection begins at ingestion and continues throughout the full data lifecycle.
         </p>
-        <a
-          href="/security"
-          className="text-sm text-foreground underline underline-offset-4 hover:text-accent transition-colors mb-16 inline-block"
-        >
-          Learn about security
-        </a>
-
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mt-12">
-          {certifications.map((cert, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center gap-3 p-6 border border-border rounded-lg hover:border-foreground/30 transition-colors"
-            >
-              <Shield className="w-8 h-8 text-muted-foreground" />
-              <p className="text-xs font-medium text-foreground text-center leading-snug">{cert.name}</p>
-              <a
-                href={cert.link}
-                className="text-xs text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Details
-              </a>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
