@@ -143,12 +143,12 @@ const About = () => {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               {[
-                { title: "Diverse signals, not narrow datasets", body: "We combine legacy records with dynamic external sources to avoid blind spots." },
-                { title: "Method before model", body: "AI is applied to prepared data, not raw noise." },
-                { title: "Workflow alignment", body: "Technology fits existing roles and responsibilities." },
-                { title: "Clarity of reasoning", body: "Outputs can be inspected, traced and challenged." },
-                { title: "Depth across formats and languages", body: "Text, transcripts, reports, reviews and regulatory material analysed consistently across markets." },
-                { title: "Tailored output, not generic templates", body: "Automated reports adapt to each client's tone of voice, branding and structure — because intelligence should speak the way your organisation does." },
+                { title: "Diverse signals, not narrow datasets", body: "We combine legacy records with dynamic external sources across markets and formats to reduce blind spots and improve perspective." },
+                { title: "Method before model", body: "AI is applied to prepared, classified data. Deterministic pipelines come first, models operate on governed inputs." },
+                { title: "Workflow alignment", body: "Technology fits existing roles and responsibilities, supporting judgement instead of forcing behavioural change." },
+                { title: "Clarity of reasoning", body: "Outputs can be inspected, traced and challenged. Every conclusion is linked to prepared data and transparent processing steps." },
+                { title: "Depth across formats and languages", body: "Text, transcripts, reports, reviews and regulatory material are analysed consistently across markets and languages." },
+                { title: "Tailored output, not generic templates", body: "Reports adapt to each client's tone, structure and context so intelligence reflects how the organisation actually operates." },
               ].map((item) => (
                 <div key={item.title} className="p-6">
                   <h3 className="text-[16px] font-semibold text-foreground mb-2">
