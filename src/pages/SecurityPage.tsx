@@ -13,9 +13,7 @@ const SecurityPage = () => {
       <Navbar light />
 
       {/* 1 — Dark: Hero */}
-      <div className="bg-[hsl(20,10%,6%)]">
-        <SecurityHero />
-      </div>
+      <SecurityHero />
 
       {/* 2 — Light: Architectural Foundation */}
       <Security />
