@@ -1,30 +1,37 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SecurityHero from "@/components/security/SecurityHero";
-import EnterpriseProtection from "@/components/security/EnterpriseProtection";
-import SecurityFundamental from "@/components/security/SecurityFundamental";
-import SecurityBlog from "@/components/security/SecurityBlog";
 import Security from "@/components/Security";
-import SecurityClientIsolation from "@/components/security/SecurityClientIsolation";
+import SecurityTrustBlock from "@/components/security/SecurityTrustBlock";
 import SecurityFAQ from "@/components/security/SecurityFAQ";
-import SecurityAI from "@/components/security/SecurityAI";
-import SecurityOperations from "@/components/security/SecurityOperations";
-import SecurityEnterprise from "@/components/security/SecurityEnterprise";
+import SecurityOperationalBlock from "@/components/security/SecurityOperationalBlock";
+import SecurityBlog from "@/components/security/SecurityBlog";
 
 const SecurityPage = () => {
   return (
     <div className="min-h-screen theme-light bg-background text-foreground">
       <Navbar light />
-      <SecurityHero />
+
+      {/* 1 — Dark: Hero */}
+      <div className="bg-[hsl(20,10%,6%)]">
+        <SecurityHero />
+      </div>
+
+      {/* 2 — Light: Architectural Foundation */}
       <Security />
-      <EnterpriseProtection />
-      <SecurityFundamental />
-      <SecurityClientIsolation />
+
+      {/* 3 — Light (continued): Trust, Data Protection, Isolation */}
+      <SecurityTrustBlock />
+
+      {/* 4 — Dark: FAQ */}
       <SecurityFAQ />
-      <SecurityAI />
-      <SecurityOperations />
-      <SecurityEnterprise />
+
+      {/* 5 — Light: Operational Resilience grid */}
+      <SecurityOperationalBlock />
+
+      {/* 6 — Dark: Final CTA */}
       <SecurityBlog />
+
       <Footer />
     </div>
   );
