@@ -114,9 +114,9 @@ const Solutions = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30 pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-transparent pointer-events-none" />
 
-        {/* Hero content — bottom-anchored */}
-        <div className="relative z-10 flex-1 flex items-end">
-          <div className="w-full px-8 md:px-16 pb-20 md:pb-28">
+        {/* Hero content — vertically centred, slightly lower */}
+        <div className="relative z-10 flex-1 flex items-center">
+          <div className="w-full px-8 md:px-16 pt-24 pb-0">
             <div className="max-w-6xl mx-auto">
               <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-8 text-foreground tracking-tight max-w-4xl">
                 Intelligence applied to real decisions
