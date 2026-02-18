@@ -38,27 +38,29 @@ const faqs = [
 
 const SecurityFAQ = () => {
   return (
-    <section className="py-24 px-8 md:px-16 bg-[hsl(20,10%,6%)]">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif text-[hsl(40,30%,92%)] mb-12">
+    <section className="py-[140px] px-8 md:px-16 bg-[hsl(20,10%,6%)]">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-serif text-[hsl(40,30%,92%)] mb-16 max-w-[680px]">
           Frequently asked questions
         </h2>
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, i) => (
-            <AccordionItem
-              key={i}
-              value={`item-${i}`}
-              className="border-[hsl(20,10%,20%)]"
-            >
-              <AccordionTrigger className="text-left text-base font-serif text-[hsl(40,30%,92%)] hover:no-underline">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-sm text-[hsl(30,10%,55%)] leading-relaxed">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <div className="max-w-[680px]">
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((faq, i) => (
+              <AccordionItem
+                key={i}
+                value={`item-${i}`}
+                className="border-b border-[hsl(20,10%,18%)]"
+              >
+                <AccordionTrigger className="text-left text-base font-serif text-[hsl(40,30%,92%)] hover:no-underline py-[18px]">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-base text-[hsl(30,10%,55%)] leading-relaxed pb-[18px]">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
       </div>
     </section>
   );
