@@ -1,40 +1,26 @@
-const posts = [
-  {
-    title: "Security by Design: How Harvey Engineered Trust from Day One",
-    date: "May 29, 2025",
-    href: "#",
-  },
-  {
-    title: "Building Enterprise Security at Scale",
-    date: "Apr 15, 2025",
-    href: "#",
-  },
-];
-
 const SecurityBlog = () => {
   return (
     <section className="py-24 px-8 md:px-16">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-12">
-          Secured by a World-Class Team
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-6">
+          Security that holds under scrutiny
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {posts.map((post, i) => (
-            <a
-              key={i}
-              href={post.href}
-              className="group block border border-border rounded-lg overflow-hidden hover:border-foreground/30 transition-colors"
-            >
-              <div className="aspect-video bg-muted" />
-              <div className="p-6">
-                <p className="text-xs text-muted-foreground mb-2">{post.date}</p>
-                <h3 className="text-base font-serif font-medium text-foreground group-hover:text-accent transition-colors">
-                  {post.title}
-                </h3>
-              </div>
-            </a>
-          ))}
-        </div>
+        <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4 max-w-3xl">
+          As AI becomes embedded into decision-making systems, reliability matters more than speed.
+        </p>
+        <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-10 max-w-3xl">
+          Rubiklab is built so intelligence remains dependable as complexity grows.
+        </p>
+        <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-3xl">
+          For detailed documentation or a technical briefing, our team is{" "}
+          <a
+            href="mailto:support@rubiklab.ai"
+            className="text-accent underline underline-offset-4 hover:opacity-80 transition-opacity"
+          >
+            available
+          </a>
+          .
+        </p>
       </div>
     </section>
   );

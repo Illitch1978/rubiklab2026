@@ -16,10 +16,10 @@ const SecurityHero = () => {
       <div className="relative z-10 flex-1 flex items-center">
         <div className="px-8 md:px-16 max-w-3xl pt-24">
           <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium text-white leading-[0.95] mb-8 tracking-tight">
-            For the Most<br />Sensitive Matters
+            Protection built<br />for critical work
           </h1>
           <p className="text-white/70 text-base md:text-lg max-w-md leading-relaxed">
-            Rubiklab keeps your client data safe with world-class security and data privacy measures.
+            Sensitive information demands oversight, traceability and restraint.<br />Rubiklab is designed to meet that standard.
           </p>
         </div>
       </div>
