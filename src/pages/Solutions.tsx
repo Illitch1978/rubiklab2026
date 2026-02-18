@@ -112,6 +112,16 @@ const sharedFoundation = [
 /* ── COMPONENT ────────────────────────────────────────────────────── */
 
 const Solutions = () => {
+  const slides = useMemo(() => shuffle(allSlides), []);
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
     <div className="min-h-screen">
       <Navbar />
