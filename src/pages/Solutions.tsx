@@ -121,23 +121,9 @@ const Solutions = () => {
               <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-8 text-foreground tracking-tight max-w-4xl">
                 Intelligence applied to real decisions
               </h1>
-              <p className={`${bodyText} mb-10 max-w-[52ch]`}>
+              <p className={`${bodyText} max-w-[52ch]`}>
                 Rubiklab brings governed knowledge, diverse signals and aligned workflows into environments where accuracy matters.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <a
-                  href="#environments"
-                  className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
-                >
-                  Explore solutions
-                </a>
-                <a
-                  href="#"
-                  className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
-                >
-                  Request a demo
-                </a>
-              </div>
             </div>
           </div>
         </div>
