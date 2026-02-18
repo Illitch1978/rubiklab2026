@@ -49,7 +49,7 @@ const About = () => {
               </div>
               {/* Right column: supporting copy */}
               <div className="md:col-span-6 space-y-3">
-                <p className="text-[18px] md:text-[19px] lg:text-[20px] leading-[1.6] text-muted-foreground max-w-[60ch]">
+                <p className={bodyText}>
                   Organisations generate more knowledge than they can govern, trust, or activate.
                 </p>
                 <p className={bodyText}>
