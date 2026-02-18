@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
+  { label: "About", href: "/about" },
   { label: "Platform", href: "/platform" },
   { label: "Solutions", href: "#" },
-  { label: "About", href: "/about" },
   { label: "Security", href: "/security" },
   { label: "Resources", href: "#" },
 ];
