@@ -20,10 +20,14 @@ const Navbar = ({ light }: NavbarProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Shorter pages (e.g. /about) have a compact hero — hide nav earlier
-      const threshold = location.pathname === "/about"
-        ? 320
-        : window.innerHeight * 0.8;
+      // Pages with full-viewport heroes keep the nav visible always
+      const fullViewportPages = ["/solutions", "/platform", "/security", "/"];
+      if (fullViewportPages.includes(location.pathname)) {
+        setHidden(false);
+        return;
+      }
+      // Shorter pages (e.g. /about) hide nav after scrolling past compact hero
+      const threshold = 320;
       setHidden(window.scrollY > threshold);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
