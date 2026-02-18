@@ -2,47 +2,46 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 /* ── LOCKED TYPE SYSTEM ──────────────────────────────────────────────
- * H1  – Hero only:       text-4xl md:text-6xl lg:text-[4.5rem]
- * H2  – Section heads:   text-3xl md:text-[2.75rem] lg:text-5xl
- * H3  – Sub-labels:      text-xl md:text-2xl
- * Body:                  text-base
- * Lead:                  text-lg md:text-xl
- * Small / muted:         text-sm text-muted-foreground
+ * H2  – All section heads:  text-[36px] md:text-[44px] lg:text-[52px]
+ * Body:                     text-[16px] md:text-[17px] lg:text-[18px]
+ * Small:                    text-[13px] md:text-[14px]
  * ─────────────────────────────────────────────────────────────────── */
 
-const pageContainer = "max-w-[1320px] mx-auto px-8 md:px-12 lg:px-16";
-const prose = "max-w-[760px] mx-auto";
+const container = "max-w-[1120px] mx-auto px-6 md:px-12 lg:px-[72px]";
+const sectionPad = "py-14 md:py-[72px] lg:py-24";
 
-const h1 = "text-4xl md:text-6xl lg:text-[4.5rem] font-serif font-medium leading-[1.12] tracking-tight text-foreground";
-const h2 = "text-3xl md:text-[2.75rem] lg:text-5xl font-serif font-medium leading-[1.14] tracking-[-0.01em] text-foreground";
-const lead = "text-lg md:text-xl text-secondary-foreground leading-relaxed";
-const body = "text-base text-muted-foreground leading-relaxed";
+const h2 =
+  "font-serif font-medium text-[36px] md:text-[44px] lg:text-[52px] leading-[1.05] tracking-tight text-foreground max-w-[16ch]";
+const bodyText =
+  "text-[16px] md:text-[17px] lg:text-[18px] leading-[1.6] text-muted-foreground max-w-[60ch]";
+const smallText =
+  "text-[13px] md:text-[14px] leading-[1.6] text-muted-foreground";
+const emphasis =
+  "text-[16px] md:text-[17px] lg:text-[18px] leading-[1.6] text-foreground font-medium max-w-[60ch]";
 
 const About = () => {
   return (
     <div className="min-h-screen">
-      {/* SECTION 1 — DARK HERO */}
+      {/* ═══ DARK HERO ═══ */}
       <div className="bg-background text-foreground">
         <Navbar />
-        <section className="pt-52 pb-[160px]">
-          <div className={pageContainer}>
-            <div className={prose}>
-              <h1 className={`${h1} mb-12`}>
+        <section className={`${sectionPad} !pt-[calc(96px+24px)] md:!pt-[calc(72px+24px)] lg:!pt-[calc(96px+24px)]`}>
+          <div className={container}>
+            <div className="max-w-[720px] mx-auto text-center">
+              <h1 className="font-serif font-medium text-[36px] md:text-[44px] lg:text-[52px] leading-[1.05] tracking-tight text-foreground mb-4">
                 Why Rubiklab exists
               </h1>
-              <p className={`${lead} mb-10`} style={{ maxWidth: '100%' }}>
+              <p className={`${bodyText} mx-auto mt-4 text-secondary-foreground`}>
                 Organisations generate more knowledge than they can govern, trust, or activate.
               </p>
-              <div className="space-y-6">
-                <p className={body}>
-                  Documents accumulate. Research multiplies. Conversations expand across systems.
-                  <br />
-                  External data flows continuously.
+              <div className="mt-4 space-y-3 mx-auto max-w-[60ch]">
+                <p className={bodyText}>
+                  Documents accumulate. Research multiplies. Conversations expand across systems. External data flows continuously.
                 </p>
-                <p className={body}>
+                <p className={bodyText}>
                   Most AI tools attempt to layer automation on top of that complexity.
                 </p>
-                <p className={body}>
+                <p className={bodyText}>
                   We built Rubiklab to solve the structural problem underneath it.
                 </p>
               </div>
@@ -51,25 +50,31 @@ const About = () => {
         </section>
       </div>
 
-      {/* SECTION 1 — LIGHT: When knowledge fragments */}
+      {/* ═══ LIGHT NARRATIVE CHAPTER ═══ */}
       <div className="theme-light bg-background text-foreground">
-        <section className="pt-[160px] pb-[140px]">
-          <div className={pageContainer}>
-            <div className={prose}>
-              <h2 className={`${h2} mb-12`}>
-                When knowledge fragments, risk grows
-              </h2>
-              <p className={`${lead} mb-10`}>
-                Organisations rarely struggle with lack of information. They struggle with fragmentation.
-              </p>
-              <div className="space-y-6">
-                <p className={body}>
+
+        {/* Section 1 — When knowledge fragments */}
+        <section className={sectionPad}>
+          <div className={container}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 lg:gap-6">
+              {/* Left column: heading + lead */}
+              <div className="md:col-span-7">
+                <h2 className={`${h2} mb-4`}>
+                  When knowledge fragments, risk grows
+                </h2>
+                <p className={`${bodyText} text-secondary-foreground`}>
+                  Organisations rarely struggle with lack of information. They struggle with fragmentation.
+                </p>
+              </div>
+              {/* Right column: supporting copy */}
+              <div className="md:col-span-5 space-y-3">
+                <p className={bodyText}>
                   Insight sits in reports, transcripts, dashboards, archives, inboxes, shared drives, and external feeds. Legacy systems coexist with real‑time data. Different formats. Different languages. Different standards.
                 </p>
-                <p className={body}>
+                <p className={bodyText}>
                   Layering AI on top of this does not resolve the problem. It often amplifies inconsistency.
                 </p>
-                <p className="text-base text-foreground leading-relaxed font-medium mt-10">
+                <p className={`${emphasis} mt-5`}>
                   When decisions matter, intelligence must be grounded, traceable, and complete.
                 </p>
               </div>
@@ -77,82 +82,85 @@ const About = () => {
           </div>
         </section>
 
-        {/* SECTION 2 — LIGHT: Technology should adapt */}
-        <section className="pb-[140px]">
-          <div className={pageContainer}>
-            <div className={prose}>
-              <h2 className={`${h2} mb-12`}>
-                Technology should adapt to people
-              </h2>
-              <p className={`${body} mb-6`}>
-                Most systems force teams to change how they work.
-              </p>
-              <p className={`${body} mb-10`}>
-                Rubiklab works differently.
-              </p>
-              <div className="space-y-6 mb-14">
-                <p className={body}>
-                  We design workflows around existing practices, not the other way around. Analysts, lawyers, researchers and editors remain in control. The system supports their judgement rather than replacing it.
-                </p>
-                <p className={body}>
-                  Automation is introduced where it reduces friction. Oversight remains where it protects quality.
+        {/* Section 2 — Technology should adapt */}
+        <section className={`${sectionPad} !pt-0`}>
+          <div className={container}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 lg:gap-6">
+              <div className="md:col-span-7">
+                <h2 className={`${h2} mb-4`}>
+                  Technology should adapt to people
+                </h2>
+                <p className={bodyText}>
+                  Most systems force teams to change how they work. Rubiklab works differently.
                 </p>
               </div>
-              <p className="text-base text-foreground leading-relaxed font-medium">
-                The result is adoption without disruption.
-              </p>
+              <div className="md:col-span-5 space-y-3">
+                <p className={bodyText}>
+                  We design workflows around existing practices, not the other way around. Analysts, lawyers, researchers and editors remain in control. The system supports their judgement rather than replacing it.
+                </p>
+                <p className={bodyText}>
+                  Automation is introduced where it reduces friction. Oversight remains where it protects quality.
+                </p>
+                <p className={`${emphasis} mt-5`}>
+                  The result is adoption without disruption.
+                </p>
+              </div>
             </div>
           </div>
         </section>
       </div>
 
-      {/* SECTION 3 — DARK: How Rubiklab works */}
+      {/* ═══ DARK SYSTEM BLOCK ═══ */}
       <div className="bg-background text-foreground">
-        <section className="pt-[160px] pb-[140px]">
-          <div className="max-w-[1160px] mx-auto px-8 md:px-12 lg:px-16">
-            <h2 className={`${h2} mb-12`}>
-              How Rubiklab works
-            </h2>
-            <div className={`${prose} ml-0`}>
-              <div className="space-y-6 mb-14">
-                <p className={body}>
-                  We bring together internal archives and live external data into a single governed environment.
+
+        {/* Section 3 — How Rubiklab works */}
+        <section className={sectionPad}>
+          <div className={container}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 lg:gap-6">
+              <div className="md:col-span-9">
+                <h2 className={`${h2} mb-4`}>
+                  How Rubiklab works
+                </h2>
+                <div className="space-y-3">
+                  <p className={bodyText}>
+                    We bring together internal archives and live external data into a single governed environment.
+                  </p>
+                  <p className={bodyText}>
+                    Documents, research, conversations, reviews, regulatory material, market signals and historical records coexist in one ecosystem.
+                  </p>
+                  <p className={bodyText}>
+                    Data is cleaned, tagged and validated using deterministic pipelines before any AI layer interacts with it.
+                  </p>
+                </div>
+                <p className={`${emphasis} mt-5 mb-5`}>
+                  This matters.
                 </p>
-                <p className={body}>
-                  Documents, research, conversations, reviews, regulatory material, market signals and historical records coexist in one ecosystem.
-                </p>
-                <p className={body}>
-                  Data is cleaned, tagged and validated using deterministic pipelines before any AI layer interacts with it.
+                <div className="space-y-3">
+                  <p className={bodyText}>
+                    Because our analysis does not rely solely on probabilistic language models. It is anchored in prepared data, defined taxonomies and transparent processing steps.
+                  </p>
+                  <p className={bodyText}>
+                    The outcome is deeper signal across both structured and unstructured sources, across multiple languages, without losing traceability.
+                  </p>
+                  <p className={bodyText}>
+                    Users can explore broadly, ask complex questions, and follow the reasoning behind every output.
+                  </p>
+                </div>
+                <p className={`${emphasis} mt-5`}>
+                  Curiosity is encouraged. Confidence is earned.
                 </p>
               </div>
-              <p className="text-base text-foreground leading-relaxed font-medium mb-14">
-                This matters.
-              </p>
-              <div className="space-y-6 mb-14">
-                <p className={body}>
-                  Because our analysis does not rely solely on probabilistic language models. It is anchored in prepared data, defined taxonomies and transparent processing steps.
-                </p>
-                <p className={body}>
-                  The outcome is deeper signal across both structured and unstructured sources, across multiple languages, without losing traceability.
-                </p>
-                <p className={body}>
-                  Users can explore broadly, ask complex questions, and follow the reasoning behind every output.
-                </p>
-              </div>
-              <p className="text-base text-foreground leading-relaxed font-medium">
-                Curiosity is encouraged. Confidence is earned.
-              </p>
             </div>
           </div>
         </section>
 
-        {/* SECTION 4 — DARK: What makes the difference */}
-        <section className="pb-[160px]">
-          <div className="max-w-[1160px] mx-auto px-8 md:px-12 lg:px-16">
-            <h2 className={`${h2} mb-16`}>
+        {/* Section 4 — What makes the difference */}
+        <section className={sectionPad}>
+          <div className={container}>
+            <h2 className={`${h2} mb-4`}>
               What makes the difference
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-14">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               {[
                 { title: "Diverse signals, not narrow datasets", body: "We combine legacy records with dynamic external sources to avoid blind spots." },
                 { title: "Method before model", body: "AI is applied to prepared data, not raw noise." },
@@ -160,83 +168,88 @@ const About = () => {
                 { title: "Clarity of reasoning", body: "Outputs can be inspected, traced and challenged." },
                 { title: "Depth across formats and languages", body: "Text, transcripts, reports, reviews and regulatory material analysed consistently across markets." },
               ].map((item) => (
-                <div key={item.title}>
-                  <h3 className="text-xl md:text-2xl font-serif font-semibold text-foreground mb-3">
+                <div key={item.title} className="p-6">
+                  <h3 className="text-[16px] font-semibold text-foreground mb-2">
                     {item.title}
                   </h3>
-                  <p className={body}>
+                  <p className={smallText}>
                     {item.body}
                   </p>
                 </div>
               ))}
             </div>
-            <p className="text-base text-foreground leading-relaxed font-medium mt-16">
+            <p className={`${emphasis} mt-8`}>
               This is where reliability comes from.
             </p>
           </div>
         </section>
       </div>
 
-      {/* SECTION 5 — LIGHT: Built for complex environments */}
+      {/* ═══ LIGHT: Built for complex environments ═══ */}
       <div className="theme-light bg-background text-foreground">
-        <section className="pt-[160px] pb-[140px]">
-          <div className={pageContainer}>
-            <div className={prose}>
-              <h2 className={`${h2} mb-12`}>
-                Built for complex environments
-              </h2>
-              <div className="space-y-6 mb-14">
-                <p className={body}>Legal teams navigating intricate matters.</p>
-                <p className={body}>Research organisations interpreting diverse signals.</p>
-                <p className={body}>Healthcare and publishing groups managing sensitive knowledge.</p>
-                <p className={body}>Enterprises operating across multiple jurisdictions.</p>
+        <section className={`${sectionPad} !pt-[72px] md:!pt-24 lg:!pt-32`}>
+          <div className={container}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 lg:gap-6">
+              <div className="md:col-span-7">
+                <h2 className={`${h2} mb-4`}>
+                  Built for complex environments
+                </h2>
+                <p className={bodyText}>
+                  These organisations operate beyond simple reporting.
+                </p>
               </div>
-              <p className={`${body} mb-2`}>
-                These organisations operate beyond simple reporting.
-              </p>
-              <p className="text-base text-foreground leading-relaxed font-medium">
-                They require dependable understanding.
-              </p>
+              <div className="md:col-span-5 space-y-3">
+                <p className={bodyText}>Legal teams navigating intricate matters.</p>
+                <p className={bodyText}>Research organisations interpreting diverse signals.</p>
+                <p className={bodyText}>Healthcare and publishing groups managing sensitive knowledge.</p>
+                <p className={bodyText}>Enterprises operating across multiple jurisdictions.</p>
+                <p className={`${emphasis} mt-5`}>
+                  They require dependable understanding.
+                </p>
+              </div>
             </div>
           </div>
         </section>
-      </div>
 
-      {/* SECTION 6 — LIGHT: Intelligence that holds up */}
-      <div className="theme-light bg-background text-foreground">
-        <section className="pt-[180px] pb-[160px]">
-          <div className={pageContainer}>
-            <div className={prose}>
-              <h2 className={`${h2} mb-12`}>
-                Intelligence that holds up under scrutiny
-              </h2>
-              <p className={`${body} mb-10`}>
-                As AI becomes embedded in organisations, the difference will not be speed. It will be integrity.
-              </p>
-              <div className="space-y-6 mb-14">
-                <p className={body}>Scale without method creates noise.</p>
-                <p className={body}>Automation without discipline creates risk.</p>
+        {/* ═══ LIGHT: Intelligence that holds up ═══ */}
+        <section className={sectionPad}>
+          <div className={container}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 lg:gap-6">
+              <div className="md:col-span-7">
+                <h2 className={`${h2} mb-4`}>
+                  Intelligence that holds up under scrutiny
+                </h2>
+                <p className={bodyText}>
+                  As AI becomes embedded in organisations, the difference will not be speed. It will be integrity.
+                </p>
               </div>
-              <p className="text-base text-foreground leading-relaxed font-medium mb-20">
-                Rubiklab exists to ensure intelligence remains reliable as systems grow more complex.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="/platform"
-                  className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-sm tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
-                >
-                  Explore the platform
-                </a>
-                <a
-                  href="#"
-                  className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-sm tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
-                >
-                  Request a demo
-                </a>
+              <div className="md:col-span-5 space-y-3">
+                <p className={bodyText}>Scale without method creates noise.</p>
+                <p className={bodyText}>Automation without discipline creates risk.</p>
+                <p className={`${emphasis} mt-5`}>
+                  Rubiklab exists to ensure intelligence remains reliable as systems grow more complex.
+                </p>
               </div>
+            </div>
+
+            {/* CTA */}
+            <div className="flex flex-col sm:flex-row gap-3 mt-7">
+              <a
+                href="/platform"
+                className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
+              >
+                Explore the platform
+              </a>
+              <a
+                href="#"
+                className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
+              >
+                Request a demo
+              </a>
             </div>
           </div>
         </section>
+
         <Footer />
       </div>
     </div>
