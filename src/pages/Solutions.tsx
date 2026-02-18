@@ -121,7 +121,7 @@ const Solutions = () => {
               Intelligence applied to real decisions
             </h1>
             <p className={`${bodyText} max-w-[52ch]`}>
-              Rubiklab brings governed knowledge, diverse signals and aligned workflows into environments where accuracy matters.
+                Rubiklab brings diverse signals and aligned workflows into environments where accuracy matters.
             </p>
           </div>
         </div>
