@@ -1,6 +1,20 @@
+import { useState, useEffect, useMemo } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import solutionsHero from "@/assets/solutions-hero.png";
+import solutionsSlide1 from "@/assets/solutions-slide-1.png";
+import solutionsSlide2 from "@/assets/solutions-slide-2.png";
+import solutionsSlide3 from "@/assets/solutions-slide-3.png";
+
+const allSlides = [solutionsSlide1, solutionsSlide2, solutionsSlide3];
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 /* ── TYPE SYSTEM (matches About page) ───────────────────────────────
  * H2  – text-[36px] md:text-[44px] lg:text-[52px]
