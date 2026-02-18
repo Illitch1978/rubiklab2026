@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import solutionsHero from "@/assets/solutions-hero.png";
 
 /* ── TYPE SYSTEM (matches About page) ───────────────────────────────
  * H2  – text-[36px] md:text-[44px] lg:text-[52px]
@@ -100,33 +101,50 @@ const Solutions = () => {
   return (
     <div className="min-h-screen">
 
-      {/* ═══ DARK HERO ═══ */}
-      <div className="bg-background text-foreground">
-        <Navbar />
-        <section className="pt-32 pb-20 px-8 md:px-16">
-          <div className="max-w-6xl mx-auto">
-            <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-8 text-foreground tracking-tight max-w-4xl">
-              Intelligence applied to real decisions
-            </h1>
-            <p className={`${bodyText} mb-10 max-w-[52ch]`}>
-              Rubiklab brings governed knowledge, diverse signals and aligned workflows into environments where accuracy matters.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href="#environments"
-                className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
-              >
-                Explore solutions
-              </a>
-              <a
-                href="#"
-                className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
-              >
-                Request a demo
-              </a>
+      {/* ═══ FULL VIEWPORT HERO ═══ */}
+      <div className="relative min-h-screen flex flex-col">
+        {/* Background image */}
+        <img
+          src={solutionsHero}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        {/* Dark overlay for text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-transparent" />
+
+        {/* Navbar sits on top */}
+        <div className="relative z-10">
+          <Navbar />
+        </div>
+
+        {/* Hero content — bottom-anchored */}
+        <div className="relative z-10 flex-1 flex items-end">
+          <div className="w-full px-8 md:px-16 pb-20 md:pb-28">
+            <div className="max-w-6xl mx-auto">
+              <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-8 text-foreground tracking-tight max-w-4xl">
+                Intelligence applied to real decisions
+              </h1>
+              <p className={`${bodyText} mb-10 max-w-[52ch]`}>
+                Rubiklab brings governed knowledge, diverse signals and aligned workflows into environments where accuracy matters.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="#environments"
+                  className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
+                >
+                  Explore solutions
+                </a>
+                <a
+                  href="#"
+                  className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
+                >
+                  Request a demo
+                </a>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
 
       {/* ═══ LIGHT: How we apply the platform ═══ */}
