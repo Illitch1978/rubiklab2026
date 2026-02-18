@@ -49,6 +49,9 @@ const About = () => {
               </div>
               {/* Right column: supporting copy */}
               <div className="md:col-span-6 space-y-3">
+                <p className="text-[18px] md:text-[19px] lg:text-[20px] leading-[1.6] text-muted-foreground max-w-[60ch]">
+                  Organisations generate more knowledge than they can govern, trust, or activate.
+                </p>
                 <p className={bodyText}>
                   Insight sits in reports, transcripts, dashboards, archives, inboxes, shared drives, and external feeds. Legacy systems coexist with real‑time data. Different formats. Different languages. Different standards.
                 </p>
@@ -101,13 +104,13 @@ const About = () => {
                 </h2>
                 <div className="space-y-3">
                   <p className={bodyText}>
-                    We bring together internal archives and live external data into a single governed environment.
+                    We bring internal archives and live external signals into one coherent environment.
                   </p>
                   <p className={bodyText}>
                     Documents, research, conversations, reviews, regulatory material, market signals and historical records coexist in one ecosystem.
                   </p>
                   <p className={bodyText}>
-                    Data is cleaned, tagged and validated using deterministic pipelines before any AI layer interacts with it.
+                    Data is prepared, classified and validated before any AI layer interacts with it.
                   </p>
                 </div>
                 <p className={`${emphasis} mt-5 mb-5`}>
@@ -118,14 +121,14 @@ const About = () => {
                     Because our analysis does not rely solely on probabilistic language models. It is anchored in prepared data, defined taxonomies and transparent processing steps.
                   </p>
                   <p className={bodyText}>
-                    The outcome is deeper signal across both structured and unstructured sources, across multiple languages, without losing traceability.
+                    The result is deeper signal across formats and languages, without losing traceability.
                   </p>
                   <p className={bodyText}>
                     Users can explore broadly, ask complex questions, and follow the reasoning behind every output.
                   </p>
                 </div>
                 <p className={`${emphasis} mt-5`}>
-                  Curiosity is encouraged. Confidence is earned.
+                  Curiosity is encouraged. Confidence follows.
                 </p>
               </div>
             </div>
@@ -180,7 +183,7 @@ const About = () => {
                 <p className={bodyText}>Healthcare and publishing groups managing sensitive knowledge.</p>
                 <p className={bodyText}>Enterprises operating across multiple jurisdictions.</p>
                 <p className={`${emphasis} mt-5`}>
-                  They require dependable understanding.
+                  They operate where ambiguity has consequences.
                 </p>
               </div>
             </div>
@@ -200,7 +203,7 @@ const About = () => {
                 <p className={bodyText}>Scale without method creates noise.</p>
                 <p className={bodyText}>Automation without discipline creates risk.</p>
                 <p className={`${emphasis} mt-5`}>
-                  Rubiklab exists to ensure intelligence remains reliable as systems grow more complex. As AI becomes embedded in organisations, the difference will not be speed. It will be integrity.
+                  As AI becomes embedded in organisations, the difference will not be speed. It will be integrity.
                 </p>
               </div>
             </div>
