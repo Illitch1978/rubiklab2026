@@ -183,7 +183,7 @@ const About = () => {
                 <p className={bodyText}>Healthcare and publishing groups managing sensitive knowledge.</p>
                 <p className={bodyText}>Enterprises operating across multiple jurisdictions.</p>
                 <p className={`${emphasis} mt-5`}>
-                  They operate where ambiguity has consequences.
+                  In these settings, ambiguity has consequences.
                 </p>
               </div>
             </div>
