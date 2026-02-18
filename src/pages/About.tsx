@@ -26,10 +26,7 @@ const About = () => {
       <div className="bg-background text-foreground">
         <Navbar />
         <section className="pt-32 pb-20 px-8 md:px-16">
-          <div className="max-w-6xl mx-auto">
-            <p className="text-sm font-medium text-foreground mb-6 tracking-wide">
-              Company
-            </p>
+           <div className="max-w-6xl mx-auto">
             <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-20 text-foreground tracking-tight max-w-4xl">
               Why Rubiklab exists
             </h1>
@@ -175,9 +172,6 @@ const About = () => {
                 <h2 className={`${h2} mb-4`}>
                   Built for complex environments
                 </h2>
-                <p className={bodyText}>
-                  These organisations operate beyond simple reporting.
-                </p>
               </div>
               <div className="md:col-span-5 space-y-3">
                 <p className={bodyText}>Legal teams navigating intricate matters.</p>
@@ -200,15 +194,12 @@ const About = () => {
                 <h2 className={`${h2} mb-4`}>
                   Intelligence that holds up under scrutiny
                 </h2>
-                <p className={bodyText}>
-                  As AI becomes embedded in organisations, the difference will not be speed. It will be integrity.
-                </p>
               </div>
               <div className="md:col-span-5 space-y-3">
                 <p className={bodyText}>Scale without method creates noise.</p>
                 <p className={bodyText}>Automation without discipline creates risk.</p>
                 <p className={`${emphasis} mt-5`}>
-                  Rubiklab exists to ensure intelligence remains reliable as systems grow more complex.
+                  Rubiklab exists to ensure intelligence remains reliable as systems grow more complex. As AI becomes embedded in organisations, the difference will not be speed. It will be integrity.
                 </p>
               </div>
             </div>
