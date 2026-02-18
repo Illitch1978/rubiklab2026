@@ -100,6 +100,7 @@ const sharedFoundation = [
 const Solutions = () => {
   return (
     <div className="min-h-screen">
+      <Navbar />
 
       {/* ═══ FULL VIEWPORT HERO ═══ */}
       <div className="relative min-h-screen flex flex-col">
@@ -107,16 +108,11 @@ const Solutions = () => {
         <img
           src={solutionsHero}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
         />
         {/* Dark overlay for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30 pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-transparent pointer-events-none" />
-
-        {/* Navbar sits on top */}
-        <div className="relative z-10">
-          <Navbar />
-        </div>
 
         {/* Hero content — bottom-anchored */}
         <div className="relative z-10 flex-1 flex items-end">
