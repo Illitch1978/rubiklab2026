@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import aboutHeroVideo from "@/assets/about-hero.mp4";
 
 /* ── LOCKED TYPE SYSTEM ──────────────────────────────────────────────
  * H2  – All section heads:  text-[36px] md:text-[44px] lg:text-[52px]
@@ -22,16 +23,27 @@ const emphasis =
 const About = () => {
   return (
     <div className="min-h-screen">
-      {/* ═══ DARK HERO ═══ */}
-      <div className="bg-background text-foreground">
+      {/* ═══ VIDEO HERO ═══ */}
+      <div className="relative min-h-screen overflow-hidden">
+        {/* Background video */}
+        <video
+          src={aboutHeroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* Gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/30 to-transparent" />
         <Navbar />
-        <section className="pt-32 pb-20 px-8 md:px-16">
-           <div className="max-w-6xl mx-auto">
+        <div className="relative z-10 flex items-center min-h-screen px-8 md:px-16">
+          <div className="max-w-6xl mx-auto pt-24">
             <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-20 text-foreground tracking-tight max-w-4xl">
               Why Rubiklab exists
             </h1>
           </div>
-        </section>
+        </div>
       </div>
 
       {/* ═══ LIGHT NARRATIVE CHAPTER ═══ */}
