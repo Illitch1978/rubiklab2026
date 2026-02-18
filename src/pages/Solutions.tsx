@@ -118,12 +118,20 @@ const Solutions = () => {
 
       {/* ═══ FULL VIEWPORT HERO ═══ */}
       <div className="relative min-h-screen flex flex-col">
-        {/* Background image */}
-        <img
-          src={solutionsHero}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
-        />
+        {/* Sliding background images */}
+        {slides.map((src, i) => (
+          <div
+            key={i}
+            className="absolute inset-0 transition-opacity duration-[2000ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
+            style={{ opacity: i === current ? 1 : 0 }}
+          >
+            <img
+              src={src}
+              alt={`Solutions environment ${i + 1}`}
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+        ))}
         {/* Dark overlay for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30 pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-transparent pointer-events-none" />
@@ -133,9 +141,13 @@ const Solutions = () => {
           <div className="px-8 md:px-16 max-w-3xl pt-24">
             <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-8 text-foreground tracking-tight">
               Intelligence applied to real decisions
+              <span
+                className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-1 align-baseline animate-pulse"
+                style={{ backgroundColor: "hsl(var(--accent))" }}
+              />
             </h1>
             <p className={`${bodyText} max-w-[52ch]`}>
-                Rubiklab brings diverse signals and aligned workflows into environments where accuracy matters.
+              Rubiklab brings diverse signals and aligned workflows into environments where accuracy matters.
             </p>
           </div>
         </div>
