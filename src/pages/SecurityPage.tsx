@@ -6,6 +6,7 @@ import SecurityFundamental from "@/components/security/SecurityFundamental";
 import SecurityBlog from "@/components/security/SecurityBlog";
 import Security from "@/components/Security";
 import SecurityClientIsolation from "@/components/security/SecurityClientIsolation";
+import SecurityFAQ from "@/components/security/SecurityFAQ";
 import SecurityAI from "@/components/security/SecurityAI";
 import SecurityOperations from "@/components/security/SecurityOperations";
 import SecurityEnterprise from "@/components/security/SecurityEnterprise";
@@ -19,6 +20,7 @@ const SecurityPage = () => {
       <EnterpriseProtection />
       <SecurityFundamental />
       <SecurityClientIsolation />
+      <SecurityFAQ />
       <SecurityAI />
       <SecurityOperations />
       <SecurityEnterprise />
