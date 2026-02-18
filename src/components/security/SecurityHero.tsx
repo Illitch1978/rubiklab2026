@@ -22,8 +22,6 @@ const SecurityHero = () => {
         className="absolute inset-0 w-full h-full object-cover"
       />
       {/* Dim overlay */}
-      {/* Gradient overlay: transparent at top (navbar area) → dims over video content */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent from-[12%] via-black/30 to-black/50" />
       <div className="relative z-10 flex-1 flex items-center">
         <div className="px-8 md:px-16 max-w-3xl pt-40">
           <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium text-white leading-[0.95] mb-8 tracking-tight">
