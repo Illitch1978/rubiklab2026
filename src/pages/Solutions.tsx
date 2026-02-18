@@ -110,8 +110,8 @@ const Solutions = () => {
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         {/* Dark overlay for text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-transparent pointer-events-none" />
 
         {/* Navbar sits on top */}
         <div className="relative z-10">
