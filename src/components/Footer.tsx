@@ -9,7 +9,7 @@ const Footer = () => {
               <span className="w-1.5 h-1.5 rounded-full bg-accent mb-0.5 animate-pulse" />
             </div>
             <p className="text-[13px] md:text-[14px] leading-[1.6] text-muted-foreground max-w-xs">
-              Structured knowledge infrastructure for legal, research, healthcare, publishing, and regulated enterprises.
+              Knowledge systems for legal, research, healthcare, publishing, and regulated enterprises.
             </p>
           </div>
 
