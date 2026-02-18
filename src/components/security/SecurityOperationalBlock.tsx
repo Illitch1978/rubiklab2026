@@ -1,65 +1,27 @@
-const columns = [
+const blocks = [
   {
-    blocks: [
-      {
-        heading: "AI under control",
-        points: [
-          "Natural language interface",
-          "Search enhancement and context summarisation",
-          "Assisted reporting",
-          "Cross-validated against statistical methods",
-          "Client data never used to train external models",
-        ],
-      },
-      {
-        heading: "Prepared for the unexpected",
-        points: [
-          "Real-time threat detection and behavioural analysis",
-          "Automated alerting and network monitoring",
-          "Immediate containment and threat eradication",
-          "Recovery procedures with defined RTO and RPO",
-          "Structured post-incident analysis",
-        ],
-      },
-    ],
+    title: "AI under control",
+    body: "AI capabilities are introduced within defined boundaries. Natural language search, summarisation and assisted reporting operate on prepared and validated data. Outputs are cross-checked against statistical methods, and client data is never used to train external models.",
   },
   {
-    blocks: [
-      {
-        heading: "Security reinforced by people",
-        points: [
-          "Role-based access control",
-          "Multi-factor authentication",
-          "Structured access reviews",
-          "Secure device management",
-          "Mandatory security training",
-        ],
-      },
-      {
-        heading: "Aligned with your security environment",
-        points: [
-          "SSO integration",
-          "API-based authentication",
-          "SIEM integration",
-          "Custom retention policies",
-          "Client-specific access controls",
-        ],
-      },
-    ],
+    title: "People enforce protection",
+    body: "Security is reinforced by clear roles and disciplined access management. Role-based permissions, multi-factor authentication, structured access reviews and secure device policies ensure accountability at every level. Security training is mandatory, not optional.",
   },
   {
-    blocks: [
-      {
-        heading: "Security evolves with technology",
-        points: [
-          "Expanded zero-trust implementation",
-          "Enhanced AI monitoring and anomaly detection",
-          "Advanced encryption capabilities",
-          "Privacy-enhancing technologies",
-          "Continuous regulatory adaptation",
-        ],
-      },
-    ],
+    title: "Aligned with your environment",
+    body: "Rubiklab integrates into existing security ecosystems rather than replacing them. SSO, API-based authentication, SIEM integration, custom retention policies and client-specific access controls allow alignment with your internal standards.",
+  },
+  {
+    title: "Prepared for the unexpected",
+    body: "Operational monitoring is continuous. Real-time threat detection, behavioural analysis, automated alerting and defined incident response procedures support rapid containment and recovery. RTO and RPO objectives are documented and tested.",
+  },
+  {
+    title: "Evolving with technology",
+    body: "Security controls are reviewed as technology and regulation evolve. Zero-trust principles, enhanced anomaly detection, advanced encryption and privacy-enhancing techniques are extended as new risks emerge.",
+  },
+  {
+    title: "Resilience by design",
+    body: "Operational resilience is embedded across infrastructure, processes and oversight. Security is not an add-on. It is integrated into how data is stored, accessed, processed and governed across the platform.",
   },
 ];
 
@@ -71,21 +33,15 @@ const SecurityOperationalBlock = () => {
           Operational resilience
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-20">
-          {columns.map((col, ci) => (
-            <div key={ci} className="flex flex-col gap-16">
-              {col.blocks.map((block, bi) => (
-                <div key={bi}>
-                  <h3 className="text-lg md:text-xl font-serif text-foreground mb-6">
-                    {block.heading}
-                  </h3>
-                  <ul className="text-muted-foreground text-sm md:text-base leading-relaxed space-y-3 list-none">
-                    {block.points.map((pt, pi) => (
-                      <li key={pi}>• {pt}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-14">
+          {blocks.map((block, i) => (
+            <div key={i}>
+              <h3 className="text-lg md:text-xl font-serif text-foreground mb-4">
+                {block.title}
+              </h3>
+              <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+                {block.body}
+              </p>
             </div>
           ))}
         </div>
