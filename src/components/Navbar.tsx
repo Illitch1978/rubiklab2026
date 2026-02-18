@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   { label: "Platform", href: "/platform" },
@@ -14,6 +14,7 @@ interface NavbarProps {
 }
 
 const Navbar = ({ light }: NavbarProps) => {
+  const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
 
@@ -40,7 +41,7 @@ const Navbar = ({ light }: NavbarProps) => {
           <Link
             key={item.label}
             to={item.href}
-            className="text-sm text-secondary-foreground hover:text-foreground transition-colors"
+            className={`text-sm transition-colors ${location.pathname === item.href ? "text-accent font-medium" : "text-secondary-foreground hover:text-foreground"}`}
           >
             {item.label}
           </Link>

@@ -145,6 +145,7 @@ const About = () => {
                 { title: "Workflow alignment", body: "Technology fits existing roles and responsibilities." },
                 { title: "Clarity of reasoning", body: "Outputs can be inspected, traced and challenged." },
                 { title: "Depth across formats and languages", body: "Text, transcripts, reports, reviews and regulatory material analysed consistently across markets." },
+                { title: "Tailored output, not generic templates", body: "Automated reports adapt to each client's tone of voice, branding and structure — because intelligence should speak the way your organisation does." },
               ].map((item) => (
                 <div key={item.title} className="p-6">
                   <h3 className="text-[16px] font-semibold text-foreground mb-2">
