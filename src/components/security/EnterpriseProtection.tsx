@@ -1,58 +1,42 @@
-import { Shield, Globe, Lock, Settings, FileCheck, Search } from "lucide-react";
-
 const features = [
   {
-    icon: Shield,
-    title: "Dedicated security expertise",
-    description: "An in-house security team oversees infrastructure, application layers and monitoring across environments.",
+    title: "ISO 27001 certification",
   },
   {
-    icon: Globe,
-    title: "Data sovereignty and control",
-    description: "Clients retain control of their data. Hosting configurations and regional requirements can be aligned to internal policy.",
+    title: "Grade A penetration testing certification",
   },
   {
-    icon: Lock,
-    title: "No model training on client data",
-    description: "Client inputs, documents and outputs are not used to train external models.",
+    title: "Regular third-party security audits",
   },
   {
-    icon: Settings,
-    title: "Enterprise-grade features",
-    description: "Single sign-on, granular permissions, audit trails and controlled lifecycle management are built in.",
-  },
-  {
-    icon: FileCheck,
-    title: "Enforceable commitments",
-    description: "Controls and processes align with recognised standards including ISO frameworks and SOC principles.",
-  },
-  {
-    icon: Search,
-    title: "Independently tested",
-    description: "Regular external testing validates system resilience and operational discipline.",
+    title: "Continuous compliance monitoring",
   },
 ];
 
 const EnterpriseProtection = () => {
   return (
     <section className="py-20 px-8 md:px-16">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-16">
-          Enterprise-grade protection
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-6">
+          Tested and certified
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {features.map((feature, i) => (
-            <div key={i} className="space-y-4">
-              <feature.icon className="w-8 h-8 text-foreground" strokeWidth={1.5} />
-              <h3 className="text-lg font-serif font-medium text-foreground">
-                {feature.title}
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
+        <p className="text-muted-foreground text-base md:text-lg max-w-3xl mb-8 leading-relaxed">
+          Security claims are only meaningful when validated.
+        </p>
+        <p className="text-muted-foreground text-base md:text-lg max-w-3xl mb-4 leading-relaxed">
+          Rubiklab maintains:
+        </p>
+        <ul className="text-muted-foreground text-base md:text-lg max-w-3xl mb-8 leading-relaxed space-y-2 list-none">
+          {features.map((f, i) => (
+            <li key={i}>• {f.title}</li>
           ))}
-        </div>
+        </ul>
+        <p className="text-muted-foreground text-base md:text-lg max-w-3xl mb-4 leading-relaxed">
+          Our Information Security Management System includes documented risk assessments, independent audits and structured improvement cycles.
+        </p>
+        <p className="text-secondary-foreground text-base md:text-lg max-w-3xl font-medium leading-relaxed">
+          Controls are tested, reviewed and strengthened continuously.
+        </p>
       </div>
     </section>
   );

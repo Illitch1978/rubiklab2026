@@ -2,11 +2,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SecurityHero from "@/components/security/SecurityHero";
 import EnterpriseProtection from "@/components/security/EnterpriseProtection";
-
 import SecurityFundamental from "@/components/security/SecurityFundamental";
-import SecurityFAQ from "@/components/security/SecurityFAQ";
 import SecurityBlog from "@/components/security/SecurityBlog";
 import Security from "@/components/Security";
+import SecurityClientIsolation from "@/components/security/SecurityClientIsolation";
+import SecurityAI from "@/components/security/SecurityAI";
+import SecurityOperations from "@/components/security/SecurityOperations";
+import SecurityEnterprise from "@/components/security/SecurityEnterprise";
 
 const SecurityPage = () => {
   return (
@@ -15,9 +17,11 @@ const SecurityPage = () => {
       <SecurityHero />
       <Security />
       <EnterpriseProtection />
-      
       <SecurityFundamental />
-      <SecurityFAQ />
+      <SecurityClientIsolation />
+      <SecurityAI />
+      <SecurityOperations />
+      <SecurityEnterprise />
       <SecurityBlog />
       <Footer />
     </div>
