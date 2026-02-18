@@ -25,27 +25,14 @@ const About = () => {
       {/* ═══ DARK HERO ═══ */}
       <div className="bg-background text-foreground">
         <Navbar />
-        <section className={`${sectionPad} !pt-[calc(96px+24px)] md:!pt-[calc(72px+24px)] lg:!pt-[calc(96px+24px)]`}>
-          <div className={container}>
-            <div className="max-w-[720px] mx-auto text-center">
-              <h1 className="font-serif font-medium text-[36px] md:text-[44px] lg:text-[52px] leading-[1.05] tracking-tight text-foreground mb-4">
-                Why Rubiklab exists
-              </h1>
-              <p className={`${bodyText} mx-auto mt-4 text-secondary-foreground`}>
-                Organisations generate more knowledge than they can govern, trust, or activate.
-              </p>
-              <div className="mt-4 space-y-3 mx-auto max-w-[60ch]">
-                <p className={bodyText}>
-                  Documents accumulate. Research multiplies. Conversations expand across systems. External data flows continuously.
-                </p>
-                <p className={bodyText}>
-                  Most AI tools attempt to layer automation on top of that complexity.
-                </p>
-                <p className={bodyText}>
-                  We built Rubiklab to solve the structural problem underneath it.
-                </p>
-              </div>
-            </div>
+        <section className="pt-32 pb-20 px-8 md:px-16">
+          <div className="max-w-6xl mx-auto">
+            <p className="text-sm font-medium text-foreground mb-6 tracking-wide">
+              Company
+            </p>
+            <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-20 text-foreground tracking-tight max-w-4xl">
+              Why Rubiklab exists
+            </h1>
           </div>
         </section>
       </div>
@@ -57,17 +44,14 @@ const About = () => {
         <section className={sectionPad}>
           <div className={container}>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 lg:gap-6">
-              {/* Left column: heading + lead */}
-              <div className="md:col-span-7">
+              {/* Left column: heading */}
+              <div className="md:col-span-6">
                 <h2 className={`${h2} mb-4`}>
                   When knowledge fragments, risk grows
                 </h2>
-                <p className={`${bodyText} text-secondary-foreground`}>
-                  Organisations rarely struggle with lack of information. They struggle with fragmentation.
-                </p>
               </div>
               {/* Right column: supporting copy */}
-              <div className="md:col-span-5 space-y-3">
+              <div className="md:col-span-6 space-y-3">
                 <p className={bodyText}>
                   Insight sits in reports, transcripts, dashboards, archives, inboxes, shared drives, and external feeds. Legacy systems coexist with real‑time data. Different formats. Different languages. Different standards.
                 </p>
@@ -86,15 +70,12 @@ const About = () => {
         <section className={`${sectionPad} !pt-0`}>
           <div className={container}>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 lg:gap-6">
-              <div className="md:col-span-7">
+              <div className="md:col-span-6">
                 <h2 className={`${h2} mb-4`}>
                   Technology should adapt to people
                 </h2>
-                <p className={bodyText}>
-                  Most systems force teams to change how they work. Rubiklab works differently.
-                </p>
               </div>
-              <div className="md:col-span-5 space-y-3">
+              <div className="md:col-span-6 space-y-3">
                 <p className={bodyText}>
                   We design workflows around existing practices, not the other way around. Analysts, lawyers, researchers and editors remain in control. The system supports their judgement rather than replacing it.
                 </p>
@@ -157,7 +138,7 @@ const About = () => {
         {/* Section 4 — What makes the difference */}
         <section className={sectionPad}>
           <div className={container}>
-            <h2 className={`${h2} mb-4`}>
+            <h2 className={`${h2} mb-4 !max-w-none`}>
               What makes the difference
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
