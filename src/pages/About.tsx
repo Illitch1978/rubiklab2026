@@ -26,7 +26,14 @@ const About = () => {
     <div className="min-h-screen">
       {/* ═══ VIDEO HERO ═══ */}
       <div className="relative min-h-screen overflow-hidden">
-        {/* Background video */}
+        {/* Static poster shown immediately to prevent flicker */}
+        <img
+          src={aboutHeroPoster}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* Background video layers on top once loaded */}
         <video
           src={aboutHeroVideo}
           poster={aboutHeroPoster}
