@@ -151,7 +151,7 @@ const Solutions = () => {
         <div className="relative z-10 flex-1 flex items-center">
           <div className="px-8 md:px-16 max-w-3xl pt-24">
             <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-8 text-foreground tracking-tight">
-              Intelligence applied to real decisions
+              Applied Intelligence.
               <span
                 className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-1 align-baseline animate-pulse"
                 style={{ backgroundColor: "hsl(var(--accent))" }}
