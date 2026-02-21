@@ -28,6 +28,13 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Static first image to prevent flicker */}
+      <img
+        src={heroNew1}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       {/* Sliding images */}
       {slides.map((src, i) => (
         <div

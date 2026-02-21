@@ -129,6 +129,13 @@ const Solutions = () => {
 
       {/* ═══ FULL VIEWPORT HERO ═══ */}
       <div className="relative min-h-screen flex flex-col">
+        {/* Static first image to prevent flicker */}
+        <img
+          src={solutionsSlide1}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
         {/* Sliding background images */}
         {slides.map((src, i) => (
           <div
