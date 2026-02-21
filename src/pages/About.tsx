@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import aboutHeroVideo from "@/assets/about-hero.mp4";
+import aboutHeroPoster from "@/assets/about-hero-poster.png";
 
 /* ── LOCKED TYPE SYSTEM ──────────────────────────────────────────────
  * H2  – All section heads:  text-[36px] md:text-[44px] lg:text-[52px]
@@ -28,6 +29,7 @@ const About = () => {
         {/* Background video */}
         <video
           src={aboutHeroVideo}
+          poster={aboutHeroPoster}
           autoPlay
           loop
           muted
