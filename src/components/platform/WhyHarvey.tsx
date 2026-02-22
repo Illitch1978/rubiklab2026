@@ -1,19 +1,27 @@
 const points = [
   {
     title: "Method before model",
-    text: "AI interacts only with prepared, classified data. Deterministic pipelines come first.",
+    text: "Every project begins with preparation. Data is classified, structured and validated before analysis begins. Your frameworks, taxonomies and internal standards shape the work. Studio respects your methodology rather than replacing it.",
   },
   {
     title: "Diverse signal",
-    text: "Legacy knowledge and live external data coexist in one governed environment.",
+    text: "Internal archives, live external sources, surveys and market data sit in one governed environment. Teams can compare sentiment shifts with tracker results, campaign performance and historical insight in a single, connected view.",
   },
   {
-    title: "Workflow alignment",
-    text: "Studio fits how teams already operate. It does not force behavioural change.",
+    title: "Depth without distortion",
+    text: "Reports follow your structure, your level of rigour and your tone of voice. Outputs are long form when needed, branded correctly, aligned to client expectations and built with traceable evidence behind every claim.",
+  },
+  {
+    title: "Workflow continuity",
+    text: "Studio integrates into how teams already operate. Multiple tasks can run in parallel while you explore data. Analysis, comparisons, summaries and structured outputs evolve together inside one environment rather than across spreadsheets and slide decks.",
   },
   {
     title: "Transparent reasoning",
-    text: "Outputs can be traced, reviewed and challenged before distribution.",
+    text: "Every conclusion is linked to prepared data and visible processing steps. Confidence indicators are explicit. Assumptions can be reviewed. Sources can be inspected before anything is shared externally.",
+  },
+  {
+    title: "Orchestrated execution",
+    text: "Studio enables structured, multi-step work. Themes can be investigated, trends compared, campaign logic drafted and outputs assembled in sequence. Teams guide the process while the system handles the heavy lifting.",
   },
 ];
 

@@ -28,19 +28,19 @@ const stages = [
     title: "Hybrid Intelligence Engine",
     what: "Three analytical axes work simultaneously: semantic similarity and clustering, statistical frequency and co-occurrence, and temporal event-sequence mapping with anomaly detection.",
     why: "Single-method analysis misses complexity. Combining approaches surfaces patterns no single technique would find alone.",
-    sees: "A multi-layer analysis dashboard showing clusters, statistical correlations and event timelines — all interlinked.",
+    sees: "A multi-layer analysis dashboard showing clusters, statistical correlations and event timelines, all interlinked.",
   },
   {
     num: "05",
     title: "Constitutional Orchestration",
-    what: "A governance layer defines agent rules, evidence standards and quality baselines. Coordinated agents — noise auditors, clustering agents, statistical verifiers — execute within strict constitutional constraints.",
+    what: "A governance layer defines agent rules, evidence standards and quality baselines. Coordinated agents, including noise auditors, clustering agents and statistical verifiers, execute within strict constitutional constraints.",
     why: "Uncontrolled AI produces inconsistent results. Constitutional rules ensure every output meets defined quality thresholds.",
     sees: "An orchestration panel showing active agents, their rules, quality scores and the narrative they are building.",
   },
   {
     num: "06",
     title: "Validation & Delivery",
-    what: "Outputs pass through evidence-linking and coverage checks. Deliverables — executive briefs, thematic boards, presentations — are configured to your tone, format and visual identity.",
+    what: "Outputs pass through evidence-linking and coverage checks. Deliverables including executive briefs, thematic boards and presentations are configured to your tone, format and visual identity.",
     why: "Intelligence is only useful if it is trusted. Validation gates ensure nothing leaves the system without traceable evidence.",
     sees: "A delivery console with configurable output formats, evidence trails and direct push to CRMs, dashboards or knowledge bases.",
   },
@@ -78,13 +78,15 @@ const PipelineOverview = () => {
           {/* Header */}
           <div className="mb-8 md:mb-12">
             <p className="font-mono text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "hsl(210 60% 55%)" }}>
-              System Architecture // Intelligence Studio
+              System Architecture
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight max-w-3xl mb-5" style={{ color: "hsl(40 30% 90%)" }}>
               Six stages from raw signal to validated intelligence
             </h2>
             <p className="text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: "hsl(210 15% 55%)" }}>
-              Every output follows a disciplined, traceable path. Click each stage to see how intelligence is built.
+              Every output follows a disciplined, traceable path.
+              <br />
+              Click each stage to see how intelligence is built.
             </p>
           </div>
 
