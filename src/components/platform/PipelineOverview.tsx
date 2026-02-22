@@ -4,38 +4,38 @@ import { useState } from "react";
 
 const Chip = ({ label, detail }: { label: string; detail: string }) => (
   <div
-    className="px-3 py-2 rounded border font-mono"
+    className="px-4 py-3 rounded border font-mono"
     style={{ borderColor: "hsl(210 30% 20%)", background: "hsl(210 25% 9%)" }}
   >
-    <p className="text-[11px] font-medium" style={{ color: "hsl(40 20% 80%)" }}>{label}</p>
-    <p className="text-[10px]" style={{ color: "hsl(210 15% 45%)" }}>{detail}</p>
+    <p className="text-sm font-medium" style={{ color: "hsl(40 20% 80%)" }}>{label}</p>
+    <p className="text-xs mt-0.5" style={{ color: "hsl(210 15% 45%)" }}>{detail}</p>
   </div>
 );
 
 const FilterStep = ({ num, label, detail }: { num: string; label: string; detail: string }) => (
-  <div className="flex items-start gap-3">
+  <div className="flex items-start gap-4">
     <span
-      className="font-mono text-[10px] font-semibold w-6 h-6 flex items-center justify-center rounded border flex-shrink-0 mt-0.5"
+      className="font-mono text-xs font-semibold w-8 h-8 flex items-center justify-center rounded border flex-shrink-0 mt-0.5"
       style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(210 60% 60%)" }}
     >
       {num}
     </span>
     <div>
-      <p className="font-mono text-xs font-medium" style={{ color: "hsl(40 20% 80%)" }}>{label}</p>
-      <p className="font-mono text-[10px]" style={{ color: "hsl(210 15% 45%)" }}>{detail}</p>
+      <p className="font-mono text-sm font-medium" style={{ color: "hsl(40 20% 80%)" }}>{label}</p>
+      <p className="font-mono text-xs mt-0.5" style={{ color: "hsl(210 15% 45%)" }}>{detail}</p>
     </div>
   </div>
 );
 
 const SectionLabel = ({ children }: { children: React.ReactNode }) => (
-  <p className="font-mono text-[10px] tracking-[0.15em] uppercase mb-3" style={{ color: "hsl(210 50% 50%)" }}>
+  <p className="font-mono text-xs tracking-[0.15em] uppercase mb-4" style={{ color: "hsl(210 50% 50%)" }}>
     {children}
   </p>
 );
 
 const FlowLabel = ({ children }: { children: React.ReactNode }) => (
-  <div className="mt-4 pt-3 border-t" style={{ borderColor: "hsl(210 30% 20%)" }}>
-    <p className="font-mono text-[10px] font-medium tracking-wide" style={{ color: "hsl(210 60% 55%)" }}>
+  <div className="mt-5 pt-4 border-t" style={{ borderColor: "hsl(210 30% 20%)" }}>
+    <p className="font-mono text-sm font-medium tracking-wide" style={{ color: "hsl(210 60% 55%)" }}>
       ↓ {children}
     </p>
   </div>
@@ -70,7 +70,7 @@ const stages = [
     subtitle: "Rubiklab's 25-step protocol for defensible foundations.",
     content: (
       <div className="space-y-6">
-        <div className="space-y-2">
+        <div className="space-y-3">
           {[
             { num: "I", label: "Signal Integrity Layer", detail: "Parsing & packet validation" },
             { num: "II", label: "Bot & Synthetic Detection", detail: "Filters automated / LLM-amplified loops" },
@@ -92,9 +92,9 @@ const stages = [
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
           <SectionLabel>Substrate Processing Pipeline</SectionLabel>
-          <ol className="space-y-1.5">
+          <ol className="space-y-2">
             {["Language Standardisation", "Tokenisation & Parsing", "Metadata Enrichment", "Named Entity Extraction", "Chronology Alignment", "Provenance & Source Tags", "PII Governance Controls"].map((s, i) => (
-              <li key={i} className="font-mono text-xs flex gap-2" style={{ color: "hsl(40 20% 75%)" }}>
+              <li key={i} className="font-mono text-sm flex gap-2" style={{ color: "hsl(40 20% 75%)" }}>
                 <span style={{ color: "hsl(210 50% 45%)" }}>{i + 1}.</span>
                 {s}
               </li>
@@ -103,9 +103,9 @@ const stages = [
         </div>
         <div>
           <SectionLabel>Applied Mathematical Techniques</SectionLabel>
-          <ul className="space-y-1.5">
+          <ul className="space-y-2">
             {["NLP Multi-lingual Pipelines", "High-Dimensional Embedding", "Deep Statistical Normalisation"].map((t, i) => (
-              <li key={i} className="font-mono text-xs" style={{ color: "hsl(40 20% 75%)" }}>{t}</li>
+              <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{t}</li>
             ))}
           </ul>
         </div>
@@ -121,17 +121,17 @@ const stages = [
         <div className="grid sm:grid-cols-2 gap-6">
           <div>
             <SectionLabel>Semantic Axis</SectionLabel>
-            <ul className="space-y-1">
+            <ul className="space-y-2">
               {["Embedding indexing", "Context similarity", "Topic modelling", "N-dim clustering"].map((s, i) => (
-                <li key={i} className="font-mono text-xs" style={{ color: "hsl(40 20% 75%)" }}>{s}</li>
+                <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{s}</li>
               ))}
             </ul>
           </div>
           <div>
             <SectionLabel>Statistical Axis</SectionLabel>
-            <ul className="space-y-1">
+            <ul className="space-y-2">
               {["Frequency distribution", "Co-occurrence", "Sentiment bias", "Corroboration"].map((s, i) => (
-                <li key={i} className="font-mono text-xs" style={{ color: "hsl(40 20% 75%)" }}>{s}</li>
+                <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{s}</li>
               ))}
             </ul>
           </div>
@@ -139,15 +139,15 @@ const stages = [
         <div className="border-t pt-4 space-y-4" style={{ borderColor: "hsl(210 30% 20%)" }}>
           <div>
             <SectionLabel>Temporal Alignment Layer</SectionLabel>
-            <p className="font-mono text-xs" style={{ color: "hsl(40 20% 75%)" }}>
+            <p className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>
               Event Sequence Mapping & Temporal Anomaly Detection
             </p>
           </div>
           <div>
             <SectionLabel>Hyper-Relational Matrix</SectionLabel>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-3">
               {["Deep Graph Synthesis", "Entity Relationships", "Confidence Weighted"].map((g, i) => (
-                <span key={i} className="px-3 py-1.5 font-mono text-[10px] rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(210 60% 65%)" }}>
+                <span key={i} className="px-4 py-2 font-mono text-xs rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(210 60% 65%)" }}>
                   {g}
                 </span>
               ))}
@@ -165,22 +165,22 @@ const stages = [
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
           <SectionLabel>Constitutional Framework</SectionLabel>
-          <ul className="space-y-1.5">
+          <ul className="space-y-2">
             {["Sequence Rules & Agent Constraints", "Evidence Definitions & Traceability", "Diversity & Coverage Mandates", "Quality Scoring Baselines"].map((f, i) => (
-              <li key={i} className="font-mono text-xs" style={{ color: "hsl(40 20% 75%)" }}>{f}</li>
+              <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{f}</li>
             ))}
           </ul>
         </div>
         <div>
           <SectionLabel>Coordinated Agentic Array</SectionLabel>
-          <div className="flex flex-wrap gap-2 mb-3">
+          <div className="flex flex-wrap gap-3 mb-4">
             {["Noise Auditor", "Clustering Agent", "Stat Verifier", "Risk Detect"].map((a, i) => (
-              <span key={i} className="px-3 py-1.5 font-mono text-[10px] rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(40 20% 75%)" }}>
+              <span key={i} className="px-4 py-2 font-mono text-xs rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(40 20% 75%)" }}>
                 {a}
               </span>
             ))}
           </div>
-          <p className="font-mono text-[10px]" style={{ color: "hsl(210 50% 55%)" }}>
+          <p className="font-mono text-sm" style={{ color: "hsl(210 50% 55%)" }}>
             → Narrative Synthesis & Quality Scoring
           </p>
         </div>
@@ -195,27 +195,27 @@ const stages = [
       <div className="space-y-5">
         <div>
           <SectionLabel>Embedded Validation Gate</SectionLabel>
-          <ul className="space-y-1">
-            <li className="font-mono text-xs" style={{ color: "hsl(40 20% 75%)" }}>1. Evidence Linking (trace to source graph)</li>
-            <li className="font-mono text-xs" style={{ color: "hsl(40 20% 75%)" }}>2. Coverage Checks (representational balance)</li>
+          <ul className="space-y-2">
+            <li className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>1. Evidence Linking (trace to source graph)</li>
+            <li className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>2. Coverage Checks (representational balance)</li>
           </ul>
         </div>
         <div className="border-t pt-4" style={{ borderColor: "hsl(210 30% 20%)" }}>
           <SectionLabel>Configurable Deliverables</SectionLabel>
-          <div className="flex flex-wrap gap-2 mb-2">
+          <div className="flex flex-wrap gap-3 mb-3">
             {["Executive Briefs", "Thematic Boards", "Presentations"].map((d, i) => (
-              <span key={i} className="px-3 py-1.5 font-mono text-[10px] rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(40 20% 75%)" }}>
+              <span key={i} className="px-4 py-2 font-mono text-xs rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(40 20% 75%)" }}>
                 {d}
               </span>
             ))}
           </div>
-          <p className="font-mono text-[10px]" style={{ color: "hsl(210 40% 45%)" }}>
+          <p className="font-mono text-sm" style={{ color: "hsl(210 40% 45%)" }}>
             Fully customisable: tone, corporate formatting, and visual identity.
           </p>
         </div>
         <div className="border-t pt-4" style={{ borderColor: "hsl(210 30% 20%)" }}>
           <SectionLabel>Enterprise Integration Delivery</SectionLabel>
-          <p className="font-mono text-xs" style={{ color: "hsl(40 20% 75%)" }}>
+          <p className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>
             Automated push to CRMs, BI Dashboards, CMS, and Internal Knowledge Bases.
           </p>
         </div>
