@@ -58,6 +58,12 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-sans);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   h1, h2, h3, h4 {
