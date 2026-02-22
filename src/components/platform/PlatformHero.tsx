@@ -36,26 +36,28 @@ const PlatformHero = () => {
   }, [next]);
 
   return (
-    <section className="min-h-screen flex items-center px-8 md:px-16">
-      <div className="max-w-7xl mx-auto pt-24 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-        {/* Left: text */}
-        <div className="lg:w-[45%] flex-shrink-0">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[0.9] mb-8 text-foreground tracking-tight">
-            Intelligence Studio
+    <section className="min-h-screen flex flex-col justify-center px-8 md:px-16">
+      <div className="max-w-7xl mx-auto pt-32 w-full">
+        {/* Text — left-aligned, matching Security/About hero style */}
+        <div className="max-w-3xl mb-16">
+          <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-8 text-foreground tracking-tight">
+            Intelligence
+            <br />
+            Studio
             <span
-              className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-1 align-baseline animate-pulse"
-              style={{ backgroundColor: "hsl(210 60% 55%)" }}
+              className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-2 animate-pulse"
+              style={{ backgroundColor: "hsl(210 60% 55%)", verticalAlign: "0.1em" }}
             />
           </h1>
-          <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+          <p className="text-base md:text-lg text-muted-foreground max-w-md leading-relaxed">
             We transform raw, unstructured signal into validated, source-traced
             intelligence. Built for organisations where accuracy is non-negotiable.
           </p>
         </div>
 
-        {/* Right: carousel */}
-        <div className="lg:w-[55%] w-full">
-          <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden border border-foreground/10 shadow-2xl">
+        {/* Carousel — full width, bigger */}
+        <div className="w-full">
+          <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-foreground/10 shadow-2xl">
             {slides.map((slide, i) => (
               <div
                 key={i}
@@ -68,7 +70,10 @@ const PlatformHero = () => {
                 }}
               >
                 {/* Placeholder mockup content */}
-                <div className="w-[85%] h-[75%] rounded-lg border border-white/10 p-6 flex flex-col gap-4" style={{ background: "hsl(210 20% 8% / 0.6)" }}>
+                <div
+                  className="w-[90%] h-[80%] rounded-lg border border-white/10 p-6 flex flex-col gap-4"
+                  style={{ background: "hsl(210 20% 8% / 0.6)" }}
+                >
                   {/* Top bar */}
                   <div className="flex items-center gap-3">
                     <div className="flex gap-1.5">
@@ -81,7 +86,6 @@ const PlatformHero = () => {
                   {/* Content grid */}
                   <div className="flex-1 grid grid-cols-3 gap-3">
                     <div className="col-span-2 rounded-lg bg-white/5 flex items-end p-4">
-                      {/* Chart bars */}
                       <div className="flex items-end gap-2 w-full h-[60%]">
                         {[65, 40, 80, 55, 90, 45, 70, 60].map((h, j) => (
                           <div
@@ -110,7 +114,10 @@ const PlatformHero = () => {
                 </div>
 
                 {/* Slide label */}
-                <p className="font-mono text-xs tracking-widest uppercase mt-4" style={{ color: slide.accent }}>
+                <p
+                  className="font-mono text-xs tracking-widest uppercase mt-4"
+                  style={{ color: slide.accent }}
+                >
                   {slide.label}
                 </p>
               </div>

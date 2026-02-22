@@ -1,23 +1,21 @@
-import { Zap, Users, BookOpen } from "lucide-react";
-
 const values = [
   {
-    icon: Zap,
-    title: "Move fast, stay sharp",
+    number: "01",
+    title: "Accelerate without compromise",
     description:
-      "Streamline your entire process, from researching, drafting to reviewing. Your teams will stay focused on delivering world-class work.",
+      "Streamline research, drafting, and review into a single flow. Your teams stay focused on delivering world-class work — faster.",
   },
   {
-    icon: Users,
+    number: "02",
     title: "Collaborate with confidence",
     description:
-      "One platform for firms and corporations to collaborate securely across every document, workflow, and email. Connect internally and externally without sacrificing control.",
+      "One platform for firms and corporations to collaborate securely across every document, workflow, and communication channel.",
   },
   {
-    icon: BookOpen,
-    title: "Put your knowledge to work",
+    number: "03",
+    title: "Unlock institutional knowledge",
     description:
-      "Your institutional knowledge, from documents and data to trusted third-party sources, unified in one environment built for precision.",
+      "Your documents, data, and trusted third-party sources — unified in one governed environment built for precision.",
   },
 ];
 
@@ -29,18 +27,17 @@ const WhyHarvey = () => {
           Why the top performers choose Rubiklab
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden border border-border">
           {values.map((v, i) => (
             <div
               key={i}
-              className="relative p-8 rounded-xl bg-card border border-border overflow-hidden group hover:border-foreground/20 transition-colors"
+              className="bg-card p-10 flex flex-col justify-between min-h-[280px] group hover:bg-secondary/50 transition-colors"
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-3xl" />
-              <div className="relative z-10">
-                <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center mb-6">
-                  <v.icon className="w-6 h-6 text-foreground" />
-                </div>
-                <h3 className="text-xl font-serif font-semibold text-foreground mb-4">
+              <span className="text-xs font-mono text-muted-foreground/50 tracking-widest">
+                {v.number}
+              </span>
+              <div className="mt-auto">
+                <h3 className="text-xl font-serif font-semibold text-foreground mb-4 leading-snug">
                   {v.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
