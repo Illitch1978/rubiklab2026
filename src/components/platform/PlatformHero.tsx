@@ -1,26 +1,14 @@
 import { useState, useEffect, useCallback } from "react";
+import platformSlide1 from "@/assets/platform-slide-1.png";
+import platformSlide2 from "@/assets/platform-slide-2.png";
+import platformSlide3 from "@/assets/platform-slide-3.png";
+import platformSlide4 from "@/assets/platform-slide-4.png";
 
 const slides = [
-  {
-    label: "Dashboard",
-    bg: "hsl(210 25% 12%)",
-    accent: "hsl(210 60% 55%)",
-  },
-  {
-    label: "Analysis View",
-    bg: "hsl(220 25% 12%)",
-    accent: "hsl(190 60% 50%)",
-  },
-  {
-    label: "Report Builder",
-    bg: "hsl(200 25% 12%)",
-    accent: "hsl(40 60% 55%)",
-  },
-  {
-    label: "Signal Explorer",
-    bg: "hsl(215 25% 12%)",
-    accent: "hsl(280 50% 55%)",
-  },
+  { label: "Dashboard", image: platformSlide1 },
+  { label: "Data Audit", image: platformSlide2 },
+  { label: "Analysis View", image: platformSlide3 },
+  { label: "Key Learnings", image: platformSlide4 },
 ];
 
 const PlatformHero = () => {
@@ -54,65 +42,22 @@ const PlatformHero = () => {
 
         {/* Right: carousel — 65% width for larger display */}
         <div className="lg:w-[65%] w-full">
-          <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden border border-foreground/10 shadow-2xl">
+          <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden border border-foreground/10 shadow-2xl bg-muted">
             {slides.map((slide, i) => (
               <div
                 key={i}
-                className="absolute inset-0 flex flex-col items-center justify-center transition-all duration-700 ease-in-out"
+                className="absolute inset-0 transition-all duration-700 ease-in-out"
                 style={{
-                  background: slide.bg,
                   opacity: i === active ? 1 : 0,
                   transform: i === active ? "scale(1)" : "scale(0.96)",
                   pointerEvents: i === active ? "auto" : "none",
                 }}
               >
-                <div
-                  className="w-[90%] h-[80%] rounded-lg border border-white/10 p-6 flex flex-col gap-4"
-                  style={{ background: "hsl(210 20% 8% / 0.6)" }}
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="flex gap-1.5">
-                      <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
-                    </div>
-                    <div className="flex-1 h-5 rounded bg-white/5" />
-                  </div>
-                  <div className="flex-1 grid grid-cols-3 gap-3">
-                    <div className="col-span-2 rounded-lg bg-white/5 flex items-end p-4">
-                      <div className="flex items-end gap-2 w-full h-[60%]">
-                        {[65, 40, 80, 55, 90, 45, 70, 60].map((h, j) => (
-                          <div
-                            key={j}
-                            className="flex-1 rounded-t transition-all duration-500"
-                            style={{
-                              height: `${h}%`,
-                              background: i === active ? slide.accent : "hsl(210 20% 25%)",
-                              opacity: i === active ? 0.8 : 0.3,
-                            }}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-3">
-                      <div className="flex-1 rounded-lg bg-white/5 p-3">
-                        <div className="w-full h-3 rounded bg-white/10 mb-2" />
-                        <div className="w-2/3 h-3 rounded bg-white/10" />
-                      </div>
-                      <div className="flex-1 rounded-lg bg-white/5 p-3">
-                        <div className="w-full h-3 rounded bg-white/10 mb-2" />
-                        <div className="w-1/2 h-3 rounded bg-white/10" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <p
-                  className="font-mono text-xs tracking-widest uppercase mt-4"
-                  style={{ color: slide.accent }}
-                >
-                  {slide.label}
-                </p>
+                <img
+                  src={slide.image}
+                  alt={slide.label}
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
             ))}
           </div>
@@ -124,7 +69,7 @@ const PlatformHero = () => {
                 onClick={() => setActive(i)}
                 className="w-2 h-2 rounded-full transition-all duration-300 focus:outline-none"
                 style={{
-                  background: i === active ? slides[active].accent : "hsl(210 20% 30%)",
+                  background: i === active ? "hsl(210 60% 55%)" : "hsl(210 20% 30%)",
                   transform: i === active ? "scale(1.3)" : "scale(1)",
                 }}
               />
