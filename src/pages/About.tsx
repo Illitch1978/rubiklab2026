@@ -23,7 +23,7 @@ const emphasis =
 
 const About = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       {/* ═══ VIDEO HERO ═══ */}
       <div className="relative min-h-screen overflow-hidden">
         {/* Static poster shown immediately to prevent flicker */}

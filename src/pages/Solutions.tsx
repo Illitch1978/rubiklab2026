@@ -124,7 +124,7 @@ const Solutions = () => {
   }, [slides.length]);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar />
 
       {/* ═══ FULL VIEWPORT HERO ═══ */}

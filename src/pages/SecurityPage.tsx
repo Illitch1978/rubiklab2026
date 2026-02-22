@@ -9,7 +9,7 @@ import SecurityBlog from "@/components/security/SecurityBlog";
 
 const SecurityPage = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
 
       {/* 1 — Dark: Hero */}
