@@ -1,8 +1,21 @@
+import { useState, useEffect, useMemo } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import aboutHeroVideo from "@/assets/about-hero.mp4";
-import aboutHeroPoster from "@/assets/about-hero-poster.png";
+import aboutSlide1 from "@/assets/about-slide-1.png";
+import aboutSlide2 from "@/assets/about-slide-2.png";
+import aboutSlide3 from "@/assets/about-slide-3.png";
+import aboutSlide4 from "@/assets/about-slide-4.png";
 
+const aboutSlides = [aboutSlide1, aboutSlide2, aboutSlide3, aboutSlide4];
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 /* ── LOCKED TYPE SYSTEM ──────────────────────────────────────────────
  * H2  – All section heads:  text-[36px] md:text-[44px] lg:text-[52px]
  * Body:                     text-[16px] md:text-[17px] lg:text-[18px]
@@ -21,39 +34,66 @@ const smallText =
 const emphasis =
   "text-[16px] md:text-[17px] lg:text-[18px] leading-[1.6] text-foreground font-medium max-w-[60ch]";
 
+const AboutHeroSection = () => {
+  const slides = useMemo(() => shuffle(aboutSlides), []);
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
+  return (
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Static first image to prevent flicker */}
+      <img
+        src={aboutSlide1}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      {/* Sliding images */}
+      {slides.map((src, i) => (
+        <div
+          key={i}
+          className="absolute inset-0 transition-opacity duration-[2000ms] ease-[cubic-bezier(0.4,0,0.2,1)]"
+          style={{ opacity: i === current ? 1 : 0 }}
+        >
+          <img
+            src={src}
+            alt={`Rubiklab team ${i + 1}`}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ))}
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/20 to-transparent" />
+      <Navbar />
+      <div className="relative z-10 flex items-center min-h-screen px-8 md:px-16">
+        <div className="max-w-3xl pt-24">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[0.95] mb-8 text-foreground tracking-tight">
+            We build with care
+            <span
+              className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-1 align-baseline animate-pulse"
+              style={{ backgroundColor: "hsl(var(--accent))" }}
+            />
+          </h1>
+          <p className="text-lg md:text-xl text-secondary-foreground max-w-lg leading-relaxed">
+            We help organisations make sense of complexity without sacrificing judgement, depth or integrity.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const About = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
-      {/* ═══ VIDEO HERO ═══ */}
-      <div className="relative min-h-screen overflow-hidden">
-        {/* Static poster shown immediately to prevent flicker */}
-        <img
-          src={aboutHeroPoster}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        {/* Background video layers on top once loaded */}
-        <video
-          src={aboutHeroVideo}
-          poster={aboutHeroPoster}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        {/* Gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/30 to-transparent" />
-        <Navbar />
-        <div className="relative z-10 flex items-center min-h-screen px-8 md:px-16">
-          <div className="max-w-6xl mx-auto pt-24">
-            <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-20 text-foreground tracking-tight max-w-4xl">
-              Why Rubiklab exists
-            </h1>
-          </div>
-        </div>
-      </div>
+      {/* ═══ IMAGE SLIDESHOW HERO ═══ */}
+      <AboutHeroSection />
 
       {/* ═══ LIGHT NARRATIVE CHAPTER ═══ */}
       <div className="theme-light bg-background text-foreground">
