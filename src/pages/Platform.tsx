@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PlatformHero from "@/components/platform/PlatformHero";
+import PipelineOverview from "@/components/platform/PipelineOverview";
 import ProductsGrid from "@/components/platform/ProductsGrid";
 import WhyHarvey from "@/components/platform/WhyHarvey";
 import PlatformStats from "@/components/platform/PlatformStats";
@@ -13,6 +14,7 @@ const Platform = () => {
     <div className="min-h-screen theme-light bg-background text-foreground">
       <Navbar light />
       <PlatformHero />
+      <PipelineOverview />
       <ProductsGrid />
       <WhyHarvey />
       <PlatformStats />
