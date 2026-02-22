@@ -5,11 +5,8 @@ const ProductsGrid = () => {
         <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-4">
           Experience Studio in action
         </h3>
-        <p className="text-base text-muted-foreground max-w-xl mx-auto leading-relaxed mb-3">
+        <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">
           Explore a real project environment with live data, structured reasoning and traceable outputs.
-        </p>
-        <p className="text-sm text-muted-foreground/70 mb-10">
-          This is a live project environment. The same system our clients use.
         </p>
         <a
           href="#"
