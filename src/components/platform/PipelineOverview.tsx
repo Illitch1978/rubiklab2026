@@ -310,7 +310,7 @@ const PipelineOverview = () => {
 
           {/* Active stage detail card */}
           <div
-            className="border rounded-lg p-6 md:p-8 transition-all duration-300 min-h-[420px]"
+            className="border rounded-lg p-6 md:p-8 transition-all duration-300 h-[420px] overflow-y-auto"
             style={{ borderColor: "hsl(210 30% 20%)", background: "hsl(210 25% 7%)" }}
           >
             <div className="flex items-baseline gap-3 mb-2">
