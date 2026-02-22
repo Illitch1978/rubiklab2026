@@ -4,7 +4,7 @@ const points = [
     text: "AI interacts only with prepared, classified data. Deterministic pipelines come first.",
   },
   {
-    title: "Diverse signal, not narrow datasets",
+    title: "Diverse signal",
     text: "Legacy knowledge and live external data coexist in one governed environment.",
   },
   {

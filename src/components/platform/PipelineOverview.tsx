@@ -84,7 +84,7 @@ const PipelineOverview = () => {
               Six stages from raw signal to validated intelligence
             </h2>
             <p className="text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: "hsl(210 15% 55%)" }}>
-              Every output in Studio follows a disciplined, traceable path. Click each stage to see how intelligence is built.
+              Every output follows a disciplined, traceable path. Click each stage to see how intelligence is built.
             </p>
           </div>
 
