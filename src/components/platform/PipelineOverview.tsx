@@ -1,220 +1,48 @@
 import { useState } from "react";
 
-/* ── Sub-components ── */
-
-const Chip = ({ label, detail }: { label: string; detail: string }) => (
-  <div
-    className="px-4 py-3 rounded border font-mono"
-    style={{ borderColor: "hsl(210 30% 20%)", background: "hsl(210 25% 9%)" }}
-  >
-    <p className="text-sm font-medium" style={{ color: "hsl(40 20% 80%)" }}>{label}</p>
-    <p className="text-xs mt-0.5" style={{ color: "hsl(210 15% 45%)" }}>{detail}</p>
-  </div>
-);
-
-const FilterStep = ({ num, label, detail }: { num: string; label: string; detail: string }) => (
-  <div className="flex items-start gap-4">
-    <span
-      className="font-mono text-xs font-semibold w-8 h-8 flex items-center justify-center rounded border flex-shrink-0 mt-0.5"
-      style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(210 60% 60%)" }}
-    >
-      {num}
-    </span>
-    <div>
-      <p className="font-mono text-sm font-medium" style={{ color: "hsl(40 20% 80%)" }}>{label}</p>
-      <p className="font-mono text-xs mt-0.5" style={{ color: "hsl(210 15% 45%)" }}>{detail}</p>
-    </div>
-  </div>
-);
-
-const SectionLabel = ({ children }: { children: React.ReactNode }) => (
-  <p className="font-mono text-xs tracking-[0.15em] uppercase mb-4" style={{ color: "hsl(210 50% 50%)" }}>
-    {children}
-  </p>
-);
-
-const FlowLabel = ({ children }: { children: React.ReactNode }) => (
-  <div className="mt-5 pt-4 border-t" style={{ borderColor: "hsl(210 30% 20%)" }}>
-    <p className="font-mono text-sm font-medium tracking-wide" style={{ color: "hsl(210 60% 55%)" }}>
-      ↓ {children}
-    </p>
-  </div>
-);
-
 /* ── Stage data ── */
 const stages = [
   {
     num: "01",
     title: "Raw Signal Ingestion",
-    subtitle: "Absorb all knowledge in one place. Zero structural limitations.",
-    content: (
-      <div className="space-y-6">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {[
-            { label: "Reports & Docs", detail: "(PDF, PPTX, DOCX)" },
-            { label: "Global Coverage", detail: "50+ languages" },
-            { label: "Media Streams", detail: "Audio & video" },
-            { label: "Scale Intake", detail: "100,000+ deep sources" },
-            { label: "Financial Data", detail: "Transactional sheets" },
-            { label: "Social & Reputation", detail: "Reviews, forums & press" },
-          ].map((c, i) => (
-            <Chip key={i} label={c.label} detail={c.detail} />
-          ))}
-        </div>
-        <FlowLabel>Unified Signal Intake Gate</FlowLabel>
-      </div>
-    ),
+    what: "We absorb knowledge in its native form. Reports, transcripts, dashboards, archives and live external feeds enter a single controlled environment. Nothing is summarised yet. Nothing is guessed.",
+    why: "Reliable intelligence begins with complete input. Fragmented sources create blind spots.",
+    sees: "A unified intake view showing every imported source, format and language — all timestamped and tracked.",
   },
   {
     num: "02",
     title: "Noise Filtration Gate",
-    subtitle: "Rubiklab's 25-step protocol for defensible foundations.",
-    content: (
-      <div className="space-y-6">
-        <div className="space-y-3">
-          {[
-            { num: "I", label: "Signal Integrity Layer", detail: "Parsing & packet validation" },
-            { num: "II", label: "Bot & Synthetic Detection", detail: "Filters automated / LLM-amplified loops" },
-            { num: "III", label: "Duplicate Suppression", detail: "Prevents artificial signal inflation" },
-            { num: "IV", label: "Credibility Filtering", detail: "Source scoring & anomaly culling" },
-          ].map((f, i) => (
-            <FilterStep key={i} num={f.num} label={f.label} detail={f.detail} />
-          ))}
-        </div>
-        <FlowLabel>Clean State Validated · Zero-Noise Feed</FlowLabel>
-      </div>
-    ),
+    what: "A 25-step protocol removes duplicates, detects synthetic content and scores source credibility. Automated loops, bot-generated noise and anomalies are filtered before any analysis begins.",
+    why: "Conclusions drawn from dirty data are unreliable. Clean foundations make every downstream step defensible.",
+    sees: "A filtration log showing what was removed, why, and how many signals passed through to the next stage.",
   },
   {
     num: "03",
     title: "Harmonisation Substrate",
-    subtitle: "Converting into an analytical structure. No generation yet.",
-    content: (
-      <div className="grid sm:grid-cols-2 gap-6">
-        <div>
-          <SectionLabel>Substrate Processing Pipeline</SectionLabel>
-          <ol className="space-y-2">
-            {["Language Standardisation", "Tokenisation & Parsing", "Metadata Enrichment", "Named Entity Extraction", "Chronology Alignment", "Provenance & Source Tags", "PII Governance Controls"].map((s, i) => (
-              <li key={i} className="font-mono text-sm flex gap-2" style={{ color: "hsl(40 20% 75%)" }}>
-                <span style={{ color: "hsl(210 50% 45%)" }}>{i + 1}.</span>
-                {s}
-              </li>
-            ))}
-          </ol>
-        </div>
-        <div>
-          <SectionLabel>Applied Mathematical Techniques</SectionLabel>
-          <ul className="space-y-2">
-            {["NLP Multi-lingual Pipelines", "High-Dimensional Embedding", "Deep Statistical Normalisation"].map((t, i) => (
-              <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{t}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    ),
+    what: "Validated signals are standardised across languages, enriched with metadata and aligned chronologically. Named entities are extracted and provenance tags are attached to every fragment.",
+    why: "Analysis requires structured data. Without harmonisation, patterns stay hidden inside incompatible formats.",
+    sees: "A structured data view with enriched entities, timeline alignment and source provenance for every signal.",
   },
   {
     num: "04",
     title: "Hybrid Intelligence Engine",
-    subtitle: "Combining semantic, statistical, and relational analysis.",
-    content: (
-      <div className="grid sm:grid-cols-3 gap-6">
-        <div>
-          <SectionLabel>Semantic Axis</SectionLabel>
-          <ul className="space-y-1.5">
-            {["Embedding indexing", "Context similarity", "Topic modelling", "N-dim clustering"].map((s, i) => (
-              <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{s}</li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <SectionLabel>Statistical Axis</SectionLabel>
-          <ul className="space-y-1.5">
-            {["Frequency distribution", "Co-occurrence", "Sentiment bias", "Corroboration"].map((s, i) => (
-              <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{s}</li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <SectionLabel>Temporal & Relational</SectionLabel>
-          <p className="font-mono text-sm mb-3" style={{ color: "hsl(40 20% 75%)" }}>
-            Event Sequence Mapping & Anomaly Detection
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {["Graph Synthesis", "Entity Relations", "Confidence Weighted"].map((g, i) => (
-              <span key={i} className="px-3 py-1.5 font-mono text-xs rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(210 60% 65%)" }}>
-                {g}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
-    ),
+    what: "Three analytical axes work simultaneously: semantic similarity and clustering, statistical frequency and co-occurrence, and temporal event-sequence mapping with anomaly detection.",
+    why: "Single-method analysis misses complexity. Combining approaches surfaces patterns no single technique would find alone.",
+    sees: "A multi-layer analysis dashboard showing clusters, statistical correlations and event timelines — all interlinked.",
   },
   {
     num: "05",
     title: "Constitutional Orchestration",
-    subtitle: "Governance layer defining rules and interacting agents.",
-    content: (
-      <div className="grid sm:grid-cols-2 gap-6">
-        <div>
-          <SectionLabel>Constitutional Framework</SectionLabel>
-          <ul className="space-y-2">
-            {["Sequence Rules & Agent Constraints", "Evidence Definitions & Traceability", "Diversity & Coverage Mandates", "Quality Scoring Baselines"].map((f, i) => (
-              <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{f}</li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <SectionLabel>Coordinated Agentic Array</SectionLabel>
-          <div className="flex flex-wrap gap-3 mb-4">
-            {["Noise Auditor", "Clustering Agent", "Stat Verifier", "Risk Detect"].map((a, i) => (
-              <span key={i} className="px-4 py-2 font-mono text-xs rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(40 20% 75%)" }}>
-                {a}
-              </span>
-            ))}
-          </div>
-          <p className="font-mono text-sm" style={{ color: "hsl(210 50% 55%)" }}>
-            → Narrative Synthesis & Quality Scoring
-          </p>
-        </div>
-      </div>
-    ),
+    what: "A governance layer defines agent rules, evidence standards and quality baselines. Coordinated agents — noise auditors, clustering agents, statistical verifiers — execute within strict constitutional constraints.",
+    why: "Uncontrolled AI produces inconsistent results. Constitutional rules ensure every output meets defined quality thresholds.",
+    sees: "An orchestration panel showing active agents, their rules, quality scores and the narrative they are building.",
   },
   {
     num: "06",
-    title: "Validation & Configuration",
-    subtitle: "Secure output gates and methodology formatting.",
-    content: (
-      <div className="grid sm:grid-cols-3 gap-6">
-        <div>
-          <SectionLabel>Embedded Validation Gate</SectionLabel>
-          <ul className="space-y-1.5">
-            <li className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>1. Evidence Linking (trace to source graph)</li>
-            <li className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>2. Coverage Checks (representational balance)</li>
-          </ul>
-        </div>
-        <div>
-          <SectionLabel>Configurable Deliverables</SectionLabel>
-          <div className="flex flex-wrap gap-2 mb-3">
-            {["Executive Briefs", "Thematic Boards", "Presentations"].map((d, i) => (
-              <span key={i} className="px-3 py-1.5 font-mono text-xs rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(40 20% 75%)" }}>
-                {d}
-              </span>
-            ))}
-          </div>
-          <p className="font-mono text-xs" style={{ color: "hsl(210 40% 45%)" }}>
-            Customisable tone, formatting & visual identity.
-          </p>
-        </div>
-        <div>
-          <SectionLabel>Enterprise Integration</SectionLabel>
-          <p className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>
-            Automated push to CRMs, BI Dashboards, CMS, and Internal Knowledge Bases.
-          </p>
-        </div>
-      </div>
-    ),
+    title: "Validation & Delivery",
+    what: "Outputs pass through evidence-linking and coverage checks. Deliverables — executive briefs, thematic boards, presentations — are configured to your tone, format and visual identity.",
+    why: "Intelligence is only useful if it is trusted. Validation gates ensure nothing leaves the system without traceable evidence.",
+    sees: "A delivery console with configurable output formats, evidence trails and direct push to CRMs, dashboards or knowledge bases.",
   },
 ];
 
@@ -248,20 +76,21 @@ const PipelineOverview = () => {
         <div className="max-w-[1120px] mx-auto">
 
           {/* Header */}
-          <div className="mb-12 md:mb-16">
+          <div className="mb-8 md:mb-12">
             <p className="font-mono text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "hsl(210 60% 55%)" }}>
               System Architecture // Intelligence Studio
             </p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight max-w-3xl" style={{ color: "hsl(40 30% 90%)" }}>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight max-w-3xl mb-5" style={{ color: "hsl(40 30% 90%)" }}>
               Six stages from raw signal to validated intelligence
             </h2>
+            <p className="text-base md:text-lg leading-relaxed max-w-2xl" style={{ color: "hsl(210 15% 55%)" }}>
+              Every output in Studio follows a disciplined, traceable path. Click each stage to see how intelligence is built.
+            </p>
           </div>
 
           {/* Horizontal stepper bar */}
           <div className="relative mb-10">
-            {/* Connector line */}
             <div className="absolute top-[24px] left-0 right-0 h-px" style={{ background: "hsl(210 50% 25%)" }} />
-
             <div className="relative flex justify-between">
               {stages.map((stage, i) => {
                 const isActive = i === active;
@@ -273,7 +102,6 @@ const PipelineOverview = () => {
                     className="group flex flex-col items-center gap-3 relative z-10 focus:outline-none"
                     style={{ flex: 1 }}
                   >
-                    {/* Node */}
                     <div
                       className="w-[44px] h-[44px] md:w-[52px] md:h-[52px] rounded-sm border flex items-center justify-center transition-all duration-300"
                       style={{
@@ -289,7 +117,6 @@ const PipelineOverview = () => {
                         {stage.num}
                       </span>
                     </div>
-                    {/* Title (hidden on small screens) */}
                     <span
                       className="hidden lg:block font-mono text-[11px] tracking-wide text-center leading-tight max-w-[140px] transition-colors duration-300"
                       style={{ color: isActive ? "hsl(40 30% 85%)" : "hsl(210 15% 40%)" }}
@@ -304,7 +131,7 @@ const PipelineOverview = () => {
 
           {/* Active stage detail card */}
           <div
-            className="border rounded-lg p-6 md:p-8 transition-all duration-300 h-[420px] overflow-y-auto"
+            className="border rounded-lg p-6 md:p-8 transition-all duration-300"
             style={{ borderColor: "hsl(210 30% 20%)", background: "hsl(210 25% 7%)" }}
           >
             <div className="flex items-baseline gap-3 mb-2">
@@ -315,10 +142,29 @@ const PipelineOverview = () => {
                 {current.title}
               </h3>
             </div>
-            <p className="text-base mb-6 leading-relaxed" style={{ color: "hsl(210 15% 50%)" }}>
-              {current.subtitle}
+
+            <p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: "hsl(40 20% 75%)" }}>
+              {current.what}
             </p>
-            {current.content}
+
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="border rounded-md p-5" style={{ borderColor: "hsl(210 30% 18%)", background: "hsl(210 25% 9%)" }}>
+                <p className="font-mono text-xs tracking-[0.15em] uppercase mb-3" style={{ color: "hsl(210 50% 50%)" }}>
+                  Why this matters
+                </p>
+                <p className="text-sm leading-relaxed" style={{ color: "hsl(210 15% 55%)" }}>
+                  {current.why}
+                </p>
+              </div>
+              <div className="border rounded-md p-5" style={{ borderColor: "hsl(210 30% 18%)", background: "hsl(210 25% 9%)" }}>
+                <p className="font-mono text-xs tracking-[0.15em] uppercase mb-3" style={{ color: "hsl(210 50% 50%)" }}>
+                  What you see
+                </p>
+                <p className="text-sm leading-relaxed" style={{ color: "hsl(210 15% 55%)" }}>
+                  {current.sees}
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Prev / Next nav */}
