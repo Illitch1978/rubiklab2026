@@ -1,15 +1,15 @@
 const benefits = [
   {
     title: "Research in days, not weeks",
-    text: "Studio compresses complex research cycles. What once required weeks of consolidation, validation and reporting can now be completed in a single working day.",
+    text: "Studio compresses complex research cycles. What once required weeks of consolidation and validation can now be completed in a single working day.",
   },
   {
     title: "No more summaries of summaries",
-    text: "Insights are built from prepared, classified data. Outputs are traceable to original sources. No recursive summarisation. No guesswork layered on guesswork.",
+    text: "Insights are built from prepared, classified data. Outputs are traceable to original sources. No recursive summarisation. No guesswork layered on noise.",
   },
   {
     title: "Past work becomes active knowledge",
-    text: "Import legacy reports, studies and internal archives. Add live campaigns and new signals. Studio connects historical context with current data in one continuous environment.",
+    text: "Import legacy reports and internal archives. Add new campaigns and live signals. Studio connects historical context with current data in one continuous environment.",
   },
   {
     title: "Decisions backed by reasoning",

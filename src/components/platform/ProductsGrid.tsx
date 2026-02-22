@@ -9,7 +9,7 @@ const ProductsGrid = () => {
           Explore a real project environment with live data, structured reasoning and traceable outputs.
         </p>
         <p className="text-sm text-muted-foreground/70 mb-10">
-          This is not a simulation. It is how Studio actually works.
+          This is not a demo. It is how Studio actually works.
         </p>
         <a
           href="#"

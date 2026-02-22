@@ -1,6 +1,6 @@
 const quotes = [
   "We used to spend most of our time consolidating material. Now we spend it thinking.",
-  "Bringing ten years of reports into Studio changed how we run new campaigns.",
+  "Bringing ten years of reports into Studio changed how we run our business.",
   "For the first time, our outputs are both faster and more defensible.",
 ];
 

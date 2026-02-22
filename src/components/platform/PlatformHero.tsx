@@ -33,7 +33,7 @@ const PlatformHero = () => {
             />
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-md leading-relaxed">
-            Weeks of research, reduced to a single working day.
+            Weeks of research. One working day.
           </p>
         </div>
 

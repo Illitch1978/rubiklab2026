@@ -2,6 +2,9 @@ const CallToAction = () => {
   return (
     <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border">
       <div className="max-w-3xl mx-auto text-center">
+        <p className="text-base text-muted-foreground mb-6">
+          Intelligence becomes valuable when it is applied.
+        </p>
         <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mb-8">
           Activate your intelligence
         </h3>
