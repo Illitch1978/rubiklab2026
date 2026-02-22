@@ -33,8 +33,7 @@ const PlatformHero = () => {
             />
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-md leading-relaxed">
-            We transform raw, unstructured signal into validated, source-traced
-            intelligence. Built for organisations where accuracy is non-negotiable.
+            Weeks of research, reduced to a single working day.
           </p>
         </div>
 
