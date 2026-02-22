@@ -31,11 +31,11 @@ const PlatformQuotes = () => {
         <div className="grid md:grid-cols-2 gap-10">
           {quotes.map((q, i) => (
             <div key={i}>
-              <blockquote className="text-lg font-serif text-foreground leading-relaxed mb-4">
+              <blockquote className="text-lg font-serif text-foreground leading-[1.7] mb-4">
                 "{q.text}"
               </blockquote>
               <p className="text-sm font-medium text-foreground">{q.name}</p>
-              <p className="text-sm text-muted-foreground">{q.company}</p>
+              <p className="text-xs text-muted-foreground/70 mt-0.5">{q.company}</p>
             </div>
           ))}
         </div>

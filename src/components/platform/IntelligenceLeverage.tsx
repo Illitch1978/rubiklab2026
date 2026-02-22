@@ -1,15 +1,15 @@
 const pillars = [
   {
     title: "Institutional memory",
-    text: "Past work compounds. Every report, study and campaign enriches the next. Knowledge grows with your organisation rather than resetting with each project.",
+    text: "Past work compounds. Every report, analysis and campaign strengthens future output instead of living in isolation.",
   },
   {
     title: "Structured execution",
-    text: "Multi-step research, parallel investigations and final assembly happen in one governed environment. No jumping between tools.",
+    text: "Investigations, comparisons and narratives are built in one governed environment. No jumping between disconnected tools.",
   },
   {
     title: "Defensible decisions",
-    text: "Every conclusion is traceable. Sources are visible. Reasoning can be inspected and challenged before anything is shared externally.",
+    text: "Conclusions are linked to visible data and transparent processing. Outputs can be reviewed and challenged before they are shared.",
   },
 ];
 

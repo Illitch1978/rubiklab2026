@@ -2,43 +2,43 @@ const points = [
   {
     number: "1",
     title: "Your methodology, embedded",
-    text: "Studio does not overwrite how you think. It embeds your structure, your taxonomy, your review process and your brand voice directly into the workflow. Reports follow your format. Outputs reflect your tone. Your team remains in control of how conclusions are shaped and communicated.",
+    text: "Studio works within your existing structure. Your taxonomy, review process and brand voice are part of the workflow. Reports follow your format. Outputs reflect your standards.",
   },
   {
     number: "2",
     title: "From exploration to execution",
-    text: "You can identify a sentiment shift, compare it with your survey tracker, validate it against historical reports and turn it into a campaign narrative in one environment. Confidence metrics and traceable reasoning sit behind every claim. Nothing leaves the room without being grounded.",
+    text: "Track a sentiment shift. Compare it with survey data. Validate against historical reports. Turn it into a campaign narrative. All within one environment, with confidence metrics behind every claim.",
   },
   {
     number: "3",
-    title: "Multiple threads, one outcome",
-    text: "Launch parallel investigations while you explore the data. Compare regions, test hypotheses, build segments, draft insights. Studio keeps everything structured and connected. You assemble the final story in Assisted Deck without jumping between Excel and PowerPoint.",
+    title: "Depth without fragmentation",
+    text: "Legacy knowledge and live campaigns sit together. Historical insight strengthens current analysis automatically.",
   },
   {
     number: "4",
-    title: "Depth without fragmentation",
-    text: "Legacy reports, live campaigns and external signals live together. Historical knowledge informs current work automatically. Teams stop recreating context and start building on it.",
+    title: "Confident before distribution",
+    text: "Every output links back to prepared data and visible processing steps. Assumptions can be reviewed. Reasoning can be challenged.",
   },
   {
     number: "5",
-    title: "Confidence before distribution",
-    text: "Every output is linked to prepared data and visible processing steps. Assumptions can be reviewed. Reasoning can be challenged. Decisions are made with clarity rather than speed alone.",
+    title: "Parallel investigations",
+    text: "Launch multiple lines of inquiry while exploring the data. Compare regions, test hypotheses, generate segments and assemble the final narrative in Assisted Deck without switching tools.",
   },
   {
     number: "6",
-    title: "Work that scales with you",
-    text: "As your library grows, Studio becomes more valuable. Past thinking strengthens present analysis. Institutional knowledge compounds instead of disappearing into folders.",
+    title: "Work that compounds",
+    text: "As your library grows, Studio becomes more valuable. Institutional knowledge accumulates instead of disappearing into folders.",
   },
 ];
 
 const WhyHarvey = () => {
   return (
-    <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border">
+    <section className="py-20 md:py-28 px-8 md:px-16 border-t border-border">
       <div className="max-w-[1120px] mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-16">
+        <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-14">
           How Studio changes the work
         </h2>
-        <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
+        <div className="grid md:grid-cols-2 gap-x-16 gap-y-10">
           {points.map((p, i) => (
             <div key={i}>
               <h3 className="text-lg font-serif font-semibold text-foreground mb-2">
