@@ -117,41 +117,34 @@ const stages = [
     title: "Hybrid Intelligence Engine",
     subtitle: "Combining semantic, statistical, and relational analysis.",
     content: (
-      <div className="space-y-6">
-        <div className="grid sm:grid-cols-2 gap-6">
-          <div>
-            <SectionLabel>Semantic Axis</SectionLabel>
-            <ul className="space-y-2">
-              {["Embedding indexing", "Context similarity", "Topic modelling", "N-dim clustering"].map((s, i) => (
-                <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{s}</li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <SectionLabel>Statistical Axis</SectionLabel>
-            <ul className="space-y-2">
-              {["Frequency distribution", "Co-occurrence", "Sentiment bias", "Corroboration"].map((s, i) => (
-                <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{s}</li>
-              ))}
-            </ul>
-          </div>
+      <div className="grid sm:grid-cols-3 gap-6">
+        <div>
+          <SectionLabel>Semantic Axis</SectionLabel>
+          <ul className="space-y-1.5">
+            {["Embedding indexing", "Context similarity", "Topic modelling", "N-dim clustering"].map((s, i) => (
+              <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{s}</li>
+            ))}
+          </ul>
         </div>
-        <div className="border-t pt-4 space-y-4" style={{ borderColor: "hsl(210 30% 20%)" }}>
-          <div>
-            <SectionLabel>Temporal Alignment Layer</SectionLabel>
-            <p className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>
-              Event Sequence Mapping & Temporal Anomaly Detection
-            </p>
-          </div>
-          <div>
-            <SectionLabel>Hyper-Relational Matrix</SectionLabel>
-            <div className="flex flex-wrap gap-3">
-              {["Deep Graph Synthesis", "Entity Relationships", "Confidence Weighted"].map((g, i) => (
-                <span key={i} className="px-4 py-2 font-mono text-xs rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(210 60% 65%)" }}>
-                  {g}
-                </span>
-              ))}
-            </div>
+        <div>
+          <SectionLabel>Statistical Axis</SectionLabel>
+          <ul className="space-y-1.5">
+            {["Frequency distribution", "Co-occurrence", "Sentiment bias", "Corroboration"].map((s, i) => (
+              <li key={i} className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>{s}</li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <SectionLabel>Temporal & Relational</SectionLabel>
+          <p className="font-mono text-sm mb-3" style={{ color: "hsl(40 20% 75%)" }}>
+            Event Sequence Mapping & Anomaly Detection
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["Graph Synthesis", "Entity Relations", "Confidence Weighted"].map((g, i) => (
+              <span key={i} className="px-3 py-1.5 font-mono text-xs rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(210 60% 65%)" }}>
+                {g}
+              </span>
+            ))}
           </div>
         </div>
       </div>
@@ -192,29 +185,29 @@ const stages = [
     title: "Validation & Configuration",
     subtitle: "Secure output gates and methodology formatting.",
     content: (
-      <div className="space-y-5">
+      <div className="grid sm:grid-cols-3 gap-6">
         <div>
           <SectionLabel>Embedded Validation Gate</SectionLabel>
-          <ul className="space-y-2">
+          <ul className="space-y-1.5">
             <li className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>1. Evidence Linking (trace to source graph)</li>
             <li className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>2. Coverage Checks (representational balance)</li>
           </ul>
         </div>
-        <div className="border-t pt-4" style={{ borderColor: "hsl(210 30% 20%)" }}>
+        <div>
           <SectionLabel>Configurable Deliverables</SectionLabel>
-          <div className="flex flex-wrap gap-3 mb-3">
+          <div className="flex flex-wrap gap-2 mb-3">
             {["Executive Briefs", "Thematic Boards", "Presentations"].map((d, i) => (
-              <span key={i} className="px-4 py-2 font-mono text-xs rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(40 20% 75%)" }}>
+              <span key={i} className="px-3 py-1.5 font-mono text-xs rounded border" style={{ borderColor: "hsl(210 40% 30%)", color: "hsl(40 20% 75%)" }}>
                 {d}
               </span>
             ))}
           </div>
-          <p className="font-mono text-sm" style={{ color: "hsl(210 40% 45%)" }}>
-            Fully customisable: tone, corporate formatting, and visual identity.
+          <p className="font-mono text-xs" style={{ color: "hsl(210 40% 45%)" }}>
+            Customisable tone, formatting & visual identity.
           </p>
         </div>
-        <div className="border-t pt-4" style={{ borderColor: "hsl(210 30% 20%)" }}>
-          <SectionLabel>Enterprise Integration Delivery</SectionLabel>
+        <div>
+          <SectionLabel>Enterprise Integration</SectionLabel>
           <p className="font-mono text-sm" style={{ color: "hsl(40 20% 75%)" }}>
             Automated push to CRMs, BI Dashboards, CMS, and Internal Knowledge Bases.
           </p>
