@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import PlatformHero from "@/components/platform/PlatformHero";
 import PipelineOverview from "@/components/platform/PipelineOverview";
 import ProductsGrid from "@/components/platform/ProductsGrid";
-import PlatformBenefits from "@/components/platform/PlatformBenefits";
+
 import PlatformQuotes from "@/components/platform/PlatformQuotes";
 import WhyHarvey from "@/components/platform/WhyHarvey";
 import IntelligenceLeverage from "@/components/platform/IntelligenceLeverage";
@@ -16,7 +16,7 @@ const Platform = () => {
       <PlatformHero />
       <PipelineOverview />
       <ProductsGrid />
-      <PlatformBenefits />
+      
       <PlatformQuotes />
       <WhyHarvey />
       <IntelligenceLeverage />
