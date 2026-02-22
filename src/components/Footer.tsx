@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4 lg:gap-6 mb-16">
           <div className="col-span-2">
             <div className="flex items-baseline gap-0.5 mb-4">
-              <span className="font-serif text-xl font-bold text-foreground">rubiklab</span>
+              <span className="font-serif text-xl font-bold text-[hsl(0,0%,30%)]">rubiklab</span>
               <span className="w-1.5 h-1.5 rounded-full bg-accent mb-0.5 animate-pulse" />
             </div>
             <p className="text-[13px] md:text-[14px] leading-[1.6] text-muted-foreground max-w-xs">

@@ -35,7 +35,7 @@ const Navbar = ({ light }: NavbarProps) => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 transition-opacity duration-300 ${hidden ? "opacity-0 pointer-events-none" : "opacity-100"}`}>
       <Link to="/" className="flex items-baseline gap-0.5 group">
-        <span className="font-serif text-2xl font-bold tracking-tight text-[hsl(0,0%,30%)] group-hover:text-accent transition-colors">
+        <span className={`font-serif text-2xl font-bold tracking-tight group-hover:text-accent transition-colors ${light ? "text-[hsl(0,0%,30%)]" : "text-foreground"}`}>
           rubiklab
         </span>
         <span className="w-1.5 h-1.5 rounded-full bg-accent mb-0.5 animate-pulse" />
