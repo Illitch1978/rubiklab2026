@@ -51,11 +51,12 @@ const stages = [
       <div className="space-y-6">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {[
-            { label: "Reports & Docs", detail: "Unstructured repositories" },
+            { label: "Reports & Docs", detail: "(PDF, PPTX, DOCX)" },
             { label: "Global Coverage", detail: "50+ languages" },
             { label: "Media Streams", detail: "Audio & video" },
             { label: "Scale Intake", detail: "100,000+ deep sources" },
             { label: "Financial Data", detail: "Transactional sheets" },
+            { label: "Social & Reputation", detail: "Reviews, forums & press" },
           ].map((c, i) => (
             <Chip key={i} label={c.label} detail={c.detail} />
           ))}

@@ -42,11 +42,14 @@ const PlatformHero = () => {
         <div className="lg:w-[45%] flex-shrink-0">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[0.9] mb-8 text-foreground tracking-tight">
             Intelligence Studio
+            <span
+              className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-1 align-baseline animate-pulse"
+              style={{ backgroundColor: "hsl(210 60% 55%)" }}
+            />
           </h1>
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            A six-stage architecture that transforms raw, unstructured signal
-            into validated, source-traced intelligence. Built for organisations
-            where accuracy is non-negotiable.
+            We transform raw, unstructured signal into validated, source-traced
+            intelligence. Built for organisations where accuracy is non-negotiable.
           </p>
         </div>
 
