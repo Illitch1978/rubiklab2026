@@ -1,27 +1,33 @@
 const points = [
   {
-    title: "Method before model",
-    text: "Every project begins with preparation. Data is classified, structured and validated before analysis begins. Your frameworks, taxonomies and internal standards shape the work. Studio respects your methodology rather than replacing it.",
+    number: "1",
+    title: "Your methodology, embedded",
+    text: "Studio does not overwrite how you think. It embeds your structure, your taxonomy, your review process and your brand voice directly into the workflow. Reports follow your format. Outputs reflect your tone. Your team remains in control of how conclusions are shaped and communicated.",
   },
   {
-    title: "Diverse signal",
-    text: "Internal archives, live external sources, surveys and market data sit in one governed environment. Teams can compare sentiment shifts with tracker results, campaign performance and historical insight in a single, connected view.",
+    number: "2",
+    title: "From exploration to execution",
+    text: "You can identify a sentiment shift, compare it with your survey tracker, validate it against historical reports and turn it into a campaign narrative in one environment. Confidence metrics and traceable reasoning sit behind every claim. Nothing leaves the room without being grounded.",
   },
   {
-    title: "Depth without distortion",
-    text: "Reports follow your structure, your level of rigour and your tone of voice. Outputs are long form when needed, branded correctly, aligned to client expectations and built with traceable evidence behind every claim.",
+    number: "3",
+    title: "Multiple threads, one outcome",
+    text: "Launch parallel investigations while you explore the data. Compare regions, test hypotheses, build segments, draft insights. Studio keeps everything structured and connected. You assemble the final story in Assisted Deck without jumping between Excel and PowerPoint.",
   },
   {
-    title: "Workflow continuity",
-    text: "Studio integrates into how teams already operate. Multiple tasks can run in parallel while you explore data. Analysis, comparisons, summaries and structured outputs evolve together inside one environment rather than across spreadsheets and slide decks.",
+    number: "4",
+    title: "Depth without fragmentation",
+    text: "Legacy reports, live campaigns and external signals live together. Historical knowledge informs current work automatically. Teams stop recreating context and start building on it.",
   },
   {
-    title: "Transparent reasoning",
-    text: "Every conclusion is linked to prepared data and visible processing steps. Confidence indicators are explicit. Assumptions can be reviewed. Sources can be inspected before anything is shared externally.",
+    number: "5",
+    title: "Confidence before distribution",
+    text: "Every output is linked to prepared data and visible processing steps. Assumptions can be reviewed. Reasoning can be challenged. Decisions are made with clarity rather than speed alone.",
   },
   {
-    title: "Orchestrated execution",
-    text: "Studio enables structured, multi-step work. Themes can be investigated, trends compared, campaign logic drafted and outputs assembled in sequence. Teams guide the process while the system handles the heavy lifting.",
+    number: "6",
+    title: "Work that scales with you",
+    text: "As your library grows, Studio becomes more valuable. Past thinking strengthens present analysis. Institutional knowledge compounds instead of disappearing into folders.",
   },
 ];
 
@@ -30,12 +36,13 @@ const WhyHarvey = () => {
     <section className="py-24 md:py-32 px-8 md:px-16 border-t border-border">
       <div className="max-w-[1120px] mx-auto">
         <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-16">
-          Why Studio is different
+          How Studio changes the work
         </h2>
-        <div className="grid md:grid-cols-2 gap-x-16 gap-y-10">
+        <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
           {points.map((p, i) => (
             <div key={i}>
               <h3 className="text-lg font-serif font-semibold text-foreground mb-2">
+                <span className="text-muted-foreground mr-2">{p.number}.</span>
                 {p.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
