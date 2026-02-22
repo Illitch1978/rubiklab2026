@@ -9,11 +9,11 @@ const ProductsGrid = () => {
           Explore a real project environment with live data, structured reasoning and traceable outputs.
         </p>
         <p className="text-sm text-muted-foreground/70 mb-10">
-          This is not a demo. It is how Studio actually works.
+          This is a live project environment. The same system our clients use.
         </p>
         <a
           href="#"
-          className="inline-block font-mono text-sm tracking-wide px-8 py-3.5 rounded-md border border-foreground/20 text-foreground hover:bg-foreground hover:text-background transition-colors duration-300"
+          className="inline-block text-sm tracking-wide px-8 py-3 border border-foreground/20 text-foreground hover:bg-foreground hover:text-background transition-colors duration-300"
         >
           Explore a live project
         </a>

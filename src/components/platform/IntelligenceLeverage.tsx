@@ -25,8 +25,7 @@ const IntelligenceLeverage = () => {
           <br />
           Not a repository. Not a dashboard.
           <br />
-          A working environment where structured data, disciplined reasoning and execution meet.
-        </p>
+          A working environment where structured data, disciplined reasoning and execution meet.</p>
         <div className="grid md:grid-cols-3 gap-12">
           {pillars.map((p, i) => (
             <div key={i}>
