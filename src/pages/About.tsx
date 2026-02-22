@@ -71,12 +71,11 @@ const AboutHeroSection = () => {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/20 to-transparent" />
       <Navbar />
-      <div className="relative z-10 flex items-center min-h-screen px-8 md:px-16">
-        <div className="max-w-3xl pt-24">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[0.95] mb-8 text-foreground tracking-tight">
-            We build with care
-            <span
-              className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-1 align-baseline animate-pulse"
+      <div className="relative z-10 flex items-end min-h-screen px-8 md:px-16 pb-16 md:pb-24">
+        <div className="max-w-3xl">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[0.95] mb-6 text-foreground tracking-tight">
+            We build with care<span
+              className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-2 align-middle animate-pulse"
               style={{ backgroundColor: "hsl(var(--accent))" }}
             />
           </h1>
