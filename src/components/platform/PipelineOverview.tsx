@@ -5,7 +5,7 @@ const PipelineOverview = () => {
     <section className="relative overflow-hidden" style={{ background: "hsl(210 25% 8%)" }}>
       {/* Blueprint grid pattern */}
       <div
-        className="absolute inset-0 opacity-[0.07]"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
           backgroundImage:
             "linear-gradient(hsl(210 60% 50%) 1px, transparent 1px), linear-gradient(90deg, hsl(210 60% 50%) 1px, transparent 1px)",
@@ -13,7 +13,7 @@ const PipelineOverview = () => {
         }}
       />
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.015]"
         style={{
           backgroundImage:
             "linear-gradient(hsl(210 60% 50%) 1px, transparent 1px), linear-gradient(90deg, hsl(210 60% 50%) 1px, transparent 1px)",

@@ -1,7 +1,7 @@
 const PlatformHero = () => {
   return (
-    <section className="pt-32 pb-8 px-8 md:px-16">
-      <div className="max-w-[1120px] mx-auto">
+    <section className="min-h-screen flex items-center px-8 md:px-16">
+      <div className="max-w-[1120px] mx-auto pt-24">
         <p className="text-sm font-medium text-muted-foreground mb-6 tracking-wide uppercase">
           Platform Overview
         </p>
@@ -9,7 +9,7 @@ const PlatformHero = () => {
           Intelligence Studio
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-          A six-stage architecture that transforms raw, unstructured signal into validated, source-traced intelligence — built for organisations where accuracy is non-negotiable.
+          A six-stage architecture that transforms raw, unstructured signal into validated, source-traced intelligence. Built for organisations where accuracy is non-negotiable.
         </p>
       </div>
     </section>
