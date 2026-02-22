@@ -1,13 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
 import platformSlide1 from "@/assets/platform-slide-1.png";
 import platformSlide2 from "@/assets/platform-slide-2.png";
-import platformSlide3 from "@/assets/platform-slide-3.png";
 import platformSlide4 from "@/assets/platform-slide-4.png";
 
 const slides = [
   { label: "Dashboard", image: platformSlide1 },
   { label: "Data Audit", image: platformSlide2 },
-  { label: "Analysis View", image: platformSlide3 },
   { label: "Key Learnings", image: platformSlide4 },
 ];
 
@@ -56,7 +54,7 @@ const PlatformHero = () => {
                 <img
                   src={slide.image}
                   alt={slide.label}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             ))}
