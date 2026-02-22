@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 /* ── Sub-components ── */
 
@@ -232,7 +231,7 @@ const PipelineOverview = () => {
   const current = stages[active];
 
   return (
-    <section className="relative overflow-hidden" style={{ background: "hsl(210 25% 8%)" }}>
+    <section className="relative overflow-hidden min-h-screen flex flex-col justify-center" style={{ background: "hsl(210 25% 8%)" }}>
       {/* Blueprint grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.04]"
@@ -256,10 +255,10 @@ const PipelineOverview = () => {
 
           {/* Header */}
           <div className="mb-12 md:mb-16">
-            <p className="font-mono text-[10px] tracking-[0.3em] uppercase mb-4" style={{ color: "hsl(210 60% 55%)" }}>
+            <p className="font-mono text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "hsl(210 60% 55%)" }}>
               System Architecture // Intelligence Studio
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif leading-tight max-w-3xl" style={{ color: "hsl(40 30% 90%)" }}>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight max-w-3xl" style={{ color: "hsl(40 30% 90%)" }}>
               Six stages from raw signal to validated intelligence
             </h2>
           </div>
@@ -267,7 +266,7 @@ const PipelineOverview = () => {
           {/* Horizontal stepper bar */}
           <div className="relative mb-10">
             {/* Connector line */}
-            <div className="absolute top-[15px] left-0 right-0 h-px" style={{ background: "hsl(210 50% 25%)" }} />
+            <div className="absolute top-[24px] left-0 right-0 h-px" style={{ background: "hsl(210 50% 25%)" }} />
 
             <div className="relative flex justify-between">
               {stages.map((stage, i) => {
@@ -277,12 +276,12 @@ const PipelineOverview = () => {
                   <button
                     key={i}
                     onClick={() => setActive(i)}
-                    className="group flex flex-col items-center gap-2 relative z-10 focus:outline-none"
+                    className="group flex flex-col items-center gap-3 relative z-10 focus:outline-none"
                     style={{ flex: 1 }}
                   >
                     {/* Node */}
                     <div
-                      className="w-[30px] h-[30px] md:w-[36px] md:h-[36px] rounded-sm border flex items-center justify-center transition-all duration-300"
+                      className="w-[44px] h-[44px] md:w-[52px] md:h-[52px] rounded-sm border flex items-center justify-center transition-all duration-300"
                       style={{
                         borderColor: isActive ? "hsl(210 60% 55%)" : isPast ? "hsl(210 50% 35%)" : "hsl(210 40% 25%)",
                         background: isActive ? "hsl(210 50% 15%)" : "hsl(210 25% 10%)",
@@ -290,7 +289,7 @@ const PipelineOverview = () => {
                       }}
                     >
                       <span
-                        className="font-mono text-[10px] md:text-xs font-semibold transition-colors duration-300"
+                        className="font-mono text-sm md:text-base font-semibold transition-colors duration-300"
                         style={{ color: isActive ? "hsl(210 60% 70%)" : isPast ? "hsl(210 50% 50%)" : "hsl(210 40% 35%)" }}
                       >
                         {stage.num}
@@ -298,7 +297,7 @@ const PipelineOverview = () => {
                     </div>
                     {/* Title (hidden on small screens) */}
                     <span
-                      className="hidden lg:block font-mono text-[9px] tracking-wide text-center leading-tight max-w-[120px] transition-colors duration-300"
+                      className="hidden lg:block font-mono text-[11px] tracking-wide text-center leading-tight max-w-[140px] transition-colors duration-300"
                       style={{ color: isActive ? "hsl(40 30% 85%)" : "hsl(210 15% 40%)" }}
                     >
                       {stage.title}
@@ -314,15 +313,15 @@ const PipelineOverview = () => {
             className="border rounded-lg p-6 md:p-8 transition-all duration-300"
             style={{ borderColor: "hsl(210 30% 20%)", background: "hsl(210 25% 7%)" }}
           >
-            <div className="flex items-baseline gap-3 mb-1">
-              <span className="font-mono text-sm font-semibold" style={{ color: "hsl(210 60% 60%)" }}>
+            <div className="flex items-baseline gap-3 mb-2">
+              <span className="font-mono text-base font-semibold" style={{ color: "hsl(210 60% 60%)" }}>
                 {current.num}
               </span>
-              <h3 className="text-lg md:text-xl font-serif" style={{ color: "hsl(40 30% 90%)" }}>
+              <h3 className="text-xl md:text-2xl font-serif" style={{ color: "hsl(40 30% 90%)" }}>
                 {current.title}
               </h3>
             </div>
-            <p className="text-sm mb-6 leading-relaxed" style={{ color: "hsl(210 15% 50%)" }}>
+            <p className="text-base mb-6 leading-relaxed" style={{ color: "hsl(210 15% 50%)" }}>
               {current.subtitle}
             </p>
             {current.content}
@@ -333,7 +332,7 @@ const PipelineOverview = () => {
             <button
               onClick={() => setActive(Math.max(0, active - 1))}
               disabled={active === 0}
-              className="font-mono text-xs px-4 py-2 rounded border transition-all disabled:opacity-20"
+              className="font-mono text-sm px-5 py-2.5 rounded border transition-all disabled:opacity-20"
               style={{ borderColor: "hsl(210 30% 25%)", color: "hsl(210 60% 60%)" }}
             >
               ← Previous
@@ -341,59 +340,11 @@ const PipelineOverview = () => {
             <button
               onClick={() => setActive(Math.min(stages.length - 1, active + 1))}
               disabled={active === stages.length - 1}
-              className="font-mono text-xs px-4 py-2 rounded border transition-all disabled:opacity-20"
+              className="font-mono text-sm px-5 py-2.5 rounded border transition-all disabled:opacity-20"
               style={{ borderColor: "hsl(210 30% 25%)", color: "hsl(210 60% 60%)" }}
             >
               Next →
             </button>
-          </div>
-
-          {/* Security foundation bar */}
-          <div
-            className="mt-16 md:mt-20 border rounded-lg p-8 md:p-10"
-            style={{ borderColor: "hsl(210 30% 20%)", background: "hsl(210 25% 6%)" }}
-          >
-            <div className="flex flex-col md:flex-row md:items-start gap-8">
-              <div className="md:w-1/3">
-                <p className="font-mono text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: "hsl(210 60% 55%)" }}>
-                  Foundation
-                </p>
-                <h3 className="text-xl md:text-2xl font-serif mb-2" style={{ color: "hsl(40 30% 90%)" }}>
-                  Security Layer
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "hsl(210 15% 50%)" }}>
-                  Universal data protection underpinning the production lifecycle.
-                </p>
-              </div>
-              <div className="md:w-2/3 grid sm:grid-cols-2 gap-5">
-                {[
-                  { title: "Encryption & Data Protection", items: ["End-to-end encryption (TLS 1.2/1.3)", "Encryption at rest (AES-256)", "Cryptographic key management"] },
-                  { title: "Access Control & Identity", items: ["Role-based access & least privilege", "MFA and enterprise SSO (SAML/OIDC)", "Automated authentication monitoring"] },
-                  { title: "Data Isolation & Processing", items: ["Logical tenant isolation", "Zero client data used for tuning", "Secure sandboxed analytical nodes"] },
-                  { title: "Infrastructure & Resilience", items: ["Hardened cloud hosting instances", "Network isolation & private subnets", "Centralised incident response logging"] },
-                ].map((block, i) => (
-                  <div key={i}>
-                    <p className="font-mono text-[10px] tracking-wide uppercase mb-2" style={{ color: "hsl(210 50% 55%)" }}>
-                      {block.title}
-                    </p>
-                    <ul className="space-y-0.5">
-                      {block.items.map((item, j) => (
-                        <li key={j} className="font-mono text-[10px]" style={{ color: "hsl(210 15% 50%)" }}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="mt-6 pt-4 border-t" style={{ borderColor: "hsl(210 30% 20%)" }}>
-              <Link
-                to="/security"
-                className="font-mono text-xs underline underline-offset-4 transition-opacity hover:opacity-70"
-                style={{ color: "hsl(210 60% 60%)" }}
-              >
-                Read more about our security architecture →
-              </Link>
-            </div>
           </div>
 
         </div>
