@@ -1,10 +1,7 @@
 const PlatformHero = () => {
   return (
     <section className="min-h-screen flex items-center px-8 md:px-16">
-      <div className="max-w-[1120px] mx-auto pt-24">
-        <p className="text-sm font-medium text-muted-foreground mb-6 tracking-wide uppercase">
-          Platform Overview
-        </p>
+      <div className="max-w-6xl mx-auto pt-24">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[0.9] mb-8 text-foreground tracking-tight max-w-4xl">
           Intelligence Studio
         </h1>

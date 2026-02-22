@@ -11,7 +11,7 @@ import CallToAction from "@/components/CallToAction";
 
 const Platform = () => {
   return (
-    <div className="min-h-screen theme-light bg-background text-foreground">
+    <div className="min-h-screen theme-light bg-background text-foreground overflow-x-hidden">
       <Navbar light />
       <PlatformHero />
       <PipelineOverview />
