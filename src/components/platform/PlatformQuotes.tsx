@@ -1,19 +1,23 @@
 const quotes = [
   {
-    text: "We brought ten years of reports into Studio. For the first time, our historical work actually informs our current campaigns. We can see patterns we used to miss entirely.",
-    role: "Head of Insight, Global Research Agency",
+    text: "We used to spend most of our time consolidating material and formatting slides. Now the structure is already there. We focus on interpretation. The work feels sharper and more deliberate.",
+    name: "Research Director",
+    company: "Global Insights Agency",
   },
   {
-    text: "We used to spend most of our time consolidating material and formatting slides. Now we spend that time thinking. The structure is already there. The reasoning is visible. The work feels more deliberate.",
-    role: "Strategy Director, Professional Services Firm",
+    text: "Bringing ten years of reports into Studio changed how we run our business. We can see patterns we never noticed before and apply them directly to new campaigns. It feels like we finally have continuity.",
+    name: "Head of Strategy",
+    company: "Consumer Brand Group",
   },
   {
-    text: "We tracked a sentiment shift in social listening, compared it with our survey tracker and built a full campaign response inside Studio. The confidence metrics gave our leadership team the assurance to move quickly.",
-    role: "Marketing Lead, Consumer Brand",
+    text: "We tracked a shift in sentiment, validated it against our survey tracker and built a full campaign narrative in the same space. The confidence metrics made it easy to defend internally. That used to take weeks.",
+    name: "Marketing Lead",
+    company: "International Retail Brand",
   },
   {
-    text: "I expected something clever and conversational. What changed the game was being able to run multiple investigations at once, shape the narrative, and assemble everything into a structured deck without leaving the platform.",
-    role: "Managing Partner, Boutique Consultancy",
+    text: "I expected a clever assistant. What I found was a structured environment where multiple threads of work can run at once. I can explore the data, launch deeper analysis and assemble a final deck without leaving the platform. It genuinely changed how I operate.",
+    name: "Managing Partner",
+    company: "Strategy Consultancy",
   },
 ];
 
@@ -30,9 +34,8 @@ const PlatformQuotes = () => {
               <blockquote className="text-lg font-serif text-foreground leading-relaxed mb-4">
                 "{q.text}"
               </blockquote>
-              <p className="text-sm text-muted-foreground">
-                {q.role}
-              </p>
+              <p className="text-sm font-medium text-foreground">{q.name}</p>
+              <p className="text-sm text-muted-foreground">{q.company}</p>
             </div>
           ))}
         </div>

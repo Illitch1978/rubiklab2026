@@ -6,6 +6,7 @@ import ProductsGrid from "@/components/platform/ProductsGrid";
 import PlatformBenefits from "@/components/platform/PlatformBenefits";
 import PlatformQuotes from "@/components/platform/PlatformQuotes";
 import WhyHarvey from "@/components/platform/WhyHarvey";
+import IntelligenceLeverage from "@/components/platform/IntelligenceLeverage";
 import CallToAction from "@/components/CallToAction";
 
 const Platform = () => {
@@ -18,6 +19,7 @@ const Platform = () => {
       <PlatformBenefits />
       <PlatformQuotes />
       <WhyHarvey />
+      <IntelligenceLeverage />
       <CallToAction />
       <Footer />
     </div>
