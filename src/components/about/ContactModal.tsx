@@ -67,7 +67,22 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[480px] theme-light bg-[hsl(40,20%,96%)]">
+      <DialogContent
+        className="sm:max-w-[480px]"
+        style={{
+          // @ts-ignore
+          '--background': '40 20% 96%',
+          '--foreground': '20 20% 10%',
+          '--popover': '40 20% 96%',
+          '--popover-foreground': '20 20% 10%',
+          '--muted-foreground': '20 8% 45%',
+          '--border': '30 10% 85%',
+          '--input': '30 10% 85%',
+          '--ring': '20 20% 10%',
+          backgroundColor: 'hsl(40 20% 96%)',
+          color: 'hsl(20 20% 10%)',
+        } as React.CSSProperties}
+      >
         <DialogHeader>
           <DialogTitle className="text-2xl font-serif font-medium">
             Start a conversation
