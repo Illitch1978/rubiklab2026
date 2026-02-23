@@ -275,21 +275,6 @@ const About = () => {
               </div>
             </div>
 
-            {/* CTA */}
-            <div className="flex flex-col sm:flex-row gap-3 mt-7">
-              <a
-                href="/platform"
-                className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
-              >
-                Explore the platform
-              </a>
-              <a
-                href="#"
-                className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
-              >
-                Request a demo
-              </a>
-            </div>
           </div>
         </section>
 
@@ -304,9 +289,9 @@ const About = () => {
               <p className={bodyText}>
                 Studio was created by practitioners working across research, publishing and regulated environments who understood how complex knowledge flows in the real world. The platform reflects that experience: disciplined data preparation, governed workflows and outputs that stand up to scrutiny.
               </p>
-              <p className={bodyText}>
-                Our engineering and data architecture are developed in close collaboration with DataExpert Services Kft, a long-standing technical partner with deep expertise in enterprise cloud infrastructure, information security and scalable data systems. This partnership brings together applied domain understanding and production-grade engineering.
-              </p>
+                <p className={bodyText}>
+                  Our engineering and data architecture are developed in collaboration with <a href="https://dataexpert.hu/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground transition-colors">DataExpert Services Kft</a>, part of the same group as Rubiklab. DataExpert brings deep expertise in enterprise cloud infrastructure, information security and scalable data systems, ensuring production-grade engineering across the platform.
+                </p>
               <p className={bodyText}>
                 Rubiklab operates with clear accountability across product vision, governance and technical implementation. The platform is designed to support continuity, institutional memory and long-term capability.
               </p>
