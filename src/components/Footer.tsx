@@ -4,10 +4,10 @@ const Footer = () => {
       <div className="max-w-[1120px] mx-auto px-6 md:px-12 lg:px-[72px]">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4 lg:gap-6 mb-16">
           <div className="col-span-2">
-            <div className="flex items-baseline gap-0.5 mb-4">
+            <a href="/" className="flex items-baseline gap-0.5 mb-4">
               <span className="font-serif text-xl font-bold text-[hsl(0,0%,30%)]">rubiklab</span>
               <span className="w-1.5 h-1.5 rounded-full bg-accent mb-0.5 animate-pulse" />
-            </div>
+            </a>
             <p className="text-[13px] md:text-[14px] leading-[1.6] text-muted-foreground max-w-xs">
               Knowledge systems for legal, research, healthcare, publishing, and regulated enterprises.
             </p>
