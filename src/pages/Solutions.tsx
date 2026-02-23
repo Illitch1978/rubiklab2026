@@ -310,7 +310,8 @@ const Solutions = () => {
                   See it applied to your environment
                 </h2>
                 <p className={`${bodyText} mb-8`}>
-                  Tell us how your organisation works. We will show you how the system adapts.
+                  Tell us how your organisation works.<br />
+                  We will show you how the system adapts.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
