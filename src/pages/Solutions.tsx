@@ -263,6 +263,44 @@ const Solutions = () => {
           </div>
         </section>
 
+        {/* ═══ DARK: Built around your reality ═══ */}
+        <section className="py-12 md:py-16 lg:py-20">
+          <div className={container}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 lg:gap-12">
+              <div className="md:col-span-5">
+                <h2 className={`${h2} max-w-[16ch]`}>
+                  Built around your reality
+                </h2>
+              </div>
+              <div className="md:col-span-7 space-y-6">
+                <p className={bodyText}>
+                  While many organisations adopt one of our defined solutions, others require a more tailored environment.
+                </p>
+                <p className={bodyText}>
+                  Around a third of our work involves designing and implementing custom intelligence frameworks built on the same core architecture as Studio.
+                </p>
+                <p className={emphasis}>We work with clients to:</p>
+                <ul className="space-y-3">
+                  {[
+                    "Integrate proprietary systems and internal taxonomies",
+                    "Embed existing methodologies and reporting standards",
+                    "Build structured environments for grants, consortium projects or specialist research programmes",
+                    "Develop domain-specific intelligence layers with governance and auditability built in",
+                  ].map((item, i) => (
+                    <li key={i} className="flex gap-3 items-start">
+                      <span className="mt-[0.45em] w-1 h-1 rounded-full bg-foreground/50 shrink-0" />
+                      <span className={smallText + " text-foreground/70"}>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className={emphasis}>
+                  The foundation remains the same. The configuration adapts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ═══ DARK: Closing CTA ═══ */}
         <section className={`${sectionPad} border-t border-border`}>
           <div className={container}>
