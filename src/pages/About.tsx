@@ -303,7 +303,7 @@ const About = () => {
         </section>
 
         {/* ═══ LET'S TALK ═══ */}
-        <section className="pt-20 pb-20">
+        <section id="contact" className="pt-20 pb-20">
           <div className={container}>
             <h2 className={`${h2} mb-6`}>Let's talk</h2>
             <p className={`${bodyText} mb-8`}>
