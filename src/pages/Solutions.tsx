@@ -264,7 +264,7 @@ const Solutions = () => {
         </section>
 
         {/* ═══ DARK: Built around your reality ═══ */}
-        <section className="py-12 md:py-16 lg:py-20">
+        <section id="custom" className="py-12 md:py-16 lg:py-20">
           <div className={container}>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 lg:gap-12">
               <div className="md:col-span-5">
