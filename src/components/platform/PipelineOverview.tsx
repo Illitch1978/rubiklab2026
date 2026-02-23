@@ -53,7 +53,7 @@ const PipelineOverview = () => {
   const current = stages[active];
 
   return (
-    <section className="relative overflow-hidden min-h-screen flex flex-col justify-center" style={{ background: "hsl(210 25% 8%)" }}>
+    <section id="blueprint" className="relative overflow-hidden min-h-screen flex flex-col justify-center" style={{ background: "hsl(210 25% 8%)" }}>
       {/* Blueprint grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.04]"
