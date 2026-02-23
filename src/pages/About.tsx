@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ContactModal from "@/components/about/ContactModal";
 import aboutSlide1 from "@/assets/about-slide-1.png";
 import aboutSlide2 from "@/assets/about-slide-2.png";
 import aboutSlide3 from "@/assets/about-slide-3.png";
@@ -34,7 +35,7 @@ const smallText =
 const emphasis =
   "text-[16px] md:text-[17px] lg:text-[18px] leading-[1.6] text-foreground font-medium max-w-[60ch]";
 
-const AboutHeroSection = () => {
+const AboutHeroSection = ({ onOpenContact }: { onOpenContact: () => void }) => {
   const slides = useMemo(() => shuffle(aboutSlides), []);
   const [current, setCurrent] = useState(0);
 
@@ -79,6 +80,12 @@ const AboutHeroSection = () => {
           <p className="text-lg md:text-xl text-secondary-foreground max-w-lg leading-relaxed">
             We help organisations make sense of complexity without sacrificing judgement, depth or integrity.
           </p>
+          <button
+            onClick={onOpenContact}
+            className="mt-8 inline-block border border-foreground/60 text-foreground px-8 py-3 text-sm tracking-wide hover:bg-foreground hover:text-primary-foreground transition-all duration-300"
+          >
+            Talk to us
+          </button>
         </div>
       </div>
     </div>
@@ -86,10 +93,13 @@ const AboutHeroSection = () => {
 };
 
 const About = () => {
+  const [contactOpen, setContactOpen] = useState(false);
+
   return (
     <div className="min-h-screen overflow-x-hidden">
+      <ContactModal open={contactOpen} onOpenChange={setContactOpen} />
       {/* ═══ IMAGE SLIDESHOW HERO ═══ */}
-      <AboutHeroSection />
+      <AboutHeroSection onOpenContact={() => setContactOpen(true)} />
 
       {/* ═══ LIGHT NARRATIVE CHAPTER ═══ */}
       <div className="theme-light bg-background text-foreground">
@@ -280,6 +290,46 @@ const About = () => {
                 Request a demo
               </a>
             </div>
+          </div>
+        </section>
+
+        {/* ═══ OUR FOUNDATION ═══ */}
+        <section className="py-20 md:py-24 lg:py-[100px]">
+          <div className={container}>
+            <h2 className={`${h2} mb-6`}>Our foundation</h2>
+            <div className="max-w-[680px] space-y-6">
+              <p className={bodyText}>
+                Rubiklab is a UK-based technology company building structured intelligence systems for organisations where decisions carry weight.
+              </p>
+              <p className={bodyText}>
+                Studio was created by practitioners working across research, publishing and regulated environments who understood how complex knowledge flows in the real world. The platform reflects that experience: disciplined data preparation, governed workflows and outputs that stand up to scrutiny.
+              </p>
+              <p className={bodyText}>
+                Our engineering and data architecture are developed in close collaboration with DataExpert Services Kft, a long-standing technical partner with deep expertise in enterprise cloud infrastructure, information security and scalable data systems. This partnership brings together applied domain understanding and production-grade engineering.
+              </p>
+              <p className={bodyText}>
+                Rubiklab operates with clear accountability across product vision, governance and technical implementation. The platform is designed to support continuity, institutional memory and long-term capability.
+              </p>
+              <p className={emphasis}>
+                We build for organisations that value depth, traceability and integrity.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ═══ LET'S TALK ═══ */}
+        <section className="pt-20 pb-20">
+          <div className={container}>
+            <h2 className={`${h2} mb-6`}>Let's talk</h2>
+            <p className={`${bodyText} mb-8`}>
+              If you are working with complex knowledge, regulated information or high-stakes decisions, we would welcome the conversation.
+            </p>
+            <button
+              onClick={() => setContactOpen(true)}
+              className="inline-block border border-foreground/40 text-foreground px-8 py-3 text-[14px] tracking-wide hover:bg-foreground hover:text-background transition-all duration-300"
+            >
+              Talk to us
+            </button>
           </div>
         </section>
 
