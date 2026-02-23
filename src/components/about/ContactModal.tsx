@@ -67,7 +67,7 @@ const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[480px] theme-light">
+      <DialogContent className="sm:max-w-[480px] theme-light bg-[hsl(40,20%,96%)]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-serif font-medium">
             Start a conversation
