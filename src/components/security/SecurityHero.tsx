@@ -26,7 +26,7 @@ const SecurityHero = () => {
       <div className="relative z-10 flex-1 flex items-center">
         <div className="px-8 md:px-16 max-w-3xl pt-40">
           <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium text-white leading-[0.95] mb-8 tracking-tight">
-            Security for high-stakes<br />environments<span className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-1 align-baseline animate-pulse" style={{ backgroundColor: "hsl(var(--accent))" }} />
+            Security for high‑stakes environments<span className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-1 align-baseline animate-pulse" style={{ backgroundColor: "hsl(var(--accent))" }} />
           </h1>
           <p className="text-white/70 text-base md:text-lg max-w-md leading-relaxed">
             Rubiklab protects sensitive data through certified controls, isolated processing environments and disciplined AI implementation.
