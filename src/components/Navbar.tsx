@@ -6,7 +6,7 @@ const navItems = [
   { label: "Platform", href: "/platform" },
   { label: "Solutions", href: "/solutions" },
   { label: "Security", href: "/security" },
-  { label: "Resources", href: "#" },
+  
 ];
 
 interface NavbarProps {
