@@ -27,7 +27,7 @@ const Footer = () => {
               <p>United Kingdom</p>
             </div>
             <p className="text-[11px] md:text-[12px] text-muted-foreground/50 mt-3">
-              Part of the Rubiklab–DataExpert Group
+              Part of the Rubiklab–<a href="https://dataexpert.hu/" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors">DataExpert</a> Group
             </p>
           </div>
 
@@ -36,10 +36,9 @@ const Footer = () => {
             <p className="text-[14px] font-medium text-foreground mb-4">Platform</p>
             <ul className="space-y-2">
               {[
-                { label: "Overview", href: "/platform" },
+                { label: "Overview", href: "/" },
                 { label: "Studio", href: "/platform" },
-                { label: "Knowledge Layer", href: "/platform" },
-                { label: "Integrations", href: "/platform" },
+                { label: "Knowledge Layer", href: "/platform#blueprint" },
                 { label: "Security", href: "/security" },
               ].map((link) => (
                 <li key={link.label}>
@@ -106,14 +105,6 @@ const Footer = () => {
               aria-label="LinkedIn"
             >
               <LinkedInIcon />
-            </a>
-          </div>
-          <div className="flex gap-6">
-            <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-              Terms of Service
             </a>
           </div>
         </div>
