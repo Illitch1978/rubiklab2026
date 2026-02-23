@@ -23,7 +23,7 @@ const Navbar = ({ light }: NavbarProps) => {
       // Shorter pages (e.g. /about) have a compact hero — hide nav earlier
       const threshold = location.pathname === "/about"
         ? 320
-        : location.pathname === "/platform"
+        : location.pathname === "/platform" || location.pathname === "/security"
         ? 200
         : window.innerHeight * 0.8;
       setHidden(window.scrollY > threshold);
