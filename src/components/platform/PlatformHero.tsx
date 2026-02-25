@@ -23,7 +23,7 @@ const PlatformHero = () => {
 
   return (
     <section className="min-h-screen flex items-center">
-      <div className="w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-16 px-8 md:px-16 pt-24">
+      <div className="w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-16 px-8 md:px-16 pt-32 pb-12 lg:pt-24 lg:pb-0">
         {/* Left: text — no max-w container, same as Security/About heroes */}
         <div className="lg:w-[35%] flex-shrink-0">
           <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-6 text-foreground tracking-tight">
