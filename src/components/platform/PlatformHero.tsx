@@ -23,10 +23,10 @@ const PlatformHero = () => {
 
   return (
     <section className="min-h-screen flex items-center">
-      <div className="w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-16 px-8 md:px-16 pt-32 pb-12 lg:pt-24 lg:pb-0">
+      <div className="w-full flex flex-col xl:flex-row items-center gap-10 xl:gap-16 px-8 md:px-16 pt-32 pb-12 xl:pt-24 xl:pb-0">
         {/* Left: text — no max-w container, same as Security/About heroes */}
-        <div className="lg:w-[35%] flex-shrink-0">
-          <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium leading-[0.95] mb-6 text-foreground tracking-tight">
+        <div className="xl:w-[35%] flex-shrink-0">
+          <h1 className="text-5xl md:text-7xl xl:text-[6.5rem] font-serif font-medium leading-[0.95] mb-6 text-foreground tracking-tight">
             Introducing<br />Studio<span
               className="inline-block w-3 h-3 md:w-4 md:h-4 rounded-full ml-1 align-baseline animate-pulse"
               style={{ backgroundColor: "hsl(210 60% 55%)" }}
@@ -38,7 +38,7 @@ const PlatformHero = () => {
         </div>
 
         {/* Right: carousel — 65% width for larger display */}
-        <div className="lg:w-[65%] w-full">
+        <div className="xl:w-[65%] w-full">
           <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden border border-foreground/10 shadow-2xl bg-muted">
             {slides.map((slide, i) => (
               <div
