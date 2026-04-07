@@ -4,8 +4,9 @@ import Footer from "@/components/Footer";
 import solutionsSlide1 from "@/assets/solutions-slide-1.png";
 import solutionsSlide2 from "@/assets/solutions-slide-2.png";
 import solutionsSlide3 from "@/assets/solutions-slide-3.png";
+import solutionsSlide4 from "@/assets/solutions-slide-4.png";
 
-const allSlides = [solutionsSlide1, solutionsSlide2, solutionsSlide3];
+const allSlides = [solutionsSlide1, solutionsSlide2, solutionsSlide3, solutionsSlide4];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
