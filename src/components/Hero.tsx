@@ -51,7 +51,7 @@ const Hero = () => {
       ))}
 
       {/* Subtle gradient for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/45 via-background/15 to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 px-8 md:px-16 max-w-3xl pt-24">

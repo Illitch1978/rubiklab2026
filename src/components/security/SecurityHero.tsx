@@ -22,7 +22,7 @@ const SecurityHero = () => {
         className="absolute inset-0 w-full h-full object-cover"
       />
       {/* Dim overlay */}
-      <div className="absolute inset-0 bg-black/45" />
+      <div className="absolute inset-0 bg-black/30" />
       <div className="relative z-10 flex-1 flex items-center">
         <div className="px-8 md:px-16 max-w-3xl pt-40">
           <h1 className="text-5xl md:text-7xl lg:text-[6.5rem] font-serif font-medium text-white leading-[0.95] mb-8 tracking-tight">
