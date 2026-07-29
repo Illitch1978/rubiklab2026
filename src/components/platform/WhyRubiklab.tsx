@@ -31,7 +31,7 @@ const points = [
   },
 ];
 
-const WhyHarvey = () => {
+const WhyRubiklab = () => {
   return (
     <section className="py-20 md:py-28 px-8 md:px-16 border-t border-border">
       <div className="max-w-[1120px] mx-auto">
@@ -56,4 +56,4 @@ const WhyHarvey = () => {
   );
 };
 
-export default WhyHarvey;
+export default WhyRubiklab;
