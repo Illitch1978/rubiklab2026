@@ -29,7 +29,7 @@ const AboutValues = () => {
           Our Values
         </h2>
         <p className="text-muted-foreground text-base md:text-lg max-w-2xl mb-16 leading-relaxed">
-          We want Harvey's values to be a commitment to our customers, a testament to our ambition, and a leading indicator to our candidates and employees on the culture we aim to build.
+          We want Rubiklab's values to be a commitment to our customers, a testament to our ambition, and a leading indicator to our candidates and employees on the culture we aim to build.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">

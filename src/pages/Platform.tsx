@@ -5,7 +5,7 @@ import PipelineOverview from "@/components/platform/PipelineOverview";
 import ProductsGrid from "@/components/platform/ProductsGrid";
 
 import PlatformQuotes from "@/components/platform/PlatformQuotes";
-import WhyHarvey from "@/components/platform/WhyHarvey";
+import WhyRubiklab from "@/components/platform/WhyRubiklab";
 import IntelligenceLeverage from "@/components/platform/IntelligenceLeverage";
 import CallToAction from "@/components/CallToAction";
 
@@ -18,7 +18,7 @@ const Platform = () => {
       <ProductsGrid />
       
       <PlatformQuotes />
-      <WhyHarvey />
+      <WhyRubiklab />
       <IntelligenceLeverage />
       <CallToAction />
       <Footer />
